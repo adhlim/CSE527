@@ -1,0 +1,86 @@
+[
+  {
+    "source_path": "img/IMG_3575.HEIC",
+    "drive_id": "13BlbhkV3YX_Qgbcll_K8BEJw4mGcanwY",
+    "bytes": 3271342,
+    "reason": "Personal sample photograph; retained on Drive"
+  },
+  {
+    "source_path": "img/IMG_3576.HEIC",
+    "drive_id": "1SbhFIQUwroBRvIDR3WnNpNLQLTrvYzzC",
+    "bytes": 1350735,
+    "reason": "Personal sample photograph; retained on Drive"
+  },
+  {
+    "source_path": "CSE527_datasets/hpatches-sequences-release.zip",
+    "drive_id": "1nTJjiFxuJc-x3vsJf9igK6Ov1IT36IF4",
+    "bytes": 1279545572,
+    "reason": "Large dataset archive; retained on Drive"
+  },
+  {
+    "source_path": "CSE527_datasets/val2017.zip",
+    "drive_id": "1qgb_n2eMLBQm1xnSM4YW3pAIbhHwmJMT",
+    "bytes": 815585330,
+    "reason": "Large dataset archive; retained on Drive"
+  },
+  {
+    "source_path": "2026-10-11_learned_float_bits_8bin/run/training_triplets.npz",
+    "drive_id": "1QlHQYQYzAYjhsi9OPU8I3XxH_9p8gMKW",
+    "bytes": 9771058,
+    "reason": "Training/evaluation input cache; retained on Drive"
+  },
+  {
+    "source_path": "2026-10-11_learned_float_bits_8bin/run/test_pairs.npz",
+    "drive_id": "1mESgcVSTaKxVR9FpB59MFKlYYrebVV-T",
+    "bytes": 7263840,
+    "reason": "Training/evaluation input cache; retained on Drive"
+  },
+  {
+    "source_path": "2026-10-11_learned_float_bits_8bin/run/validation_pairs.npz",
+    "drive_id": "1UKChG8QSm98NCoqo1y26Prt6UM8oxLBY",
+    "bytes": 4361184,
+    "reason": "Training/evaluation input cache; retained on Drive"
+  },
+  {
+    "source_path": "2026-10-11_learned_float_bits_8bin/run/train_pairs.npz",
+    "drive_id": "1VRb81Ni7TC39lLEHuI7RTd0U4SWFMWMa",
+    "bytes": 23253218,
+    "reason": "Training/evaluation input cache; retained on Drive"
+  },
+  {
+    "source_path": "CSE527_datasets/experiment_results/thermo_exact_20261005_203628_471955/blocked_parallel.asm",
+    "drive_id": "1FixiSfeCidRnJUbztprINcMQDlcXw7HR",
+    "bytes": 93700,
+    "reason": "Generated assembly dump; retained on Drive"
+  },
+  {
+    "source_path": "CSE527_datasets/experiment_results/thermo_exact_20261005_203628_471955/blocked_serial.asm",
+    "drive_id": "1f74yg0j0tHg3XgMqTHmW9FSN-InTHoG2",
+    "bytes": 45451,
+    "reason": "Generated assembly dump; retained on Drive"
+  },
+  {
+    "source_path": "CSE527_datasets/experiment_results/thermo_exact_20261005_203628_471955/fused.asm",
+    "drive_id": "1LjFH7NJQwE29Cuew_iihZCfQ7a5DAmL6",
+    "bytes": 41980,
+    "reason": "Generated assembly dump; retained on Drive"
+  },
+  {
+    "source_path": "CSE527_datasets/experiment_results/thermo_exact_20261005_203628_471955/existing_pairwise_thermometer64.asm",
+    "drive_id": "1Eg5WCrQS96YFFwrhpmw9Vxk883Qwhf7M",
+    "bytes": 36133,
+    "reason": "Generated assembly dump; retained on Drive"
+  },
+  {
+    "source_path": "CSE527_datasets/experiment_results/quadrant_relation_20261006_152729_168298/HPatches_test_inputs.npz",
+    "drive_id": "1vAQznB6-AruxsHobXsZiIBHAfyHcekbG",
+    "bytes": 9313668,
+    "reason": "Training/evaluation input cache; retained on Drive"
+  },
+  {
+    "source_path": "CSE527_datasets/experiment_results/quadrant_relation_20261006_152729_168298/synthetic_validation_inputs.npz",
+    "drive_id": "1oJyxJ5U39WvIGt8P0oQoptIYUXI35RHC",
+    "bytes": 6984918,
+    "reason": "Training/evaluation input cache; retained on Drive"
+  }
+]

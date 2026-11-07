@@ -1,0 +1,1325 @@
+[
+  {
+    "drive_id": "1lyj8qh7pgsi8OdeKHy-AbR6Utix6uWNu",
+    "source_path": "2026-10-11_XFeat_5methods_unified_comparison.ipynb",
+    "repository_path": "notebooks/2026-10-11_XFeat_5methods_unified_comparison.ipynb",
+    "bytes": 81657,
+    "sha256": "1f64bd3d5946db799e4a71c6acbdb478f9b6ee30d239f84b4aa79ae017f2fd3a"
+  },
+  {
+    "drive_id": "1hV9pzfWQxybjALDQZc-UUSPBTqKLG6ay",
+    "source_path": "2026-10-06_XFeat_thermometer_hardware_acceleration.ipynb",
+    "repository_path": "notebooks/2026-10-06_XFeat_thermometer_hardware_acceleration.ipynb",
+    "bytes": 86199,
+    "sha256": "66b59695e51d6231d16cdf44fb8004ca08a7a92aeadffbe7ecacd6f896220b42"
+  },
+  {
+    "drive_id": "1r3zNbfEuLv2f-0pTPcaezi2UnspZvttc",
+    "source_path": "2026-10-06_XFeat_contiguous_group_projection_cosine.ipynb",
+    "repository_path": "notebooks/2026-10-06_XFeat_contiguous_group_projection_cosine.ipynb",
+    "bytes": 242127,
+    "sha256": "b51920191f71c488fed9f20f59337e056910ee206b37ea0377de9d8a8ca6457f"
+  },
+  {
+    "drive_id": "1B03XLjfbs2C6RPODL2J-nPe6h-t7NToW",
+    "source_path": "2026-10-06_XFeat_quadrant_relation_matching.ipynb",
+    "repository_path": "notebooks/2026-10-06_XFeat_quadrant_relation_matching.ipynb",
+    "bytes": 74645,
+    "sha256": "8c4ccdba8a2e65375cb9dae48f54680d8537c7abcbba8d1f305abdada4d2f5a3"
+  },
+  {
+    "drive_id": "1uBeEp1K46xepuVoLD-ZEeGDaRXP6wejL",
+    "source_path": "2026-10-05_XFeat_learned_grouping_spatial_blob.ipynb",
+    "repository_path": "notebooks/2026-10-05_XFeat_learned_grouping_spatial_blob.ipynb",
+    "bytes": 131977,
+    "sha256": "cabfe956437f4d4b0219c415023dedfc7e2f35739de0b68bf5c676df6a6579a5"
+  },
+  {
+    "drive_id": "1m0xm1iovSsZsRao27lVJp-O2hQfp013P",
+    "source_path": "2026-10-05_XFeat_group_bound_partial_thermometer.ipynb",
+    "repository_path": "notebooks/2026-10-05_XFeat_group_bound_partial_thermometer.ipynb",
+    "bytes": 207339,
+    "sha256": "a213cb733ecbe0ab5c986d85bb62f9fcd84733059ecd52bcab9d61109a2cea9d"
+  },
+  {
+    "drive_id": "1aC8PwmGXQL_7j23pB-d45-3uvXR7LEan",
+    "source_path": "2026-10-01_XFeat_lookup_fused_MNN.ipynb",
+    "repository_path": "notebooks/2026-10-01_XFeat_lookup_fused_MNN.ipynb",
+    "bytes": 64110,
+    "sha256": "8ee9c9944f04e83dff61815c4ed684621109127f344f7a60d0cde9be73fad5c7"
+  },
+  {
+    "drive_id": "1Dn73GAwVHhIEO_ZiRDceuEs-V1Bkep8k",
+    "source_path": "2026-09-30_XFeat_fixed_quantile_thermometer_baseline.ipynb",
+    "repository_path": "notebooks/2026-09-30_XFeat_fixed_quantile_thermometer_baseline.ipynb",
+    "bytes": 39118,
+    "sha256": "9ea894b7a4ab4271a9a9d1350db05f954a40432a7057add1c2da575f73176d29"
+  },
+  {
+    "drive_id": "12pED2POGsjulutk2DjKnw4MW3OP8ztig",
+    "source_path": "2026-09-29_XFeat_8bin_learned_thresholds.ipynb",
+    "repository_path": "notebooks/2026-09-29_XFeat_8bin_learned_thresholds.ipynb",
+    "bytes": 189905,
+    "sha256": "06f20d6793ec44286393c89343b002e70c4d11bd1f694fb43562143c80811d05"
+  },
+  {
+    "drive_id": "1T1PxeGDBjrhC9z_L9ZKpXWLXNL8fbMsJ",
+    "source_path": "XFeat_BRIEF_ABS_hybrid.ipynb",
+    "repository_path": "notebooks/XFeat_BRIEF_ABS_hybrid.ipynb",
+    "bytes": 29217,
+    "sha256": "222ca7116113a4cc3a6f3a1ee2ea2f918aca1960c645b9c988565694a9badb7a"
+  },
+  {
+    "drive_id": "1_KG8UspwanJDQ9xv2fPl2TYSfZUP1p5i",
+    "source_path": "XFeat_ABS_aware_training.ipynb",
+    "repository_path": "notebooks/XFeat_ABS_aware_training.ipynb",
+    "bytes": 140475,
+    "sha256": "df97c1b219db889be56bf7f4291dd2a2e9c0ba3c43a6c03d8e800c179ab7b63a"
+  },
+  {
+    "drive_id": "1D8Fkw9XMc9Yefb9wtt-SDLyMRgArk9m1",
+    "source_path": "XFeat_abs_vs_xor_test.ipynb",
+    "repository_path": "notebooks/XFeat_abs_vs_xor_test.ipynb",
+    "bytes": 1193908,
+    "sha256": "953aa6fe263c737a2284fb9140424db7243c0d53863c082b007d146519ed6fd9"
+  },
+  {
+    "drive_id": "1kgO4CP3PmJrSuz6PD6n1n7ghRG9nPU8T",
+    "source_path": "2026-10-11_XFeat_5methods_HPatches_results/by_type_summary.csv",
+    "repository_path": "results/hpatches_5methods/by_type_summary.csv",
+    "bytes": 952,
+    "sha256": "ba0874b18d3dd3a7aa1d03128da3f87dda26b5469df0dcba72597371b2adbba1"
+  },
+  {
+    "drive_id": "1OuGg8BWbRU2W8Pv7OfUBNyUzoAtqu0Ki",
+    "source_path": "2026-10-11_XFeat_5methods_HPatches_results/hpatches_manifest.json",
+    "repository_path": "results/hpatches_5methods/hpatches_manifest.json",
+    "bytes": 2434,
+    "sha256": "f5b9859f143bf66b7c2fb0a0a35fa319eb6d1dbd275a091333904c88de21f018"
+  },
+  {
+    "drive_id": "1SZl9q6NNgk0azDCd5YxuXdwKZ7SeQjUY",
+    "source_path": "2026-10-11_XFeat_5methods_HPatches_results/environment.json",
+    "repository_path": "results/hpatches_5methods/environment.json",
+    "bytes": 442,
+    "sha256": "509df42aade0f16381ec901de9eba11275b05881f0bb959c0d01485561b4d1e5"
+  },
+  {
+    "drive_id": "1T5P31jpSX1U2itMySC_8v_F65vSlMd34",
+    "source_path": "2026-10-11_XFeat_5methods_HPatches_results/per_pair_results.csv",
+    "repository_path": "results/hpatches_5methods/per_pair_results.csv",
+    "bytes": 279178,
+    "sha256": "4bbd4f0d61fa9c56d6f07998c928dba1656f115d9726dac923a9906f4b2972ce"
+  },
+  {
+    "drive_id": "1mUVkb7Topq1DlrOSoXqE2MQQBHD96kpW",
+    "source_path": "2026-10-11_XFeat_5methods_HPatches_results/comparison_summary.csv",
+    "repository_path": "results/hpatches_5methods/comparison_summary.csv",
+    "bytes": 1350,
+    "sha256": "ca61727c5141ce228012ef16f45ce0a7ca15ea0a16d3fbc9b4b4d3a9955cf49c"
+  },
+  {
+    "drive_id": "1uAuQH2vCIujY-NnX0HCNzveoFIC60gaN",
+    "source_path": "2026-10-11_learned_float_bits_8bin/training_run.log",
+    "repository_path": "experiments/2026-10-11_learned_float_bits_8bin/training_run.log",
+    "bytes": 6914,
+    "sha256": "20287a44b3a1caf2abc34d906b9082e4a68ce1e807facd879f125785a5d1cbc2"
+  },
+  {
+    "drive_id": "1sFP8pOLAwk2WqkKWEJQf_zmqyPN4UwiC",
+    "source_path": "2026-10-11_learned_float_bits_8bin/README.md",
+    "repository_path": "experiments/2026-10-11_learned_float_bits_8bin/README.md",
+    "bytes": 4789,
+    "sha256": "e22fda5a82a1d1e768af191146d9a5d0de9c8ac2d58af3ea6d42d22cfbaeca74"
+  },
+  {
+    "drive_id": "1YFWRBpd4bpVj0WSCTw2tRleUhi6rl8Rm",
+    "source_path": "2026-10-11_learned_float_bits_8bin/bit_codec.cpp",
+    "repository_path": "experiments/2026-10-11_learned_float_bits_8bin/bit_codec.cpp",
+    "bytes": 2248,
+    "sha256": "7ab70d5bd6822728dddff6a33bafbfa31561cadb468902dd7f9e31256ce776dc"
+  },
+  {
+    "drive_id": "1vz50efhCZFkPJ8B_nmWzd3RFOmQAijwD",
+    "source_path": "2026-10-11_learned_float_bits_8bin/experiment.py",
+    "repository_path": "experiments/2026-10-11_learned_float_bits_8bin/experiment.py",
+    "bytes": 23278,
+    "sha256": "27c3e1f2d04a13b2b574b46eb0c80a79ba8ca192324dd651d543b3897e90ced7"
+  },
+  {
+    "drive_id": "1aEWUXEzDV2VjPZb2yM4eUD_xP0Imb3gZ",
+    "source_path": "2026-10-11_learned_float_bits_8bin/2026-10-11_XFeat_learned_bits_ABS_vs_thermometer.ipynb",
+    "repository_path": "experiments/2026-10-11_learned_float_bits_8bin/2026-10-11_XFeat_learned_bits_ABS_vs_thermometer.ipynb",
+    "bytes": 38302,
+    "sha256": "da117d1ebbd6ac146db80717e389202aa3f08cc2580c9aa75ab987418986ff9d"
+  },
+  {
+    "drive_id": "1_MJx9KCJ_lMJOjc-eaJOUBNVDxyFOY1M",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/2026-10-08_fair_comparison_8_11bin_vs_official_XFeat.ipynb",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/2026-10-08_fair_comparison_8_11bin_vs_official_XFeat.ipynb",
+    "bytes": 137319,
+    "sha256": "b5777c192702426140aa559154dd946913c8a11f81891f88173096b50ba78777"
+  },
+  {
+    "drive_id": "1y0XInQ_ZhXLU21rFRI6cuJkH-XP0G9Q7",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/official_XFeat.ipynb",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/official_XFeat.ipynb",
+    "bytes": 50870,
+    "sha256": "06b76dc68ba7795c4ccc9396d0271f11130c56c2f8140dc3a36ae1273ffc89e4"
+  },
+  {
+    "drive_id": "1HgmKermxsT8CrlHzwSWTqOBfV6DpxhZF",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/11bin_10bit_AVX2_SIMD4.ipynb",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/11bin_10bit_AVX2_SIMD4.ipynb",
+    "bytes": 65791,
+    "sha256": "b2ed627e97e29902b4dc4ce52ce0d46c44142a9a457bade51b376231a9602e8b"
+  },
+  {
+    "drive_id": "1CDeC-PTpZ9s5BpD8U54xQtydWZDfhzY2",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/10bin_9bit_AVX2_SIMD4.ipynb",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/10bin_9bit_AVX2_SIMD4.ipynb",
+    "bytes": 65766,
+    "sha256": "b25e8b07269d8d40bddd9b4cd738b95ce9a97188bad31633070f762af94d8c94"
+  },
+  {
+    "drive_id": "1WX2pIlvjnSaiyvy2p9MRJpj8J0BXdXgD",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/9bin_8bit_AVX2_SIMD4.ipynb",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/9bin_8bit_AVX2_SIMD4.ipynb",
+    "bytes": 65743,
+    "sha256": "a8c0e4485da2a86ad173cfe59b347eba9cb869ed9d3f7beed3ddbfe0796811af"
+  },
+  {
+    "drive_id": "15Nha_2U9rpJIN0LZ7GFdJLOxoLfYYLTH",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/8bin_7bit_AVX2_SIMD4.ipynb",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/8bin_7bit_AVX2_SIMD4.ipynb",
+    "bytes": 65732,
+    "sha256": "bc36d522e72f71729977deaa1f6dae4c0c0e849408c4ecbad5d3684642fad80d"
+  },
+  {
+    "drive_id": "1rcSdsdvh-__E650T8JHlf6n53vSdBk0v",
+    "source_path": "2026-10-14_XFeat_quantile_8_9_10_11bin_large/2026-10-14_XFeat_quantile_8_9_10_11bin_large.ipynb",
+    "repository_path": "experiments/2026-10-14_XFeat_quantile_8_9_10_11bin_large/2026-10-14_XFeat_quantile_8_9_10_11bin_large.ipynb",
+    "bytes": 69868,
+    "sha256": "dc9dc4a2a46f49211c4789e95731a8a19b8a2a1d3ba107a25dbce6eab9fb562d"
+  },
+  {
+    "drive_id": "1omMTj_OciNEWZxAmI-KMEgEQtyqkLo_2",
+    "source_path": "CSE527_datasets/experiment_results/xfeat_thermometer_2026-09-30.json",
+    "repository_path": "results/historical/xfeat_thermometer_2026-09-30.json",
+    "bytes": 23266,
+    "sha256": "94ddaec3d3cdb9aa0a3a69248b13670408e6336d29dbefcd3e8b40513fdad842"
+  },
+  {
+    "drive_id": "1VIDeqviKpxPsIx6pG1aJmxxWjYB-OmBA",
+    "source_path": "2026-10-11_learned_float_bits_8bin/run/selection_history.json",
+    "repository_path": "experiments/2026-10-11_learned_float_bits_8bin/run/selection_history.json",
+    "bytes": 1356,
+    "sha256": "a39d782be01e52942f423b0512239eef0a9a5e62ee1f33364a2de5e4253ca1cb"
+  },
+  {
+    "drive_id": "18cVFT-8gVi_2zFH7401rWF7beSz0vEoL",
+    "source_path": "2026-10-11_learned_float_bits_8bin/run/timing.csv",
+    "repository_path": "experiments/2026-10-11_learned_float_bits_8bin/run/timing.csv",
+    "bytes": 4813,
+    "sha256": "6b8e0285f4bb01aa527b661bf6ca0fc01f9eba838aea8a9aecff8d2126609f2a"
+  },
+  {
+    "drive_id": "1dnwztZl79I_bjdHpXmK2PsLp2PEYNZvP",
+    "source_path": "2026-10-11_learned_float_bits_8bin/run/accuracy.csv",
+    "repository_path": "experiments/2026-10-11_learned_float_bits_8bin/run/accuracy.csv",
+    "bytes": 12157,
+    "sha256": "2b4e4af6960d5b1504bf78bdc0e6ace9048dd856c977ca2f0d8fcc1d2989e2fe"
+  },
+  {
+    "drive_id": "1h8CmoNNfXPLNQoe4Z21pixKNBfvoaIgu",
+    "source_path": "2026-10-11_learned_float_bits_8bin/run/results.json",
+    "repository_path": "experiments/2026-10-11_learned_float_bits_8bin/run/results.json",
+    "bytes": 90524,
+    "sha256": "ee145c4d381dd33d696e054687324a85c2aa5462a1980eb6182070b22741e9fb"
+  },
+  {
+    "drive_id": "1Q7g3WbR2uo3BjfwSnOY_4vKYTw1wlWB8",
+    "source_path": "2026-10-11_learned_float_bits_8bin/run/data_manifest.json",
+    "repository_path": "experiments/2026-10-11_learned_float_bits_8bin/run/data_manifest.json",
+    "bytes": 1091,
+    "sha256": "e378d6cc394b2b44fe746b0daf1ae56670f2e14df80c774733caac8780c32a6d"
+  },
+  {
+    "drive_id": "1uXaOEIjGz87u26XYeccmbZ3UXnQh8kKk",
+    "source_path": "2026-10-11_learned_float_bits_8bin/run/training.json",
+    "repository_path": "experiments/2026-10-11_learned_float_bits_8bin/run/training.json",
+    "bytes": 2360,
+    "sha256": "3a257324e4cbed61887599eee65209ee9b3fed604e9610100d97461276bb534a"
+  },
+  {
+    "drive_id": "1YJKYPItST2TTY4kxWGRe9JjHvrabHOXQ",
+    "source_path": "2026-10-11_learned_float_bits_8bin/run/learned_codec.npz",
+    "repository_path": "experiments/2026-10-11_learned_float_bits_8bin/run/learned_codec.npz",
+    "bytes": 84740,
+    "sha256": "dcad3d3c8f412e11b5aba2542a7506b248688bcfe96122d5f10cef82cae6da3c"
+  },
+  {
+    "drive_id": "1-Rv4qEXoPSNqYa78P6-2UrQVeA3hccGK",
+    "source_path": "2026-10-14_XFeat_quantile_8_9_10_11bin_large/results/2026-10-14_XFeat_quantile_bins_large_bundle.zip",
+    "repository_path": "experiments/2026-10-14_XFeat_quantile_8_9_10_11bin_large/results/2026-10-14_XFeat_quantile_bins_large_bundle.zip",
+    "bytes": 292215,
+    "sha256": "2c1c37a84e03469d6e4a6ca8f88c3dea5f4378721a7bc73e5228ab583b6960af"
+  },
+  {
+    "drive_id": "1wAVlnt8xUCl-5BlVnD3DpomN-Sscn8Ha",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_232021/official_match_source.py",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_232021/official_match_source.py",
+    "bytes": 536,
+    "sha256": "e987220ff12fe3352c01ce2d411cdf70f2756f4039398eb2e98f62dfdcd0ad14"
+  },
+  {
+    "drive_id": "1sHnQHhlWS35xne68VLeF7y6RVSlwkLF-",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_232021/float_index_agreement.csv",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_232021/float_index_agreement.csv",
+    "bytes": 1220,
+    "sha256": "1c7b0e47ddf3c5bdad03cf4e990dc4b0f789a66f7b09cf6716654ee15887809e"
+  },
+  {
+    "drive_id": "12DjN3OSq2lyfwU9aPcuvqbDx-wJU9iFd",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_232021/pipeline_summary.csv",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_232021/pipeline_summary.csv",
+    "bytes": 660,
+    "sha256": "26c80a6e2eee0ce5b42d6d98791c26c33917e83c196f89678f92b45e788620d6"
+  },
+  {
+    "drive_id": "1zdyseXKAGYj5ht5XJ8LuN-EJ3aZVFpCH",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_232021/fixed_edges.npz",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_232021/fixed_edges.npz",
+    "bytes": 2056,
+    "sha256": "bf0e96f88a10dd0f72d1e46aa9f75de87848e0d3f9664f72edd6324ba138fa17"
+  },
+  {
+    "drive_id": "1bbIiWqIrJ5JPU1EnNuhi3jCut6glYp9j",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_232021/results.json",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_232021/results.json",
+    "bytes": 79797,
+    "sha256": "9ab9197a39f97f781ca09cac100ce1312c1b40606e1d5af66167d689f3addd82"
+  },
+  {
+    "drive_id": "161ug11iGubBBqVG5D52HrDpj_uO1iccL",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_232021/accuracy.csv",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_232021/accuracy.csv",
+    "bytes": 1145,
+    "sha256": "e8b8dd69bf7693f7c29ccaa8b92b11875e7b927d2fc5f6127760a52f8204cb8d"
+  },
+  {
+    "drive_id": "1-ONqhvEwsVjWLjyyHUkx8_6V3aaomlA4",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_232021/speed_summary.csv",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_232021/speed_summary.csv",
+    "bytes": 1961,
+    "sha256": "d4ddf6437a696bd46a37e2ff08444616524c89f6aa3b11f2ef6acc6d3e74a782"
+  },
+  {
+    "drive_id": "1JJGplAEjROu0WiGAqz0YoNXZ0fHFPfuB",
+    "source_path": "CSE527_datasets/experiment_results/contiguous_projection_20261006_160417_902089/results.json",
+    "repository_path": "results/historical/contiguous_projection_20261006_160417_902089/results.json",
+    "bytes": 20165,
+    "sha256": "4d5a284786843ae94ea4268ea1e83d9c05adde0a23d48c93458dcec2ffce4c19"
+  },
+  {
+    "drive_id": "1zDUEjffhHQcTIovrR3zy7YhDybOGlK0y",
+    "source_path": "CSE527_datasets/experiment_results/contiguous_projection_20261006_160417_902089/projection_weights.npz",
+    "repository_path": "results/historical/contiguous_projection_20261006_160417_902089/projection_weights.npz",
+    "bytes": 38226,
+    "sha256": "c810eac9bd2fd238e646464f52d0a355330ac0e4aa55c4e01d0d99584553c662"
+  },
+  {
+    "drive_id": "1rGFsxdh6tb13g4K_6V0GBs4L4jfMHzQ7",
+    "source_path": "CSE527_datasets/experiment_results/contiguous_projection_20261006_160417_902089/comparison.png",
+    "repository_path": "results/historical/contiguous_projection_20261006_160417_902089/comparison.png",
+    "bytes": 152609,
+    "sha256": "9beba2a179d461388ab0e318c01901d3b6fc46dd82b6209be24d4bfa8f3ab9af"
+  },
+  {
+    "drive_id": "1LV9CIEdDPn30AH9RcJ3Yp2YdOlQyliGR",
+    "source_path": "CSE527_datasets/experiment_results/contiguous_projection_20261006_160417_902089/checks.csv",
+    "repository_path": "results/historical/contiguous_projection_20261006_160417_902089/checks.csv",
+    "bytes": 20087,
+    "sha256": "ede646a54a9bd255ff2e60a8253c73cdf1b213da1d3832ae9eb679ed33adbebb"
+  },
+  {
+    "drive_id": "1YZBKTxHxxwNQwLGUF1tAYK8x25sze8-P",
+    "source_path": "CSE527_datasets/experiment_results/contiguous_projection_20261006_160417_902089/stage_summary.csv",
+    "repository_path": "results/historical/contiguous_projection_20261006_160417_902089/stage_summary.csv",
+    "bytes": 2253,
+    "sha256": "7040fc70604233b89b65e1cd34c03b8c3cf49f5a76410495044e1a6e77fd94ac"
+  },
+  {
+    "drive_id": "1dt9WiCyCAfPyUy1B9MrowWqLFp0Zvz7a",
+    "source_path": "CSE527_datasets/experiment_results/contiguous_projection_20261006_160417_902089/stage_raw.csv",
+    "repository_path": "results/historical/contiguous_projection_20261006_160417_902089/stage_raw.csv",
+    "bytes": 1292113,
+    "sha256": "5b64d4f9306f39070f0da655f832d005b04422ceffc52b1b2039b47cdba3dbd7"
+  },
+  {
+    "drive_id": "1bUlRUwk0WDfCWJbfkcp0f-tSFkEMcO1C",
+    "source_path": "CSE527_datasets/experiment_results/contiguous_projection_20261006_160417_902089/timing_per_pair.csv",
+    "repository_path": "results/historical/contiguous_projection_20261006_160417_902089/timing_per_pair.csv",
+    "bytes": 8190,
+    "sha256": "f670fb0ebb904f0e887be1159624b3d22b46142c4cce2fb3c87dc4bff41bd65c"
+  },
+  {
+    "drive_id": "1BxFNXJtcxdnjtibeGWPTTcNgKAiu90qv",
+    "source_path": "CSE527_datasets/experiment_results/contiguous_projection_20261006_160417_902089/timing_raw.csv",
+    "repository_path": "results/historical/contiguous_projection_20261006_160417_902089/timing_raw.csv",
+    "bytes": 270327,
+    "sha256": "c00fd59052c92a86e57ac4fc45ce27d1ae87290dada599a0f2a3388e4fb79702"
+  },
+  {
+    "drive_id": "1Ll725HScCfJLoNz3WCXa4zN1TMeIJZEQ",
+    "source_path": "CSE527_datasets/experiment_results/contiguous_projection_20261006_160417_902089/accuracy_per_pair.csv",
+    "repository_path": "results/historical/contiguous_projection_20261006_160417_902089/accuracy_per_pair.csv",
+    "bytes": 48539,
+    "sha256": "0c669b3545d86ede64f5ae68dabd13fd4fa9db823b12437d26c98c77e6b072e5"
+  },
+  {
+    "drive_id": "10avSG11yOlsaPGr8Rys0BkEZM9OInVK0",
+    "source_path": "CSE527_datasets/experiment_results/contiguous_projection_20261006_160417_902089/training_log.csv",
+    "repository_path": "results/historical/contiguous_projection_20261006_160417_902089/training_log.csv",
+    "bytes": 3243,
+    "sha256": "10466e6d061e7438a438b63f1ba5b6c4f076d134ce043615e4670d84abf0f531"
+  },
+  {
+    "drive_id": "1g44UlM9Yw8ZRox5gEX45MtNVKS_YAOnn",
+    "source_path": "CSE527_datasets/experiment_results/contiguous_projection_20261006_160417_902089/model_specs.csv",
+    "repository_path": "results/historical/contiguous_projection_20261006_160417_902089/model_specs.csv",
+    "bytes": 1003,
+    "sha256": "0c80da22074e8c3d2a9cb653914908a51044f80006adf76ab1924a59fb4f34ca"
+  },
+  {
+    "drive_id": "1WtW1T1jVoWCBykN6s9FXvfCSl2_ZRRlz",
+    "source_path": "CSE527_datasets/experiment_results/contiguous_projection_20261006_160417_902089/summary.csv",
+    "repository_path": "results/historical/contiguous_projection_20261006_160417_902089/summary.csv",
+    "bytes": 5397,
+    "sha256": "a7805f641a4bd5b00ea600f0bd611ce48e1620cea7ef88e1eee54c4e52ef6f6a"
+  },
+  {
+    "drive_id": "1Gr1nvj-z3O_Xwb3IMsDxcy8pLOgXhEls",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_235117/fixed_edges_9bin.npz",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_235117/fixed_edges_9bin.npz",
+    "bytes": 2312,
+    "sha256": "6af564035b726e3eddc2bd211a100f3444eead4c50a6392c63d414b5dd2884f8"
+  },
+  {
+    "drive_id": "1DJKj8FjA9fgCEtng3QOIyI7uMhkpsn2a",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_235117/official_match_source.py",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_235117/official_match_source.py",
+    "bytes": 536,
+    "sha256": "e987220ff12fe3352c01ce2d411cdf70f2756f4039398eb2e98f62dfdcd0ad14"
+  },
+  {
+    "drive_id": "1WsDiD4fzzDbCSncMx1XHUVJU0dXut0zt",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_235117/float_index_agreement.csv",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_235117/float_index_agreement.csv",
+    "bytes": 1220,
+    "sha256": "1c7b0e47ddf3c5bdad03cf4e990dc4b0f789a66f7b09cf6716654ee15887809e"
+  },
+  {
+    "drive_id": "1PIsqw8paPXRG-4k06JlhvC5dLuu95S3i",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_235117/pipeline_summary.csv",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_235117/pipeline_summary.csv",
+    "bytes": 849,
+    "sha256": "3420ad0d003dfab60f1d849abe8adb04c5b50016abdf8ec3f32fbf41788f2a80"
+  },
+  {
+    "drive_id": "19nVwbjEHPZwdmaS8WTN6YR9wceZOW3np",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_235117/fixed_edges.npz",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_235117/fixed_edges.npz",
+    "bytes": 2056,
+    "sha256": "bf0e96f88a10dd0f72d1e46aa9f75de87848e0d3f9664f72edd6324ba138fa17"
+  },
+  {
+    "drive_id": "1G4In_OfsvT20xlMIngGCq6JOOlAaWESR",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_235117/results.json",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_235117/results.json",
+    "bytes": 95193,
+    "sha256": "7a561e4a23364a390d7a2063e74b3b2397a796e987ad7fe837f15bf08f22dbe4"
+  },
+  {
+    "drive_id": "1nSV90Q0OiwU5Z66AWbgEpofMl90L4su_",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_235117/accuracy.csv",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_235117/accuracy.csv",
+    "bytes": 1452,
+    "sha256": "31b4538314b0729657e7e35e51676ed6eae22beb5a0f88766ad92688ba90abe2"
+  },
+  {
+    "drive_id": "1qpEAv0Ahz5No6s7iou7BCPQqu-IcbI1B",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_235117/speed_summary.csv",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_235117/speed_summary.csv",
+    "bytes": 2276,
+    "sha256": "9d5d8df3f1485c1872a77af5e71d03d6cf3a92240e91ebda8665357409ebfb70"
+  },
+  {
+    "drive_id": "16uAOmOajpAKtZIQ-UQR8RrVlG4wcfpv1",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_180740/fixed_edges.npz",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_180740/fixed_edges.npz",
+    "bytes": 2056,
+    "sha256": "608c2bfd3b0c19ab41a113ffb36a516317bdc27c5d6458bb6ab3e9046aa25035"
+  },
+  {
+    "drive_id": "1stkLiLkJ7X9cofB5C63JGlftk3ayX9zT",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_180740/results.json",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_180740/results.json",
+    "bytes": 46008,
+    "sha256": "6eaa22c5b2ffaeeb0009326d5554a2e939003c04566f625bbe8feb04aba615e3"
+  },
+  {
+    "drive_id": "18QC0W4gmWwSPQHU_glkurrikkZVPloNQ",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_180740/accuracy.csv",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_180740/accuracy.csv",
+    "bytes": 953,
+    "sha256": "97f2be1ab94db5bda1824e6036e8774896efc886a51665b6b5e8bef81083b24c"
+  },
+  {
+    "drive_id": "1x_X0tLj_EBQrAGVIM__mywtpRHfKTbzy",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261007_180740/speed_summary.csv",
+    "repository_path": "results/historical/thermometer_direct_simd_20261007_180740/speed_summary.csv",
+    "bytes": 1399,
+    "sha256": "d246966928e63d61882a6ac198c834c3a692c600af51764b885c98ad0b75e6fb"
+  },
+  {
+    "drive_id": "1Q6exmPkoDeQ-2wowo-lrN7Zrz4G92ovv",
+    "source_path": "CSE527_datasets/experiment_results/thermo_exact_20261005_203628_471955/results.json",
+    "repository_path": "results/historical/thermo_exact_20261005_203628_471955/results.json",
+    "bytes": 9464,
+    "sha256": "615760b46b11d53624472ea5165618eb2131aefbb19e7767e85bd129ae7adb07"
+  },
+  {
+    "drive_id": "1oItj_5Kl_fDZTkpixeE_qMgT3eDiC_kx",
+    "source_path": "CSE527_datasets/experiment_results/thermo_exact_20261005_203628_471955/fixed_quantile_edges.npy",
+    "repository_path": "results/historical/thermo_exact_20261005_203628_471955/fixed_quantile_edges.npy",
+    "bytes": 1920,
+    "sha256": "db8e8b1b194c781c5a4abe812b2db510f5b01e659f6073813941d8936491aa97"
+  },
+  {
+    "drive_id": "1vUHkKmNJ4vK97B9dHhEW734oAOZVsmEL",
+    "source_path": "CSE527_datasets/experiment_results/thermo_exact_20261005_203628_471955/popcount_report.csv",
+    "repository_path": "results/historical/thermo_exact_20261005_203628_471955/popcount_report.csv",
+    "bytes": 673,
+    "sha256": "7a041d9780c4b5983a2c2a66131c4c706221b52228df6d09d828e8bb718cc689"
+  },
+  {
+    "drive_id": "1asDJtRGrXCMOoUDtM1UOCeqbq4j6ikNI",
+    "source_path": "CSE527_datasets/experiment_results/thermo_exact_20261005_203628_471955/exact_checks.csv",
+    "repository_path": "results/historical/thermo_exact_20261005_203628_471955/exact_checks.csv",
+    "bytes": 17051,
+    "sha256": "8145b3205dca7808cc8e74b2d22ae264a7abe0d91bd5d6fe05c2a63fb7b4fddd"
+  },
+  {
+    "drive_id": "1IvRi8O12OR845u5tp5xrF5l54prrn-7f",
+    "source_path": "CSE527_datasets/experiment_results/thermo_exact_20261005_203628_471955/timing_per_pair.csv",
+    "repository_path": "results/historical/thermo_exact_20261005_203628_471955/timing_per_pair.csv",
+    "bytes": 6114,
+    "sha256": "08278506dbee5f61b0bcc014c697be6588c8daebe031400ab520afe7f0e5baab"
+  },
+  {
+    "drive_id": "1eTPf6Mvxp9etgBNvPOz5mvCxHJ_wAKRj",
+    "source_path": "CSE527_datasets/experiment_results/thermo_exact_20261005_203628_471955/timing_raw.csv",
+    "repository_path": "results/historical/thermo_exact_20261005_203628_471955/timing_raw.csv",
+    "bytes": 72059,
+    "sha256": "14cd613951cb27099feab6b1accebbfec561a1709c485a2cf61949d41b048413"
+  },
+  {
+    "drive_id": "1UNwQXyqYSM2Jk33n_3FMSmnTXg-_2rJv",
+    "source_path": "CSE527_datasets/experiment_results/thermo_exact_20261005_203628_471955/accuracy_per_pair.csv",
+    "repository_path": "results/historical/thermo_exact_20261005_203628_471955/accuracy_per_pair.csv",
+    "bytes": 24851,
+    "sha256": "33cb02feba5acca6793e7940260e880fce166d965719c7103c26e42fc7ad4b15"
+  },
+  {
+    "drive_id": "1PpfdToHl5AY2pWO2Na4SheKIKK1y5OoY",
+    "source_path": "CSE527_datasets/experiment_results/thermo_exact_20261005_203628_471955/summary.csv",
+    "repository_path": "results/historical/thermo_exact_20261005_203628_471955/summary.csv",
+    "bytes": 2826,
+    "sha256": "d22b27fbda62dfd5dc06e9707227f714007a7e190e7eb15a232454996d941618"
+  },
+  {
+    "drive_id": "1BA6WkasJEmGc2nsfq4UfukT44CfA3lp4",
+    "source_path": "CSE527_datasets/experiment_results/quadrant_relation_20261006_152729_168298/results.json",
+    "repository_path": "results/historical/quadrant_relation_20261006_152729_168298/results.json",
+    "bytes": 53000,
+    "sha256": "fbd26948ed39800e10c0e50373c08635efe033550132aca3dd8160be7812b707"
+  },
+  {
+    "drive_id": "1_3Y7HdVaFeVT8Tob2QYDQr9y-zlmlxjD",
+    "source_path": "CSE527_datasets/experiment_results/quadrant_relation_20261006_152729_168298/checks.csv",
+    "repository_path": "results/historical/quadrant_relation_20261006_152729_168298/checks.csv",
+    "bytes": 1652,
+    "sha256": "66276a18ba769e907b56dd413cf3d594ead90011ef2fd26ff725a6f8a2487ed0"
+  },
+  {
+    "drive_id": "1Sfklfbs7R_Rs_vNCAsDe1HLBkA6hkbHK",
+    "source_path": "CSE527_datasets/experiment_results/quadrant_relation_20261006_152729_168298/stages_summary.csv",
+    "repository_path": "results/historical/quadrant_relation_20261006_152729_168298/stages_summary.csv",
+    "bytes": 1186,
+    "sha256": "c7281e1dc8eb6ab7cbdc60032e8b1ee48f2cafb2673c93bc5e544fe9008a415e"
+  },
+  {
+    "drive_id": "1vvkwBjPNjr4Px_ceywcbV7bLyM1QYEba",
+    "source_path": "CSE527_datasets/experiment_results/quadrant_relation_20261006_152729_168298/stages_raw.csv",
+    "repository_path": "results/historical/quadrant_relation_20261006_152729_168298/stages_raw.csv",
+    "bytes": 218837,
+    "sha256": "e2f14f0bb3e5ef44ef697716f93baa8f1e6c77b19e957de791f5ffeac9a15db2"
+  },
+  {
+    "drive_id": "1wROXhSwIwDeKq23mJQI3atb_d8Skn7x9",
+    "source_path": "CSE527_datasets/experiment_results/quadrant_relation_20261006_152729_168298/timing_per_pair.csv",
+    "repository_path": "results/historical/quadrant_relation_20261006_152729_168298/timing_per_pair.csv",
+    "bytes": 1516,
+    "sha256": "64cc3e288ec26630be27966a97790f18de4bce4c914dc20d70ae67f75352cc3c"
+  },
+  {
+    "drive_id": "1W5AwLMWcPQyX4EvB6NAd07QHKZgG-xUA",
+    "source_path": "CSE527_datasets/experiment_results/quadrant_relation_20261006_152729_168298/timing_raw.csv",
+    "repository_path": "results/historical/quadrant_relation_20261006_152729_168298/timing_raw.csv",
+    "bytes": 35380,
+    "sha256": "d4b2ad50f81c6b20358b5ef6b9c117400eec1ab4fc2cade11c7c319418455528"
+  },
+  {
+    "drive_id": "19T2V0fRQgtPeRHX_1ASbKBIZexhvHnEO",
+    "source_path": "CSE527_datasets/experiment_results/quadrant_relation_20261006_152729_168298/accuracy_per_pair.csv",
+    "repository_path": "results/historical/quadrant_relation_20261006_152729_168298/accuracy_per_pair.csv",
+    "bytes": 12037,
+    "sha256": "51462e332407e5819631ddcc0be9ac8fb328d2a82701a4a699c7d7aa21ec1011"
+  },
+  {
+    "drive_id": "1ISNHnAYDYEKY2UKXpxBO106rcFWjk5X_",
+    "source_path": "CSE527_datasets/experiment_results/quadrant_relation_20261006_152729_168298/summary.csv",
+    "repository_path": "results/historical/quadrant_relation_20261006_152729_168298/summary.csv",
+    "bytes": 950,
+    "sha256": "e8965e61d66784c9e8f00f04e3856aa1aa0c9c2162b412f16d2d5496eb06aa0b"
+  },
+  {
+    "drive_id": "1eX3_VPS1AF9uKCvSVikl8w0aTiWGMUer",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_hardware_20261006_182110/fixed_edges.npz",
+    "repository_path": "results/historical/thermometer_hardware_20261006_182110/fixed_edges.npz",
+    "bytes": 2056,
+    "sha256": "f03cabc6213be68a6b1724e1c131f5c3af3fca7c6e9df96005268d20fe41c5d7"
+  },
+  {
+    "drive_id": "1FVukfF52d4TjwarCpPgtZUK7YRZm4RN9",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_hardware_20261006_182110/results.json",
+    "repository_path": "results/historical/thermometer_hardware_20261006_182110/results.json",
+    "bytes": 68795,
+    "sha256": "5102b14da3cc131feffc51090a7b62f49d21685b3c4d4e344ce6cdd639f9212e"
+  },
+  {
+    "drive_id": "1BZ0PkxHtxPemDJXHAWjhxC9l3Og5aq-F",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_hardware_20261006_182110/accuracy.csv",
+    "repository_path": "results/historical/thermometer_hardware_20261006_182110/accuracy.csv",
+    "bytes": 1394,
+    "sha256": "2bd328f87f60c0118c03f1634c984665b5a65c7b8f0e8539867fa0c0b843ac7f"
+  },
+  {
+    "drive_id": "1iazJxe_jQu0yurSBCU5iueH1hgs13J92",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_hardware_20261006_182110/speed_summary.csv",
+    "repository_path": "results/historical/thermometer_hardware_20261006_182110/speed_summary.csv",
+    "bytes": 2178,
+    "sha256": "aa42ea8428ed8ca5babc623ada3e536c2d0ba121da79d318f899c465ba2ad40f"
+  },
+  {
+    "drive_id": "1wkf45SV-bioSjz-hsn1xQ-GftkCR9wsP",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261008_000752/fixed_edges_11bin.npz",
+    "repository_path": "results/historical/thermometer_direct_simd_20261008_000752/fixed_edges_11bin.npz",
+    "bytes": 2824,
+    "sha256": "914dae7664df269b0c2dcfd453760d9c4e2e7b95d865e1e117296569830851e7"
+  },
+  {
+    "drive_id": "18pKx4y2jdneXYHyRmWZ46Rpaoi9IP22l",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261008_000752/fixed_edges_10bin.npz",
+    "repository_path": "results/historical/thermometer_direct_simd_20261008_000752/fixed_edges_10bin.npz",
+    "bytes": 2568,
+    "sha256": "2222215b3ced2d8f74165c1fa48584549f378ef138428ac2ec42e82c77302167"
+  },
+  {
+    "drive_id": "1TnIg2GgFynYMUoBskLN6QUElVFQ30ABs",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261008_000752/fixed_edges_9bin.npz",
+    "repository_path": "results/historical/thermometer_direct_simd_20261008_000752/fixed_edges_9bin.npz",
+    "bytes": 2312,
+    "sha256": "6af564035b726e3eddc2bd211a100f3444eead4c50a6392c63d414b5dd2884f8"
+  },
+  {
+    "drive_id": "1aAJjIKHOWVn1tl6rua5U9w3_TgBnjUse",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261008_000752/official_match_source.py",
+    "repository_path": "results/historical/thermometer_direct_simd_20261008_000752/official_match_source.py",
+    "bytes": 536,
+    "sha256": "e987220ff12fe3352c01ce2d411cdf70f2756f4039398eb2e98f62dfdcd0ad14"
+  },
+  {
+    "drive_id": "11lkaGeqZI6Ln0pRNxlNQBB9ZUl9Qmimy",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261008_000752/float_index_agreement.csv",
+    "repository_path": "results/historical/thermometer_direct_simd_20261008_000752/float_index_agreement.csv",
+    "bytes": 1220,
+    "sha256": "1c7b0e47ddf3c5bdad03cf4e990dc4b0f789a66f7b09cf6716654ee15887809e"
+  },
+  {
+    "drive_id": "1CGrolDdfXwfPbLpE37DZhwTp36pr599S",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261008_000752/pipeline_summary.csv",
+    "repository_path": "results/historical/thermometer_direct_simd_20261008_000752/pipeline_summary.csv",
+    "bytes": 1267,
+    "sha256": "baea0d9ca6f29c48d236055f8e161d9bd15bfefc9b4e44af27a217ed1ba40b28"
+  },
+  {
+    "drive_id": "1rNzqyY2iQkjQl2LhOxZN52aZv0y557-S",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261008_000752/fixed_edges.npz",
+    "repository_path": "results/historical/thermometer_direct_simd_20261008_000752/fixed_edges.npz",
+    "bytes": 2056,
+    "sha256": "bf0e96f88a10dd0f72d1e46aa9f75de87848e0d3f9664f72edd6324ba138fa17"
+  },
+  {
+    "drive_id": "1lyJ1XRPAEtn6kqpnmK-aNUfE9rAAyui6",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261008_000752/results.json",
+    "repository_path": "results/historical/thermometer_direct_simd_20261008_000752/results.json",
+    "bytes": 125102,
+    "sha256": "00adee68f7cd433d76415be5c7007aca146c78d8c7fb0edd5b7f955f21037249"
+  },
+  {
+    "drive_id": "1jj6cGR915MpORWxfF0dOEYnjsoqZ4yhf",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261008_000752/accuracy.csv",
+    "repository_path": "results/historical/thermometer_direct_simd_20261008_000752/accuracy.csv",
+    "bytes": 1882,
+    "sha256": "ca0cb41c781362ba4d8c39afed18adcd3889f9b46b11285c6e9c395491c9004c"
+  },
+  {
+    "drive_id": "1QrMSgRKWbUDMrh0HcsXR1HFjU0s_RcEd",
+    "source_path": "CSE527_datasets/experiment_results/thermometer_direct_simd_20261008_000752/speed_summary.csv",
+    "repository_path": "results/historical/thermometer_direct_simd_20261008_000752/speed_summary.csv",
+    "bytes": 2945,
+    "sha256": "645c7862e75e739d359d091255c5bbc117e5237c4f07fb1a8fa0777253d15231"
+  },
+  {
+    "drive_id": "1PQlmboicoj0dQ31lKrU45_UlkRWzNqcH",
+    "source_path": "CSE527_datasets/experiment_results/lookup_fused_20261001_133959_627536/results.json",
+    "repository_path": "results/historical/lookup_fused_20261001_133959_627536/results.json",
+    "bytes": 48850,
+    "sha256": "3f3b6cdb2dd645d3335f385a488e9a587b20be72d9a12c00ab0d531af4cf3325"
+  },
+  {
+    "drive_id": "1TMXn2xyCrQB7k08pbFlXtynxXXb9X6xp",
+    "source_path": "CSE527_datasets/experiment_results/lookup_fused_20261001_133959_627536/fixed_quantile_edges.pt",
+    "repository_path": "results/historical/lookup_fused_20261001_133959_627536/fixed_quantile_edges.pt",
+    "bytes": 3588,
+    "sha256": "6d83cf6af9e15c5ec91bb252ed2ab20f7ba0eed904532e91cec211a63ac457f6"
+  },
+  {
+    "drive_id": "18pqyRhYdc5bBV9Clx4b-jNXtkZBDwVJa",
+    "source_path": "CSE527_datasets/experiment_results/learned_grouping_blob_20261005_172445_076865/results.json",
+    "repository_path": "results/historical/learned_grouping_blob_20261005_172445_076865/results.json",
+    "bytes": 73566,
+    "sha256": "2fb851b54c98db1c235765e1688956f1cb30f275070d8c674750315e4112af4c"
+  },
+  {
+    "drive_id": "1EhlZIcFU4xTa0abXVsmJfJHAx5wurkzG",
+    "source_path": "CSE527_datasets/experiment_results/learned_grouping_blob_20261005_172445_076865/models_and_config.pt",
+    "repository_path": "results/historical/learned_grouping_blob_20261005_172445_076865/models_and_config.pt",
+    "bytes": 15802,
+    "sha256": "46294df9cb55374a89710f790c30a0aa5caf1d88c2fd76cc235b6785d28b93ff"
+  },
+  {
+    "drive_id": "1VXCEa3HWSj_TAqUCJcmhOSyiV6WrC3rP",
+    "source_path": "CSE527_datasets/experiment_results/learned_grouping_blob_20261005_172445_076865/comparison.png",
+    "repository_path": "results/historical/learned_grouping_blob_20261005_172445_076865/comparison.png",
+    "bytes": 130004,
+    "sha256": "362d156f9ff7538df10c7a84242bb76108123011d415cbff418b39db209bb0ce"
+  },
+  {
+    "drive_id": "17mCfyXmCXLwX7xsCkyr_RQu4KLfvgBFF",
+    "source_path": "CSE527_datasets/experiment_results/learned_grouping_blob_20261005_172445_076865/training_loss.csv",
+    "repository_path": "results/historical/learned_grouping_blob_20261005_172445_076865/training_loss.csv",
+    "bytes": 816,
+    "sha256": "a1bdb9d869a7e122d99fe26fad24a6a03d63822a3cbf1a9f73d64c70a9126beb"
+  },
+  {
+    "drive_id": "1QKXasNC459bgFMMhhapEd-Ju4j80F32c",
+    "source_path": "CSE527_datasets/experiment_results/learned_grouping_blob_20261005_172445_076865/blob_validation_sweep.csv",
+    "repository_path": "results/historical/learned_grouping_blob_20261005_172445_076865/blob_validation_sweep.csv",
+    "bytes": 1984,
+    "sha256": "c76f261320501e9311adc7fbc76a94f541b525de7846dfcf2d55e7b881edc4d7"
+  },
+  {
+    "drive_id": "1LIS6px4HS52WWSCtQwbeaTayZgbGScUX",
+    "source_path": "CSE527_datasets/experiment_results/learned_grouping_blob_20261005_172445_076865/timing_per_pair.csv",
+    "repository_path": "results/historical/learned_grouping_blob_20261005_172445_076865/timing_per_pair.csv",
+    "bytes": 2855,
+    "sha256": "19a0aa8500e6ab53a385d9e9089a77697b7a247d334d3e9d6cc6e4aa59d744ed"
+  },
+  {
+    "drive_id": "123LT0yPF63PRDoTfvgLMh_tHTVcjd72x",
+    "source_path": "CSE527_datasets/experiment_results/learned_grouping_blob_20261005_172445_076865/timing_raw.csv",
+    "repository_path": "results/historical/learned_grouping_blob_20261005_172445_076865/timing_raw.csv",
+    "bytes": 30762,
+    "sha256": "c281442fc9c7e0ebff311eca0673157cf5397a1e7b31e2bd78e45358609952de"
+  },
+  {
+    "drive_id": "1WdrmIyIH0SMC3w0OpMfOAewmJ7NebX60",
+    "source_path": "CSE527_datasets/experiment_results/learned_grouping_blob_20261005_172445_076865/accuracy_per_pair.csv",
+    "repository_path": "results/historical/learned_grouping_blob_20261005_172445_076865/accuracy_per_pair.csv",
+    "bytes": 13709,
+    "sha256": "2e238a5df1ae12b3971985c717ce4dbf608564b6ee0056e06ec9c78d998a3168"
+  },
+  {
+    "drive_id": "1C_rEwmmp8KTx0BsaHi8vW8XeBzYyv20o",
+    "source_path": "CSE527_datasets/experiment_results/learned_grouping_blob_20261005_172445_076865/summary.csv",
+    "repository_path": "results/historical/learned_grouping_blob_20261005_172445_076865/summary.csv",
+    "bytes": 1268,
+    "sha256": "5f96e94668768968f1a209e51570ca6bf0b5a4567cf346c6e41c4f77801aea78"
+  },
+  {
+    "drive_id": "195Q9rHtd-VkX78QVnwB7rDjmbKmjKta4",
+    "source_path": "CSE527_datasets/experiment_results/group_bound_partial_20261005_131620_047499/results.json",
+    "repository_path": "results/historical/group_bound_partial_20261005_131620_047499/results.json",
+    "bytes": 249378,
+    "sha256": "294ea8d15bbc337db72428db37b7433965a9396476203d0fcc833a87b3c37076"
+  },
+  {
+    "drive_id": "1WAkjEHo0-hi1eqREIJsDJdcyKSih1UYD",
+    "source_path": "CSE527_datasets/experiment_results/group_bound_partial_20261005_131620_047499/comparison.png",
+    "repository_path": "results/historical/group_bound_partial_20261005_131620_047499/comparison.png",
+    "bytes": 143384,
+    "sha256": "b93bb6dfe55642b8d248243cac22814995006d6d208f114a7d300267daab832d"
+  },
+  {
+    "drive_id": "17OLIBUOcoNJpYEwIL8fsSiwWeWrxBP-A",
+    "source_path": "CSE527_datasets/experiment_results/group_bound_partial_20261005_131620_047499/pruning_per_pair.csv",
+    "repository_path": "results/historical/group_bound_partial_20261005_131620_047499/pruning_per_pair.csv",
+    "bytes": 24661,
+    "sha256": "ea703a9ac4b840f961838252643e8099fc57d62150bf70bd543150880238fec7"
+  },
+  {
+    "drive_id": "1gIRY32XFGuggOVwbJT4e3TFsTS6oTnY3",
+    "source_path": "CSE527_datasets/experiment_results/group_bound_partial_20261005_131620_047499/timing_per_pair.csv",
+    "repository_path": "results/historical/group_bound_partial_20261005_131620_047499/timing_per_pair.csv",
+    "bytes": 6205,
+    "sha256": "ae02b5ed46ecd3ccfcb0885740b86010ff1d903b2a54ef33ba79c929bcb513a5"
+  },
+  {
+    "drive_id": "1VAN86T_ul_RfSYHqc3wHcCm8vKdLacmo",
+    "source_path": "CSE527_datasets/experiment_results/group_bound_partial_20261005_131620_047499/timing_raw.csv",
+    "repository_path": "results/historical/group_bound_partial_20261005_131620_047499/timing_raw.csv",
+    "bytes": 77738,
+    "sha256": "d8e0d0bdde34bdc108ef4bf12df123d473cbf07fd8ad2658fe8c657b72b575d6"
+  },
+  {
+    "drive_id": "1pir6alU-S83SCrTTTe_4Zb9tdP0CL5wW",
+    "source_path": "CSE527_datasets/experiment_results/group_bound_partial_20261005_131620_047499/accuracy_per_pair.csv",
+    "repository_path": "results/historical/group_bound_partial_20261005_131620_047499/accuracy_per_pair.csv",
+    "bytes": 40563,
+    "sha256": "3fed14007e99fad2d5cfdcac19f3335e12f51dda60506abb79fe40568ef892cf"
+  },
+  {
+    "drive_id": "1O9lxLZck3K4BqlL24AJQOnM16MEr2i8V",
+    "source_path": "CSE527_datasets/experiment_results/group_bound_partial_20261005_131620_047499/comparison.csv",
+    "repository_path": "results/historical/group_bound_partial_20261005_131620_047499/comparison.csv",
+    "bytes": 3553,
+    "sha256": "891b1682002041af4e002650da6567fa99b6f613a339d33fe2d089c45c685918"
+  },
+  {
+    "drive_id": "1KhY1hnmfbQpb17V834vktKbIUpEuFuIk",
+    "source_path": "CSE527_datasets/experiment_results/group_bound_partial_20261005_131620_047499/fixed_quantile_edges.npy",
+    "repository_path": "results/historical/group_bound_partial_20261005_131620_047499/fixed_quantile_edges.npy",
+    "bytes": 1920,
+    "sha256": "db8e8b1b194c781c5a4abe812b2db510f5b01e659f6073813941d8936491aa97"
+  },
+  {
+    "drive_id": "1xR4xCoTJWtmc5xVyDXFU4NuNwqMae-Lv",
+    "source_path": "CSE527_datasets/experiment_results/optimized_blob_20261005_190001_588397/results.json",
+    "repository_path": "results/historical/optimized_blob_20261005_190001_588397/results.json",
+    "bytes": 21244,
+    "sha256": "6ac7078fadd13f7cb78d94418638e1b3e12d5768381471e098ad0fce2ace0449"
+  },
+  {
+    "drive_id": "1AmsNY7H-K0kxPtmgQl1U2M1zU80sSb-S",
+    "source_path": "CSE527_datasets/experiment_results/optimized_blob_20261005_190001_588397/comparison.png",
+    "repository_path": "results/historical/optimized_blob_20261005_190001_588397/comparison.png",
+    "bytes": 140432,
+    "sha256": "6481f9c6e142d3e109c84888551f513925e73708e84cdfd86b9e9544956af2f5"
+  },
+  {
+    "drive_id": "19wlbRtcjxSDD9Rg5gbDH3YSa94iylzob",
+    "source_path": "CSE527_datasets/experiment_results/optimized_blob_20261005_190001_588397/fixed_quantile_edges.npy",
+    "repository_path": "results/historical/optimized_blob_20261005_190001_588397/fixed_quantile_edges.npy",
+    "bytes": 1920,
+    "sha256": "db8e8b1b194c781c5a4abe812b2db510f5b01e659f6073813941d8936491aa97"
+  },
+  {
+    "drive_id": "1YCxxFXFpUL6caGkZvhfBrEd1ViiMlb2M",
+    "source_path": "CSE527_datasets/experiment_results/optimized_blob_20261005_190001_588397/exact_checks.csv",
+    "repository_path": "results/historical/optimized_blob_20261005_190001_588397/exact_checks.csv",
+    "bytes": 1514,
+    "sha256": "104eaf923c56424fd892854edb70ba1dd1690d8a2940940c1b1cfc1863f37dc2"
+  },
+  {
+    "drive_id": "13D5lOOHM0FCpowqZYmpacUatjzYqY6El",
+    "source_path": "CSE527_datasets/experiment_results/optimized_blob_20261005_190001_588397/stage_times_raw.csv",
+    "repository_path": "results/historical/optimized_blob_20261005_190001_588397/stage_times_raw.csv",
+    "bytes": 107180,
+    "sha256": "9dae84ed05095b9f276fc0a49eee838c7ea6a55b9347cd03ed77a8743630feba"
+  },
+  {
+    "drive_id": "1h-BmvCwAQAbKZsfgvAq8dRJaXQeCYOVc",
+    "source_path": "CSE527_datasets/experiment_results/optimized_blob_20261005_190001_588397/stage_times.csv",
+    "repository_path": "results/historical/optimized_blob_20261005_190001_588397/stage_times.csv",
+    "bytes": 1754,
+    "sha256": "7945bb81376fac279a2ee36de415a846e18ea659bb958bc3faeeb159ef929bb9"
+  },
+  {
+    "drive_id": "1wj_EdmOgFnJi1K6CNMYwwJNYtEEXHqCF",
+    "source_path": "CSE527_datasets/experiment_results/optimized_blob_20261005_190001_588397/timing_per_pair.csv",
+    "repository_path": "results/historical/optimized_blob_20261005_190001_588397/timing_per_pair.csv",
+    "bytes": 5382,
+    "sha256": "4f4a30e19cd83a184f8390bee4842a511bdd379ffec8a9bb238017f4d6bd76e8"
+  },
+  {
+    "drive_id": "1tnr0Gs2xKFszkjxyNCMzZVPD20z1LH88",
+    "source_path": "CSE527_datasets/experiment_results/optimized_blob_20261005_190001_588397/timing_raw.csv",
+    "repository_path": "results/historical/optimized_blob_20261005_190001_588397/timing_raw.csv",
+    "bytes": 57961,
+    "sha256": "3daf9fdb940b99a94c631636768b1d0f32e5a6d708fdc8b24651c626d062124b"
+  },
+  {
+    "drive_id": "1WJ9r83lIfoi3xsoiAXRBWCgOAg-L7pyj",
+    "source_path": "CSE527_datasets/experiment_results/optimized_blob_20261005_190001_588397/accuracy_per_pair.csv",
+    "repository_path": "results/historical/optimized_blob_20261005_190001_588397/accuracy_per_pair.csv",
+    "bytes": 26775,
+    "sha256": "1fd14e708a49069aee0f7550825cf6c9c61546819cfbc73a04e41e0b66854307"
+  },
+  {
+    "drive_id": "15Y2iiyNLnEd7EN1bsQEt_zCqCYgkHILL",
+    "source_path": "CSE527_datasets/experiment_results/optimized_blob_20261005_190001_588397/summary.csv",
+    "repository_path": "results/historical/optimized_blob_20261005_190001_588397/summary.csv",
+    "bytes": 2951,
+    "sha256": "f880df0bfdb01990fdc97f1d5a216ce77a992504c2d7d0877f6d5719f1c6c14b"
+  },
+  {
+    "drive_id": "1_flJrwNidouPDmmiKfeb0MArBVbquNrj",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/official_match_source.py",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/official_match_source.py",
+    "bytes": 536,
+    "sha256": "e987220ff12fe3352c01ce2d411cdf70f2756f4039398eb2e98f62dfdcd0ad14"
+  },
+  {
+    "drive_id": "1H1sloOylUTsCnfb-9IfRE7NWE9dIObBf",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/results.json",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/results.json",
+    "bytes": 593113,
+    "sha256": "c2985d0ed15ce72876236249e50b4b0286695d1c047fd93870f330ed2f0088d9"
+  },
+  {
+    "drive_id": "199NRw1mX5wpxNQEUBU3YMDE6BRubuWuJ",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/fixed_edges.npz",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/fixed_edges.npz",
+    "bytes": 9738,
+    "sha256": "c497987d275ba10da0f77a3bd6d98d4d3def3b67516651db60cf58485eedca84"
+  },
+  {
+    "drive_id": "1fGUpOxo3RxDdmSAnxObqTyK6HZrOR9T-",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/timing_per_pair.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/timing_per_pair.csv",
+    "bytes": 8074,
+    "sha256": "f50988c547ef77d11fef9094ab0f2c9ceecda175fab211c82dd1a041201d327c"
+  },
+  {
+    "drive_id": "19KaB7u1XA0YMaPMSW1wx4VO20NHlvIgP",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/raw_timing.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/raw_timing.csv",
+    "bytes": 144948,
+    "sha256": "c5ba8bfa5db457b3e495613043f06d4dbb9d5c57440b6bef6fc2a7110e101777"
+  },
+  {
+    "drive_id": "1TghDwqzOuo2ZclNGem5WQHS2a0hje780",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/pipeline_summary.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/pipeline_summary.csv",
+    "bytes": 982,
+    "sha256": "ce025586969664a2b4bac537aa3c7b7f817b76815bc21a7db4ed4a988e23c64f"
+  },
+  {
+    "drive_id": "1_ksFH9mpbUtxPlQB04x26qoxIZi-akIX",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/speed_summary.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/speed_summary.csv",
+    "bytes": 1271,
+    "sha256": "729bab6ebbde3120c6e4c6db3b5cffc89fa0ac51a323197c74e2c20c978efc5d"
+  },
+  {
+    "drive_id": "1xlIvPPro9QFZTYML5_s9hWzoPU8kw_ex",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/accuracy_per_pair.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/accuracy_per_pair.csv",
+    "bytes": 16414,
+    "sha256": "444a387d6d76c85f03564a3a531c770862ea6b4876d4f9f4a84331f9ffea71d7"
+  },
+  {
+    "drive_id": "1kskZ1C7-mLGrp1g5JoVU396aNQTrbggn",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/accuracy.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/accuracy.csv",
+    "bytes": 1115,
+    "sha256": "ef390a847c111048d82b658da6bf2da9a97de6b6b76068b2511d485914be0ec3"
+  },
+  {
+    "drive_id": "1kLxbYxBIW55NJpboQMrgSDc60Zk6B9OI",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/comparison.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_11bin_vs_official/20261008_145842_671520/comparison.csv",
+    "bytes": 2613,
+    "sha256": "21eba3ddd338b3ba20dd0e8490f3dcf764a0a847298e4b9a654f1cb66ac76c8d"
+  },
+  {
+    "drive_id": "1lyRK82dnFvwklGNH-hvjY4qIsKFaR09l",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/official_XFeat/20261008_143431_468387/official_match_source.py",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/official_XFeat/20261008_143431_468387/official_match_source.py",
+    "bytes": 536,
+    "sha256": "e987220ff12fe3352c01ce2d411cdf70f2756f4039398eb2e98f62dfdcd0ad14"
+  },
+  {
+    "drive_id": "1D-z0AN3uN9yWD2tAKwR6aG8tYDNNTngS",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/official_XFeat/20261008_143431_468387/results.json",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/official_XFeat/20261008_143431_468387/results.json",
+    "bytes": 54023,
+    "sha256": "fc40c4aff41ebfb626d3b6c08cb421b38604367985f411fa171c51a0db4517d2"
+  },
+  {
+    "drive_id": "1K0UncSbBODygBP3iJ3at5R0vYnMLc0qb",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/official_XFeat/20261008_143431_468387/encoding_stages.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/official_XFeat/20261008_143431_468387/encoding_stages.csv",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "drive_id": "1YZ5deglmLy44dFtC82UIf-5te5Tee3mi",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/official_XFeat/20261008_143431_468387/pipeline_summary.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/official_XFeat/20261008_143431_468387/pipeline_summary.csv",
+    "bytes": 240,
+    "sha256": "2192b933352e4a7b8558f49e693db5a82bf177374c8520f6b355b43438f0eb50"
+  },
+  {
+    "drive_id": "1peXIKWjbBBzaLQ9uP6Beemh_0fwSHLwp",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/official_XFeat/20261008_143431_468387/speed_summary.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/official_XFeat/20261008_143431_468387/speed_summary.csv",
+    "bytes": 232,
+    "sha256": "0c42ac3645b4e7793eb7aaacfce61e4d466da8542f6021079d2d2f5b5401482e"
+  },
+  {
+    "drive_id": "1qvmYBB-cRLCW-3n8bNYNPn_dd5F80yiN",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/official_XFeat/20261008_143431_468387/accuracy_per_pair.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/official_XFeat/20261008_143431_468387/accuracy_per_pair.csv",
+    "bytes": 3571,
+    "sha256": "13290a1d1a159117508db1ae7d13bc90c58a491f92167f76e776aa383c89f638"
+  },
+  {
+    "drive_id": "1TeY2egnr90Jipzqxw_vpdG9sIBideIgm",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/official_XFeat/20261008_143431_468387/accuracy.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/official_XFeat/20261008_143431_468387/accuracy.csv",
+    "bytes": 314,
+    "sha256": "cc0bcdb1f040cd13ed5a59f9682b53bcf6fdd58cb89e398db7d1dc1845619147"
+  },
+  {
+    "drive_id": "1neZH7vzrYtO-eB4JUpQ4dPOqlu0mE_zE",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/11bin_10bit_AVX2_SIMD4/20261008_143001_662842/fixed_edges.npz",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/11bin_10bit_AVX2_SIMD4/20261008_143001_662842/fixed_edges.npz",
+    "bytes": 2824,
+    "sha256": "914dae7664df269b0c2dcfd453760d9c4e2e7b95d865e1e117296569830851e7"
+  },
+  {
+    "drive_id": "1CSlSr8PSGsnFsAU0qtLbpKzBYEiK2eNf",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/11bin_10bit_AVX2_SIMD4/20261008_143001_662842/official_match_source.py",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/11bin_10bit_AVX2_SIMD4/20261008_143001_662842/official_match_source.py",
+    "bytes": 536,
+    "sha256": "e987220ff12fe3352c01ce2d411cdf70f2756f4039398eb2e98f62dfdcd0ad14"
+  },
+  {
+    "drive_id": "15La8a1vm96svyjnbcJPHTDxun3KHzLDx",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/11bin_10bit_AVX2_SIMD4/20261008_143001_662842/results.json",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/11bin_10bit_AVX2_SIMD4/20261008_143001_662842/results.json",
+    "bytes": 55908,
+    "sha256": "6b42d212d2e01501f3cccfc25ee21d038bbf6d02643176049637f01667545c38"
+  },
+  {
+    "drive_id": "1tMrL7_GX8x4EfSsiQ5C3HMuYLnEdiyqM",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/11bin_10bit_AVX2_SIMD4/20261008_143001_662842/encoding_stages.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/11bin_10bit_AVX2_SIMD4/20261008_143001_662842/encoding_stages.csv",
+    "bytes": 403,
+    "sha256": "0409ab4b163e72d8f26c3457a63227a659c5f6673e46bd41f5f72a90eb8226eb"
+  },
+  {
+    "drive_id": "1vxXXnzbLeAnt_N3VbQekZPaWHxoO1e5U",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/11bin_10bit_AVX2_SIMD4/20261008_143001_662842/pipeline_summary.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/11bin_10bit_AVX2_SIMD4/20261008_143001_662842/pipeline_summary.csv",
+    "bytes": 254,
+    "sha256": "1e1e20b6a4bf405d20c9e50a6462da9f3f1c64863ac31a49169ddd9a8f22754c"
+  },
+  {
+    "drive_id": "1ugaewoxtdLYn50y_xscEnIUKNdvuySmZ",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/11bin_10bit_AVX2_SIMD4/20261008_143001_662842/speed_summary.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/11bin_10bit_AVX2_SIMD4/20261008_143001_662842/speed_summary.csv",
+    "bytes": 247,
+    "sha256": "543f4b44c08fea10b0fd2bc0273efe501c150e9592879547f44a3255010f1b07"
+  },
+  {
+    "drive_id": "1fGPr-kaZHFGUpXSctKVOXntFq0gaElAv",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/11bin_10bit_AVX2_SIMD4/20261008_143001_662842/accuracy_per_pair.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/11bin_10bit_AVX2_SIMD4/20261008_143001_662842/accuracy_per_pair.csv",
+    "bytes": 3877,
+    "sha256": "ab005ab7c17b441cbe9fafcbf00b79ba95c175fbeb9817895ca603ea69f99966"
+  },
+  {
+    "drive_id": "13cH6NLYcCrmCspuW1VWQwhv7earY-7zT",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/11bin_10bit_AVX2_SIMD4/20261008_143001_662842/accuracy.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/11bin_10bit_AVX2_SIMD4/20261008_143001_662842/accuracy.csv",
+    "bytes": 342,
+    "sha256": "f5c73ee217d4a17eaf6ea5beb804ab67ebffa232801e17549174849f260d06d0"
+  },
+  {
+    "drive_id": "1cFoJlEdIHO3_bpWG5zKqTmtBqJ-_E6S1",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/official_match_source.py",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/official_match_source.py",
+    "bytes": 536,
+    "sha256": "e987220ff12fe3352c01ce2d411cdf70f2756f4039398eb2e98f62dfdcd0ad14"
+  },
+  {
+    "drive_id": "139MntDZhXdSSPN-wYGdq0NIKrTiz30V5",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/results.json",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/results.json",
+    "bytes": 1533854,
+    "sha256": "cc1d674b16f027850d1efa08c8a125eece90fa896ef1d230a6105e8f9cfdb3e8"
+  },
+  {
+    "drive_id": "1DoOqSu6BBYmhjgF60x8mVeMRRbHgaMTZ",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/manhattan_kernel.cpp",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/manhattan_kernel.cpp",
+    "bytes": 2501,
+    "sha256": "780e24cbe47adade5d83c40b079234c48bf4b4a6c4a24a8387c3ea6e691f7773"
+  },
+  {
+    "drive_id": "109zDOVwkEpW6X3yDHvIATPLa6LrTAIOZ",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/manhattan_parameters.npz",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/manhattan_parameters.npz",
+    "bytes": 35674,
+    "sha256": "6c683ce564d8fe67fad8262bb1c211259e17ec5cd894bc1146c6e7e168f5bba0"
+  },
+  {
+    "drive_id": "1zwQMgevvvgKOwCzTxt3K45CoOBOebAkZ",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/fixed_edges.npz",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/fixed_edges.npz",
+    "bytes": 4366,
+    "sha256": "60d0ed7f75a0c5fe3a5444838a830cddd81b2ca5e38c05cb149102ece4ddae16"
+  },
+  {
+    "drive_id": "11oYroYrexK0qxtXBA4obid0MvUT089Vr",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/timing_per_pair.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/timing_per_pair.csv",
+    "bytes": 15442,
+    "sha256": "897ee3e366bbc6d44c0d0bd0d5dde0f884536d56606e9a3672c4d1dcaaf05282"
+  },
+  {
+    "drive_id": "1-p5G3NpHMTGRvHyjb5d6KTVRw42swxLS",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/raw_timing.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/raw_timing.csv",
+    "bytes": 467268,
+    "sha256": "355f178b4523d4bc02da0c13cc5b4ea6c35896d3953a9eb2e7032d6877745ef3"
+  },
+  {
+    "drive_id": "1jXYa70Q_sMogPhPnOOkL48QyGadVi5a7",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/pipeline_summary.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/pipeline_summary.csv",
+    "bytes": 2043,
+    "sha256": "56ea70dc5c028774f4b1e43c058623b83c9528a342f1bb944407f1f1f84f4ad9"
+  },
+  {
+    "drive_id": "1yXvsKfz4rTJAjGRzB61YPXRlOwdUoOpw",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/speed_summary.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/speed_summary.csv",
+    "bytes": 2314,
+    "sha256": "a89a18669e3423335e706a9a600ca37add64c5e9248a65ca3a04430572948ff9"
+  },
+  {
+    "drive_id": "1gXxOQHkIvI68sZ13CNN5d_2-OFngznIZ",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/accuracy_per_pair.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/accuracy_per_pair.csv",
+    "bytes": 34703,
+    "sha256": "92c7d6ceeb193f6c7190746efcf3615e326ffe44701ee8baf288ddee28052947"
+  },
+  {
+    "drive_id": "1osQfGzleDCx1YfxoTAZQeBLE0Fc_d6Kz",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/accuracy.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/accuracy.csv",
+    "bytes": 2917,
+    "sha256": "7c0970eca5e66bf6b4850c6e8553d0c452a1af84067a544093c29fed060306db"
+  },
+  {
+    "drive_id": "1hd-oes7MiaYeGziYfw4AUttEwTLGPcz5",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/comparison.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/fair_comparison_8_9bin_three_methods/20261008_175643_406834/comparison.csv",
+    "bytes": 5379,
+    "sha256": "f2ad510b87113e8a82a01c758ea3a4259b03f2bfd966d616c013df69e17ab57c"
+  },
+  {
+    "drive_id": "1ADxRtyxmXE6Kv9HHv3FVPSwhdYbYZITf",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/10bin_9bit_AVX2_SIMD4/20261008_142421_974610/fixed_edges.npz",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/10bin_9bit_AVX2_SIMD4/20261008_142421_974610/fixed_edges.npz",
+    "bytes": 2568,
+    "sha256": "2222215b3ced2d8f74165c1fa48584549f378ef138428ac2ec42e82c77302167"
+  },
+  {
+    "drive_id": "1FKcJqPN1mNM7vI6Vl6uSsm1axmKuNN5l",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/10bin_9bit_AVX2_SIMD4/20261008_142421_974610/official_match_source.py",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/10bin_9bit_AVX2_SIMD4/20261008_142421_974610/official_match_source.py",
+    "bytes": 536,
+    "sha256": "e987220ff12fe3352c01ce2d411cdf70f2756f4039398eb2e98f62dfdcd0ad14"
+  },
+  {
+    "drive_id": "1m5ExQ0NjQoNMncl_QmiIaQezbX2R2osM",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/10bin_9bit_AVX2_SIMD4/20261008_142421_974610/results.json",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/10bin_9bit_AVX2_SIMD4/20261008_142421_974610/results.json",
+    "bytes": 55823,
+    "sha256": "374a791dd24798a27930f0101ff00dd4520cf945d3f52f077ff121b6aa8b171b"
+  },
+  {
+    "drive_id": "1GUtNz3MQVDdyE0_Z-iApC40ry4RcclSv",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/10bin_9bit_AVX2_SIMD4/20261008_142421_974610/encoding_stages.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/10bin_9bit_AVX2_SIMD4/20261008_142421_974610/encoding_stages.csv",
+    "bytes": 442,
+    "sha256": "28059129f154adb1c06bdb3054b74f2bb320b97a7ee1388f58792efb3e81ec52"
+  },
+  {
+    "drive_id": "1j7zwr0r3Vrz-gb68ryCp3016RMH57RuE",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/10bin_9bit_AVX2_SIMD4/20261008_142421_974610/pipeline_summary.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/10bin_9bit_AVX2_SIMD4/20261008_142421_974610/pipeline_summary.csv",
+    "bytes": 255,
+    "sha256": "9d88e307a992304d97449b7a716f2e326947b95f1c1558930742733df512217c"
+  },
+  {
+    "drive_id": "1CpNwciq0xEVS9RtsfD5JUgZAT4A2UCdy",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/10bin_9bit_AVX2_SIMD4/20261008_142421_974610/speed_summary.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/10bin_9bit_AVX2_SIMD4/20261008_142421_974610/speed_summary.csv",
+    "bytes": 247,
+    "sha256": "26f4a3aa31b643bf1d5b1aa0698e32429c6b3801845ba440824795fe0654937f"
+  },
+  {
+    "drive_id": "1OqTobfJYPVxiB2p72sY7pT6h919IhUBa",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/10bin_9bit_AVX2_SIMD4/20261008_142421_974610/accuracy_per_pair.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/10bin_9bit_AVX2_SIMD4/20261008_142421_974610/accuracy_per_pair.csv",
+    "bytes": 3823,
+    "sha256": "a15febd2d29c19c050f984a7790035d30d9acb8d9e2b92939a81e70d2a80e118"
+  },
+  {
+    "drive_id": "1MaqZ1F7VCbn9fVIIMD1HQMEx1SIlVERi",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/10bin_9bit_AVX2_SIMD4/20261008_142421_974610/accuracy.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/10bin_9bit_AVX2_SIMD4/20261008_142421_974610/accuracy.csv",
+    "bytes": 338,
+    "sha256": "63a29c7aa2148674c3f150d049e63d4150835dd3b18ded23d5f795bcd74d4a5f"
+  },
+  {
+    "drive_id": "1IOz2NYzWHYXytASLODEx8WaMIUabdK4o",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/8bin_7bit_AVX2_SIMD4/20261008_141513_178096/fixed_edges.npz",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/8bin_7bit_AVX2_SIMD4/20261008_141513_178096/fixed_edges.npz",
+    "bytes": 2056,
+    "sha256": "bf0e96f88a10dd0f72d1e46aa9f75de87848e0d3f9664f72edd6324ba138fa17"
+  },
+  {
+    "drive_id": "10RMAs1IlLqtuTsKu-JusjE8k0_VqXkSh",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/8bin_7bit_AVX2_SIMD4/20261008_141513_178096/official_match_source.py",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/8bin_7bit_AVX2_SIMD4/20261008_141513_178096/official_match_source.py",
+    "bytes": 536,
+    "sha256": "e987220ff12fe3352c01ce2d411cdf70f2756f4039398eb2e98f62dfdcd0ad14"
+  },
+  {
+    "drive_id": "1JY4Dwx-qUX-F7mchRMrUjsjGKLn7SnXO",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/8bin_7bit_AVX2_SIMD4/20261008_141513_178096/results.json",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/8bin_7bit_AVX2_SIMD4/20261008_141513_178096/results.json",
+    "bytes": 55762,
+    "sha256": "459b73acfeeff2f090eecf2a07ea166fffbcd1f9ea401af847b3a9f2d1f09d8b"
+  },
+  {
+    "drive_id": "1nd29zyGyNhfrNTYu7jV4_hMjrzX3yAxH",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/8bin_7bit_AVX2_SIMD4/20261008_141513_178096/encoding_stages.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/8bin_7bit_AVX2_SIMD4/20261008_141513_178096/encoding_stages.csv",
+    "bytes": 389,
+    "sha256": "91b19968a7a3b2028cef899c3da1efe0564762926270985340d48c26ade6c336"
+  },
+  {
+    "drive_id": "1EP5z6ma9wgGBsrkEZqFLQ4v9AqPYmrGJ",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/8bin_7bit_AVX2_SIMD4/20261008_141513_178096/pipeline_summary.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/8bin_7bit_AVX2_SIMD4/20261008_141513_178096/pipeline_summary.csv",
+    "bytes": 272,
+    "sha256": "9c13f13d9d7578c0cdefedee79daee903c43a6dc49d6d9f07af481d5e984b0af"
+  },
+  {
+    "drive_id": "14Lyn_muWSINMpKIuo2p4VijUxXwyfX0K",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/8bin_7bit_AVX2_SIMD4/20261008_141513_178096/speed_summary.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/8bin_7bit_AVX2_SIMD4/20261008_141513_178096/speed_summary.csv",
+    "bytes": 233,
+    "sha256": "2f2d825364239e1c0a1ebf58e8b90a330c3a18a6f9822a1ef657a2984b90e652"
+  },
+  {
+    "drive_id": "14XZh_AyuZozmeBiqCbVERMkT60tapwez",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/8bin_7bit_AVX2_SIMD4/20261008_141513_178096/accuracy_per_pair.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/8bin_7bit_AVX2_SIMD4/20261008_141513_178096/accuracy_per_pair.csv",
+    "bytes": 3790,
+    "sha256": "9b15847329c0e2f53a8430c70b33c1fbd5ca69fdf42053cc8744f8df5ebd86ec"
+  },
+  {
+    "drive_id": "1nuhURYDtZqpfKt_l1_WNmOiIxJITqebd",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/8bin_7bit_AVX2_SIMD4/20261008_141513_178096/accuracy.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/8bin_7bit_AVX2_SIMD4/20261008_141513_178096/accuracy.csv",
+    "bytes": 332,
+    "sha256": "6928bca01e7903bf32fb6d74c5d0f21b5da965d41b4d08e11bec897661a544bd"
+  },
+  {
+    "drive_id": "1TKiP_QkoOv3yd4I0VftCptgglwye0K_a",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/9bin_8bit_AVX2_SIMD4/20261008_141948_480726/fixed_edges.npz",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/9bin_8bit_AVX2_SIMD4/20261008_141948_480726/fixed_edges.npz",
+    "bytes": 2312,
+    "sha256": "88405ccb0b116a6f89b5d35922fa26922ad2c8da52a55c9a0cb4c830764d97b8"
+  },
+  {
+    "drive_id": "1iBz7Fn-CilE3ICsv7f6SbqxDTYGk-RYL",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/9bin_8bit_AVX2_SIMD4/20261008_141948_480726/official_match_source.py",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/9bin_8bit_AVX2_SIMD4/20261008_141948_480726/official_match_source.py",
+    "bytes": 536,
+    "sha256": "e987220ff12fe3352c01ce2d411cdf70f2756f4039398eb2e98f62dfdcd0ad14"
+  },
+  {
+    "drive_id": "1xVnVKhLpjAF9UHybgI5rJzXdeHDwttsw",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/9bin_8bit_AVX2_SIMD4/20261008_141948_480726/results.json",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/9bin_8bit_AVX2_SIMD4/20261008_141948_480726/results.json",
+    "bytes": 55604,
+    "sha256": "e3b4c59783ce91aceaae4eab662b1ae789273267ab248d28f26d8f1cae51d0f8"
+  },
+  {
+    "drive_id": "1IjpWI_QH1dLygkK-bmbs493YwNbWEn9H",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/9bin_8bit_AVX2_SIMD4/20261008_141948_480726/encoding_stages.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/9bin_8bit_AVX2_SIMD4/20261008_141948_480726/encoding_stages.csv",
+    "bytes": 404,
+    "sha256": "8927b2f5f25a1e97a3e70927f8d8f0fc98fcce972c6587afcf29cb2fe752479d"
+  },
+  {
+    "drive_id": "1xEhD7olNT8zwYVn-AIbpV0HHsPgdEXfN",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/9bin_8bit_AVX2_SIMD4/20261008_141948_480726/pipeline_summary.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/9bin_8bit_AVX2_SIMD4/20261008_141948_480726/pipeline_summary.csv",
+    "bytes": 250,
+    "sha256": "03fc533fc21c4cdab8e4140074016f81fdca946b47e59612e00aea7d4b5f2ffb"
+  },
+  {
+    "drive_id": "1hppvK0G2HUC3DnmbP2xP1m8QVhXRImfM",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/9bin_8bit_AVX2_SIMD4/20261008_141948_480726/speed_summary.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/9bin_8bit_AVX2_SIMD4/20261008_141948_480726/speed_summary.csv",
+    "bytes": 234,
+    "sha256": "4c5b621be8ee9f30e14ca77a51227cf2f54be467a43c628d3449edbc6def2d91"
+  },
+  {
+    "drive_id": "1S3mPwZWtneSlcT7o0dZVBW0hTV2H3NiD",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/9bin_8bit_AVX2_SIMD4/20261008_141948_480726/accuracy_per_pair.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/9bin_8bit_AVX2_SIMD4/20261008_141948_480726/accuracy_per_pair.csv",
+    "bytes": 3765,
+    "sha256": "21dfbb9f64e2eef5c8586e0880838b0f5caac7358cae7ec647106a6510866a68"
+  },
+  {
+    "drive_id": "1cVUtqjdU1bv6GXYp4WqzWG51tBR09yWu",
+    "source_path": "success-direct-thermometer-AVX2-SIMD4/results/9bin_8bit_AVX2_SIMD4/20261008_141948_480726/accuracy.csv",
+    "repository_path": "experiments/success-direct-thermometer-AVX2-SIMD4/results/9bin_8bit_AVX2_SIMD4/20261008_141948_480726/accuracy.csv",
+    "bytes": 334,
+    "sha256": "cebd6566653863c3126135b4a4b8eb0765b69c33b92b0df9ccc83b6c56e7ccce"
+  }
+]
