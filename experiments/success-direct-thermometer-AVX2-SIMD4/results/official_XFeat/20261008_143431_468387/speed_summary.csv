@@ -1,0 +1,3 @@
+dataset,method,cached_ms,total_ms,p10_ms,p90_ms
+synthetic,official XFeat cosine MNN (-1),3.860271,3.77255,3.7296772000000002,3.8412425
+HPatches,official XFeat cosine MNN (-1),3.8366730000000002,4.199529500000001,3.8871254,4.6540279

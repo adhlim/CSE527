@@ -1,0 +1,101 @@
+{
+  "positions": [
+    31,
+    25,
+    24,
+    23,
+    22,
+    26,
+    21,
+    20
+  ],
+  "nbits": 8,
+  "levels": 8,
+  "selection_history": [
+    {
+      "step": 1,
+      "bit": 31,
+      "score": 0.09771500301361084,
+      "inner_rank": 0.905,
+      "margin_loss": 0.0241875,
+      "distill_mse": 2.4509167671203613
+    },
+    {
+      "step": 2,
+      "bit": 25,
+      "score": 0.052818826675415036,
+      "inner_rank": 0.9585,
+      "margin_loss": 0.0123984375,
+      "distill_mse": 1.347346305847168
+    },
+    {
+      "step": 3,
+      "bit": 24,
+      "score": 0.0299690625667572,
+      "inner_rank": 0.9785,
+      "margin_loss": 0.00709375,
+      "distill_mse": 0.7625104188919067
+    },
+    {
+      "step": 4,
+      "bit": 23,
+      "score": 0.01899148404598236,
+      "inner_rank": 0.9845,
+      "margin_loss": 0.005234375,
+      "distill_mse": 0.45857030153274536
+    },
+    {
+      "step": 5,
+      "bit": 22,
+      "score": 0.012396250188350676,
+      "inner_rank": 0.9875,
+      "margin_loss": 0.0044609375,
+      "distill_mse": 0.2645104229450226
+    },
+    {
+      "step": 6,
+      "bit": 26,
+      "score": 0.009415312469005585,
+      "inner_rank": 0.987,
+      "margin_loss": 0.0043203125,
+      "distill_mse": 0.16983333230018616
+    },
+    {
+      "step": 7,
+      "bit": 21,
+      "score": 0.006982421904802322,
+      "inner_rank": 0.987,
+      "margin_loss": 0.004171875,
+      "distill_mse": 0.09368489682674408
+    },
+    {
+      "step": 8,
+      "bit": 20,
+      "score": 0.005935234427452088,
+      "inner_rank": 0.9875,
+      "margin_loss": 0.0040625,
+      "distill_mse": 0.06242448091506958
+    }
+  ],
+  "refinement": [
+    {
+      "sweep": 1,
+      "changed_entries": 1031,
+      "train_rank": 0.9985,
+      "margin_loss": 0.000466796875
+    },
+    {
+      "sweep": 2,
+      "changed_entries": 255,
+      "train_rank": 0.9985,
+      "margin_loss": 0.000453125
+    }
+  ],
+  "seconds": 7.38679319899984,
+  "training_triplets": 14341,
+  "lut_training_triplets": 8000,
+  "method": "greedy bit selection with internal training-only holdout; supervised integer LUT coordinate descent",
+  "lut_scope": "per descriptor dimension, shared across all images and keypoints",
+  "teacher": "training-scene per-dimension quantile bins; regularization only",
+  "unseen_pattern_policy": "training dimension mean bin; never fitted on evaluation data"
+}

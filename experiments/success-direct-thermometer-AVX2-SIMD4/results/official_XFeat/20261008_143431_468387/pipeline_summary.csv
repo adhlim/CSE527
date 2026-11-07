@@ -1,0 +1,3 @@
+dataset,method,extraction_only_ms,pipeline_ms,p10_ms,p90_ms
+synthetic,official XFeat cosine MNN (-1),196.15220549999998,194.010941,188.5321915,205.6532829
+HPatches,official XFeat cosine MNN (-1),206.975506,210.260077,206.1352434,243.403583

@@ -1,0 +1,3 @@
+dataset,method,extraction_only_ms,pipeline_ms,p10_ms,p90_ms
+synthetic,8 bins / 7 bits: method 1+2+3 SIMD4,193.037089,196.72049650000002,191.3087572,390.1900373000001
+HPatches,8 bins / 7 bits: method 1+2+3 SIMD4,444.89468750000003,217.404427,208.0561244,238.98047300000002

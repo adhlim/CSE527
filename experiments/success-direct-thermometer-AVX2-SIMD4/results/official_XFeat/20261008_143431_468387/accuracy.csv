@@ -1,0 +1,3 @@
+dataset,method,pairs,mutual,correct,precision_pct,median_px,descriptor_bytes,bins,thermometer_bits,exact_abs_verified
+synthetic,official XFeat cosine MNN (-1),18,8200,5611,68.42682926829268,1.3664095401763916,256,,,
+HPatches,official XFeat cosine MNN (-1),24,10607,7138,67.29518242669936,1.1764448881149292,256,,,

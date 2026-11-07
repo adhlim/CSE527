@@ -1,0 +1,61 @@
+PASS: bit extraction, 3-bit roundtrip, all-bin ABS/popcount equality, full matrices, MNN including ties
+loading weights from: /workspace/scratch/20b893bc6b63/learned_bits_experiment/xfeat_repo/modules/../weights/xfeat.pt
+extract 000000400573.jpg 1000
+extract 000000371552.jpg 1000
+extract 000000011760.jpg 1000
+extract 000000186929.jpg 1000
+extract 000000465179.jpg 1000
+extract 000000311002.jpg 1000
+extract 000000222235.jpg 1000
+extract 000000388846.jpg 1000
+extract 000000374545.jpg 1000
+extract 000000544811.jpg 1000
+extract 000000254016.jpg 1000
+extract 000000472030.jpg 1000
+extract 000000073153.jpg 1000
+extract 000000243199.jpg 1000
+extract 000000394559.jpg 1000
+extract 000000334483.jpg 1000
+extract 000000386912.jpg 1000
+extract 000000183648.jpg 1000
+extract 000000031050.jpg 1000
+extract 000000283412.jpg 1000
+extract 000000418959.jpg 1000
+extract 000000267300.jpg 1000
+extract 000000157847.jpg 1000
+extract 000000259097.jpg 1000
+bit selection {'step': 1, 'bit': 31, 'score': 0.09771500301361084, 'inner_rank': 0.905, 'margin_loss': 0.0241875, 'distill_mse': 2.4509167671203613}
+bit selection {'step': 2, 'bit': 25, 'score': 0.052818826675415036, 'inner_rank': 0.9585, 'margin_loss': 0.0123984375, 'distill_mse': 1.347346305847168}
+bit selection {'step': 3, 'bit': 24, 'score': 0.0299690625667572, 'inner_rank': 0.9785, 'margin_loss': 0.00709375, 'distill_mse': 0.7625104188919067}
+bit selection {'step': 4, 'bit': 23, 'score': 0.01899148404598236, 'inner_rank': 0.9845, 'margin_loss': 0.005234375, 'distill_mse': 0.45857030153274536}
+bit selection {'step': 5, 'bit': 22, 'score': 0.012396250188350676, 'inner_rank': 0.9875, 'margin_loss': 0.0044609375, 'distill_mse': 0.2645104229450226}
+bit selection {'step': 6, 'bit': 26, 'score': 0.009415312469005585, 'inner_rank': 0.987, 'margin_loss': 0.0043203125, 'distill_mse': 0.16983333230018616}
+bit selection {'step': 7, 'bit': 21, 'score': 0.006982421904802322, 'inner_rank': 0.987, 'margin_loss': 0.004171875, 'distill_mse': 0.09368489682674408}
+bit selection {'step': 8, 'bit': 20, 'score': 0.005935234427452088, 'inner_rank': 0.9875, 'margin_loss': 0.0040625, 'distill_mse': 0.06242448091506958}
+LUT training {'sweep': 1, 'changed_entries': 1031, 'train_rank': 0.9985, 'margin_loss': 0.000466796875}
+LUT training {'sweep': 2, 'changed_entries': 255, 'train_rank': 0.9985, 'margin_loss': 0.000453125}
+eval validation 000000386912.jpg/warp0 [('official_float_cosine', 64.9, 584), ('fixed_quantile_abs', 64.89, 581), ('learned_bits_abs', 65.1, 576), ('learned_bits_thermometer', 65.1, 576)]
+eval validation 000000386912.jpg/warp1 [('official_float_cosine', 61.52, 551), ('fixed_quantile_abs', 59.28, 555), ('learned_bits_abs', 60.79, 533), ('learned_bits_thermometer', 60.79, 533)]
+eval validation 000000386912.jpg/warp2 [('official_float_cosine', 62.96, 548), ('fixed_quantile_abs', 62.64, 538), ('learned_bits_abs', 61.91, 533), ('learned_bits_thermometer', 61.91, 533)]
+eval validation 000000183648.jpg/warp0 [('official_float_cosine', 63.34, 551), ('fixed_quantile_abs', 61.47, 545), ('learned_bits_abs', 62.48, 533), ('learned_bits_thermometer', 62.48, 533)]
+eval validation 000000183648.jpg/warp1 [('official_float_cosine', 58.56, 514), ('fixed_quantile_abs', 57.63, 498), ('learned_bits_abs', 57.29, 501), ('learned_bits_thermometer', 57.29, 501)]
+eval validation 000000183648.jpg/warp2 [('official_float_cosine', 61.74, 528), ('fixed_quantile_abs', 59.23, 520), ('learned_bits_abs', 58.78, 524), ('learned_bits_thermometer', 58.78, 524)]
+eval validation 000000031050.jpg/warp0 [('official_float_cosine', 72.53, 597), ('fixed_quantile_abs', 70.56, 591), ('learned_bits_abs', 69.22, 588), ('learned_bits_thermometer', 69.22, 588)]
+eval validation 000000031050.jpg/warp1 [('official_float_cosine', 65.67, 536), ('fixed_quantile_abs', 63.23, 514), ('learned_bits_abs', 63.55, 513), ('learned_bits_thermometer', 63.55, 513)]
+eval validation 000000031050.jpg/warp2 [('official_float_cosine', 68.88, 543), ('fixed_quantile_abs', 66.6, 527), ('learned_bits_abs', 66.86, 519), ('learned_bits_thermometer', 66.86, 519)]
+eval test 000000283412.jpg/warp0 [('official_float_cosine', 81.36, 649), ('fixed_quantile_abs', 81.11, 630), ('learned_bits_abs', 81.22, 623), ('learned_bits_thermometer', 81.22, 623)]
+eval test 000000283412.jpg/warp1 [('official_float_cosine', 76.27, 632), ('fixed_quantile_abs', 73.93, 606), ('learned_bits_abs', 73.2, 597), ('learned_bits_thermometer', 73.2, 597)]
+eval test 000000283412.jpg/warp2 [('official_float_cosine', 81.1, 656), ('fixed_quantile_abs', 80.62, 640), ('learned_bits_abs', 80.59, 639), ('learned_bits_thermometer', 80.59, 639)]
+eval test 000000418959.jpg/warp0 [('official_float_cosine', 58.27, 520), ('fixed_quantile_abs', 58.23, 498), ('learned_bits_abs', 56.24, 505), ('learned_bits_thermometer', 56.24, 505)]
+eval test 000000418959.jpg/warp1 [('official_float_cosine', 61.27, 519), ('fixed_quantile_abs', 60.2, 490), ('learned_bits_abs', 58.06, 484), ('learned_bits_thermometer', 58.06, 484)]
+eval test 000000418959.jpg/warp2 [('official_float_cosine', 63.67, 545), ('fixed_quantile_abs', 63.47, 531), ('learned_bits_abs', 62.55, 534), ('learned_bits_thermometer', 62.55, 534)]
+eval test 000000267300.jpg/warp0 [('official_float_cosine', 70.26, 585), ('fixed_quantile_abs', 69.62, 576), ('learned_bits_abs', 69.04, 575), ('learned_bits_thermometer', 69.04, 575)]
+eval test 000000267300.jpg/warp1 [('official_float_cosine', 72.17, 575), ('fixed_quantile_abs', 67.97, 587), ('learned_bits_abs', 69.43, 579), ('learned_bits_thermometer', 69.43, 579)]
+eval test 000000267300.jpg/warp2 [('official_float_cosine', 66.78, 566), ('fixed_quantile_abs', 65.15, 571), ('learned_bits_abs', 65.26, 570), ('learned_bits_thermometer', 65.26, 570)]
+eval test 000000157847.jpg/warp0 [('official_float_cosine', 74.29, 560), ('fixed_quantile_abs', 68.84, 536), ('learned_bits_abs', 66.73, 538), ('learned_bits_thermometer', 66.73, 538)]
+eval test 000000157847.jpg/warp1 [('official_float_cosine', 76.3, 616), ('fixed_quantile_abs', 75.17, 580), ('learned_bits_abs', 74.49, 588), ('learned_bits_thermometer', 74.49, 588)]
+eval test 000000157847.jpg/warp2 [('official_float_cosine', 75.43, 582), ('fixed_quantile_abs', 70.8, 565), ('learned_bits_abs', 70.07, 558), ('learned_bits_thermometer', 70.07, 558)]
+eval test 000000259097.jpg/warp0 [('official_float_cosine', 68.54, 515), ('fixed_quantile_abs', 60.79, 454), ('learned_bits_abs', 61.87, 417), ('learned_bits_thermometer', 61.87, 417)]
+eval test 000000259097.jpg/warp1 [('official_float_cosine', 71.37, 524), ('fixed_quantile_abs', 63.08, 493), ('learned_bits_abs', 62.26, 477), ('learned_bits_thermometer', 62.26, 477)]
+eval test 000000259097.jpg/warp2 [('official_float_cosine', 75.14, 523), ('fixed_quantile_abs', 69.77, 483), ('learned_bits_abs', 65.29, 484), ('learned_bits_thermometer', 65.29, 484)]
+Saved: /workspace/scratch/20b893bc6b63/learned_bits_experiment/run

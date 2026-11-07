@@ -1,0 +1,2375 @@
+{
+  "experiment": "11bin_10bit_AVX2_SIMD4",
+  "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+  "run_id": "20261008_143001_662842",
+  "seed": 7,
+  "top_k": 800,
+  "bins": 11,
+  "thermometer_bits": 10,
+  "descriptor_bytes": 80,
+  "threads": 2,
+  "warmup": 3,
+  "repeats": 12,
+  "avx2_required": true,
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "cpu_info": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           46 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  2\nOn-line CPU(s) list:                     0,1\nVendor ID:                               GenuineIntel\nModel name:                              Intel(R) Xeon(R) CPU @ 2.20GHz\nCPU family:                              6\nModel:                                   79\nThread(s) per core:                      2\nCore(s) per socket:                      1\nSocket(s):                               1\nStepping:                                0\nBogoMIPS:                                4399.99\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat md_clear arch_capabilities\nHypervisor vendor:                       KVM\nVirtualization type:                     full\nL1d cache:                               32 KiB (1 instance)\nL1i cache:                               32 KiB (1 instance)\nL2 cache:                                256 KiB (1 instance)\nL3 cache:                                55 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0,1\nVulnerability Gather data sampling:      Not affected\nVulnerability Indirect target selection: Vulnerable\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Mitigation; PTE Inversion\nVulnerability Mds:                       Vulnerable; SMT Host state unknown\nVulnerability Meltdown:                  Vulnerable\nVulnerability Mmio stale data:           Vulnerable\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Vulnerable\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Vulnerable\nVulnerability Spectre v1:                Vulnerable: __user pointer sanitization and usercopy barriers only; no swapgs barriers\nVulnerability Spectre v2:                Vulnerable; IBPB: disabled; STIBP: disabled; PBRSB-eIBRS: Not affected; BHI: Vulnerable\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Vulnerable\nVulnerability Vmscape:                   Not affected\n",
+  "versions": {
+    "numpy": "2.1.3",
+    "torch": "2.11.0+cpu",
+    "opencv": "5.0.0"
+  },
+  "accuracy": [
+    {
+      "dataset": "synthetic",
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "pairs": 18,
+      "mutual": 8115,
+      "correct": 5486,
+      "precision_pct": 67.60320394331485,
+      "median_px": 1.3889272212982178,
+      "descriptor_bytes": 80,
+      "bins": 11,
+      "thermometer_bits": 10,
+      "exact_abs_verified": true
+    },
+    {
+      "dataset": "HPatches",
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "pairs": 24,
+      "mutual": 10516,
+      "correct": 6994,
+      "precision_pct": 66.50817801445416,
+      "median_px": 1.2092133164405823,
+      "descriptor_bytes": 80,
+      "bins": 11,
+      "thermometer_bits": 10,
+      "exact_abs_verified": true
+    }
+  ],
+  "pair_accuracy": [
+    {
+      "dataset": "synthetic",
+      "pair": 0,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 467,
+      "correct": 345,
+      "precision_pct": 73.87580299785867,
+      "median_px": 1.1488956212997437
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 1,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 428,
+      "correct": 275,
+      "precision_pct": 64.25233644859813,
+      "median_px": 1.69126296043396
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 2,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 443,
+      "correct": 285,
+      "precision_pct": 64.33408577878104,
+      "median_px": 1.681074857711792
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 3,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 419,
+      "correct": 238,
+      "precision_pct": 56.801909307875896,
+      "median_px": 2.0248255729675293
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 4,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 426,
+      "correct": 244,
+      "precision_pct": 57.27699530516432,
+      "median_px": 2.0097765922546387
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 5,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 438,
+      "correct": 255,
+      "precision_pct": 58.21917808219178,
+      "median_px": 1.706615924835205
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 6,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 403,
+      "correct": 214,
+      "precision_pct": 53.101736972704714,
+      "median_px": 2.4738574028015137
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 7,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 441,
+      "correct": 281,
+      "precision_pct": 63.718820861678005,
+      "median_px": 1.2410027980804443
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 8,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 402,
+      "correct": 226,
+      "precision_pct": 56.21890547263681,
+      "median_px": 1.8503727912902832
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 9,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 438,
+      "correct": 288,
+      "precision_pct": 65.75342465753425,
+      "median_px": 1.627790927886963
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 10,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 430,
+      "correct": 305,
+      "precision_pct": 70.93023255813954,
+      "median_px": 1.5366249084472656
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 11,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 459,
+      "correct": 320,
+      "precision_pct": 69.71677559912854,
+      "median_px": 1.3389922380447388
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 12,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 474,
+      "correct": 361,
+      "precision_pct": 76.16033755274262,
+      "median_px": 1.1414607763290405
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 13,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 476,
+      "correct": 341,
+      "precision_pct": 71.63865546218487,
+      "median_px": 1.2163634300231934
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 14,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 483,
+      "correct": 361,
+      "precision_pct": 74.74120082815735,
+      "median_px": 1.2050071954727173
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 15,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 500,
+      "correct": 379,
+      "precision_pct": 75.8,
+      "median_px": 1.2032811641693115
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 16,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 514,
+      "correct": 405,
+      "precision_pct": 78.79377431906615,
+      "median_px": 1.037632942199707
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 17,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 474,
+      "correct": 363,
+      "precision_pct": 76.58227848101266,
+      "median_px": 1.252232551574707
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 0,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 406,
+      "correct": 231,
+      "precision_pct": 56.89655172413793,
+      "median_px": 1.6789295673370361
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 1,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 386,
+      "correct": 185,
+      "precision_pct": 47.92746113989637,
+      "median_px": 3.376669406890869
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 2,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 404,
+      "correct": 232,
+      "precision_pct": 57.42574257425743,
+      "median_px": 2.0824878215789795
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 3,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 399,
+      "correct": 221,
+      "precision_pct": 55.388471177944865,
+      "median_px": 2.2704150676727295
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 4,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 478,
+      "correct": 318,
+      "precision_pct": 66.52719665271967,
+      "median_px": 1.3406614065170288
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 5,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 446,
+      "correct": 284,
+      "precision_pct": 63.67713004484305,
+      "median_px": 1.6050174236297607
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 6,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 332,
+      "correct": 159,
+      "precision_pct": 47.89156626506024,
+      "median_px": 3.201754570007324
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 7,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 312,
+      "correct": 129,
+      "precision_pct": 41.34615384615385,
+      "median_px": 4.391495704650879
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 8,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 375,
+      "correct": 187,
+      "precision_pct": 49.86666666666667,
+      "median_px": 3.0410611629486084
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 9,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 308,
+      "correct": 126,
+      "precision_pct": 40.90909090909091,
+      "median_px": 4.321505546569824
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 10,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 381,
+      "correct": 188,
+      "precision_pct": 49.343832020997375,
+      "median_px": 3.1182188987731934
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 11,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 360,
+      "correct": 161,
+      "precision_pct": 44.72222222222222,
+      "median_px": 3.5380780696868896
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 12,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 459,
+      "correct": 307,
+      "precision_pct": 66.88453159041394,
+      "median_px": 1.4142135381698608
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 13,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 360,
+      "correct": 159,
+      "precision_pct": 44.166666666666664,
+      "median_px": 3.605551242828369
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 14,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 543,
+      "correct": 470,
+      "precision_pct": 86.55616942909761,
+      "median_px": 0.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 15,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 496,
+      "correct": 377,
+      "precision_pct": 76.00806451612904,
+      "median_px": 1.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 16,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 536,
+      "correct": 470,
+      "precision_pct": 87.68656716417911,
+      "median_px": 1.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 17,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 520,
+      "correct": 412,
+      "precision_pct": 79.23076923076923,
+      "median_px": 1.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 18,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 517,
+      "correct": 434,
+      "precision_pct": 83.9458413926499,
+      "median_px": 0.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 19,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 524,
+      "correct": 443,
+      "precision_pct": 84.54198473282443,
+      "median_px": 0.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 20,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 533,
+      "correct": 459,
+      "precision_pct": 86.11632270168856,
+      "median_px": 0.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 21,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 490,
+      "correct": 380,
+      "precision_pct": 77.55102040816327,
+      "median_px": 1.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 22,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 490,
+      "correct": 351,
+      "precision_pct": 71.63265306122449,
+      "median_px": 1.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 23,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "mutual": 461,
+      "correct": 311,
+      "precision_pct": 67.46203904555314,
+      "median_px": 1.0
+    }
+  ],
+  "timing": [
+    {
+      "dataset": "synthetic",
+      "pair": 0,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 2.923988,
+      "total_ms": 3.311951,
+      "p10_ms": 3.2479346000000002,
+      "p90_ms": 3.3352675,
+      "cached_samples_ms": [
+        2.937241,
+        2.9202,
+        2.902638,
+        2.931318,
+        2.902026,
+        2.893229,
+        2.927776,
+        2.904018,
+        3.011288,
+        2.9102,
+        2.932108,
+        2.95226
+      ],
+      "total_samples_ms": [
+        3.309949,
+        3.317965,
+        3.313953,
+        3.275465,
+        3.320296,
+        3.278263,
+        3.230745,
+        3.246553,
+        3.335618,
+        3.332113,
+        3.260369,
+        3.394423
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 4,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 2.93016,
+      "total_ms": 3.3318285000000003,
+      "p10_ms": 3.2806371000000003,
+      "p90_ms": 3.6361653,
+      "cached_samples_ms": [
+        2.898822,
+        2.919951,
+        2.908929,
+        2.936947,
+        2.986718,
+        2.943695,
+        2.953927,
+        2.908616,
+        2.939373,
+        2.892853,
+        2.923373,
+        2.966023
+      ],
+      "total_samples_ms": [
+        3.654727,
+        3.46911,
+        3.357073,
+        3.302776,
+        3.267632,
+        3.295134,
+        3.328533,
+        4.297037,
+        3.279519,
+        3.372906,
+        3.335124,
+        3.2907
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 8,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 2.9208860000000003,
+      "total_ms": 8.413674499999999,
+      "p10_ms": 6.3502136,
+      "p90_ms": 11.914711100000002,
+      "cached_samples_ms": [
+        2.977298,
+        2.974799,
+        3.017914,
+        2.929151,
+        2.912621,
+        2.901226,
+        2.901856,
+        3.048514,
+        2.95209,
+        2.90627,
+        2.895153,
+        2.896625
+      ],
+      "total_samples_ms": [
+        10.020866,
+        11.997324,
+        8.017727,
+        12.02964,
+        5.304679,
+        8.809622,
+        6.883443,
+        6.467624,
+        11.171195,
+        6.615702,
+        6.337168,
+        11.093016
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 12,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 2.9478535,
+      "total_ms": 3.379591,
+      "p10_ms": 3.2902822,
+      "p90_ms": 3.5669779999999998,
+      "cached_samples_ms": [
+        2.978813,
+        3.029857,
+        2.921822,
+        2.915908,
+        2.958578,
+        2.914674,
+        2.916439,
+        2.923012,
+        3.012548,
+        2.971516,
+        2.983324,
+        2.937129
+      ],
+      "total_samples_ms": [
+        3.505025,
+        3.305456,
+        3.292633,
+        3.344711,
+        3.28154,
+        3.414471,
+        3.57341,
+        3.509297,
+        3.432582,
+        3.312002,
+        3.290021,
+        3.573387
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 17,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 2.9498550000000003,
+      "total_ms": 3.322681,
+      "p10_ms": 3.2697441,
+      "p90_ms": 3.4333989000000003,
+      "cached_samples_ms": [
+        2.947376,
+        2.909764,
+        2.930677,
+        3.196819,
+        2.999729,
+        2.934718,
+        2.952334,
+        2.932913,
+        2.91339,
+        3.491707,
+        3.053426,
+        2.954373
+      ],
+      "total_samples_ms": [
+        3.251523,
+        3.268012,
+        3.377721,
+        3.327075,
+        3.307102,
+        3.318287,
+        3.43895,
+        3.316126,
+        3.336386,
+        3.526892,
+        3.383439,
+        3.285333
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 0,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 2.9319115,
+      "total_ms": 3.467169,
+      "p10_ms": 3.3407881,
+      "p90_ms": 3.7583549,
+      "cached_samples_ms": [
+        2.905893,
+        2.931263,
+        2.912362,
+        2.93256,
+        2.907017,
+        3.010983,
+        2.917797,
+        3.10625,
+        3.155112,
+        3.014281,
+        2.937508,
+        2.91117
+      ],
+      "total_samples_ms": [
+        3.303286,
+        3.337966,
+        3.600417,
+        3.366187,
+        3.395399,
+        3.378502,
+        3.721058,
+        3.421804,
+        3.590709,
+        3.512534,
+        4.288941,
+        3.762499
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 5,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 2.914539,
+      "total_ms": 6.885762,
+      "p10_ms": 4.975659,
+      "p90_ms": 10.7706706,
+      "cached_samples_ms": [
+        2.935249,
+        2.903984,
+        2.99671,
+        2.912496,
+        2.909485,
+        3.036805,
+        3.115235,
+        2.916582,
+        2.898899,
+        2.886655,
+        2.892709,
+        2.969033
+      ],
+      "total_samples_ms": [
+        11.128829,
+        6.876722,
+        10.937126,
+        5.379084,
+        5.762274,
+        4.823807,
+        7.687099,
+        6.854472,
+        7.930013,
+        4.930834,
+        6.894802,
+        9.272572
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 11,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 2.910582,
+      "total_ms": 3.319076,
+      "p10_ms": 3.2849684999999997,
+      "p90_ms": 5.6093504,
+      "cached_samples_ms": [
+        2.899105,
+        2.977925,
+        2.89496,
+        2.908131,
+        2.958326,
+        2.937825,
+        2.913033,
+        2.881381,
+        2.892978,
+        2.9017,
+        3.007203,
+        4.530775
+      ],
+      "total_samples_ms": [
+        3.296538,
+        5.757968,
+        6.988524,
+        4.271792,
+        3.319766,
+        3.283683,
+        3.321983,
+        3.256303,
+        3.341085,
+        3.298714,
+        3.317058,
+        3.318386
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 17,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 6.273612,
+      "total_ms": 3.2845750000000002,
+      "p10_ms": 3.2572948,
+      "p90_ms": 3.3613155000000003,
+      "cached_samples_ms": [
+        6.64153,
+        4.992844,
+        7.985335,
+        9.271677,
+        7.984332,
+        7.432967,
+        4.940678,
+        4.485041,
+        6.356432,
+        4.246308,
+        4.167879,
+        6.190792
+      ],
+      "total_samples_ms": [
+        3.361368,
+        3.25682,
+        3.292846,
+        3.276304,
+        3.240164,
+        4.024104,
+        3.360843,
+        3.33021,
+        3.315464,
+        3.263625,
+        3.274556,
+        3.261568
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 23,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 3.076523,
+      "total_ms": 3.604071,
+      "p10_ms": 3.5293209,
+      "p90_ms": 3.6686091000000003,
+      "cached_samples_ms": [
+        3.165352,
+        3.380017,
+        3.033312,
+        3.119734,
+        3.331697,
+        3.130791,
+        3.150166,
+        2.965504,
+        2.926944,
+        2.887027,
+        2.916534,
+        2.90987
+      ],
+      "total_samples_ms": [
+        3.621648,
+        3.609272,
+        3.564666,
+        3.59887,
+        3.609864,
+        3.549957,
+        3.773307,
+        3.673827,
+        3.583073,
+        3.612565,
+        3.527028,
+        3.3864
+      ]
+    }
+  ],
+  "pipeline": [
+    {
+      "dataset": "synthetic",
+      "pair": 0,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "extraction_only_ms": 200.510924,
+      "pipeline_ms": 206.9448955,
+      "p10_ms": 202.7913065,
+      "p90_ms": 236.54004360000002,
+      "mutual": 467,
+      "correct": 345,
+      "precision_pct": 73.87580299785867,
+      "samples_ms": [
+        201.132103,
+        208.136359,
+        205.304686,
+        244.135885,
+        207.17696,
+        225.492352,
+        206.173565,
+        231.800379,
+        237.066673,
+        203.287238,
+        206.712831,
+        202.736203
+      ],
+      "extraction_samples_ms": [
+        198.441317,
+        198.658684,
+        206.66329,
+        226.645696,
+        209.563484,
+        195.565246,
+        196.785176,
+        195.846099,
+        221.399595,
+        202.362422,
+        201.491178,
+        199.53067
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 4,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "extraction_only_ms": 215.4473635,
+      "pipeline_ms": 308.61595550000004,
+      "p10_ms": 222.2671411,
+      "p90_ms": 965.0858850000001,
+      "mutual": 426,
+      "correct": 244,
+      "precision_pct": 57.27699530516432,
+      "samples_ms": [
+        250.276928,
+        220.595784,
+        224.831989,
+        227.556094,
+        221.982158,
+        362.207776,
+        522.982452,
+        981.973647,
+        972.225491,
+        900.829431,
+        835.262385,
+        255.024135
+      ],
+      "extraction_samples_ms": [
+        211.674897,
+        206.616929,
+        211.893503,
+        213.901194,
+        219.77647,
+        203.751985,
+        207.156909,
+        219.518426,
+        239.995925,
+        246.777339,
+        222.197756,
+        216.993533
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 8,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "extraction_only_ms": 212.342052,
+      "pipeline_ms": 226.4715625,
+      "p10_ms": 206.6201302,
+      "p90_ms": 680.7367333000001,
+      "mutual": 402,
+      "correct": 226,
+      "precision_pct": 56.21890547263681,
+      "samples_ms": [
+        251.299554,
+        206.347893,
+        209.644004,
+        209.070265,
+        210.137366,
+        238.772568,
+        206.330917,
+        214.170557,
+        296.343331,
+        714.933984,
+        787.11109,
+        372.961477
+      ],
+      "extraction_samples_ms": [
+        237.96072,
+        211.441899,
+        215.402688,
+        208.657532,
+        212.190747,
+        244.758198,
+        210.431202,
+        203.077007,
+        202.470775,
+        212.493357,
+        242.55932,
+        213.332741
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 12,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "extraction_only_ms": 204.3917745,
+      "pipeline_ms": 211.150035,
+      "p10_ms": 205.6782926,
+      "p90_ms": 240.6332881,
+      "mutual": 474,
+      "correct": 361,
+      "precision_pct": 76.16033755274262,
+      "samples_ms": [
+        205.527331,
+        209.952657,
+        223.845166,
+        258.26758,
+        212.347413,
+        239.122585,
+        208.094461,
+        205.433835,
+        240.801144,
+        209.518428,
+        207.036947,
+        213.745232
+      ],
+      "extraction_samples_ms": [
+        197.623134,
+        210.077644,
+        237.072005,
+        208.042914,
+        201.669174,
+        201.508635,
+        203.295429,
+        242.41537,
+        205.48812,
+        201.274553,
+        199.298939,
+        239.385012
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 17,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "extraction_only_ms": 193.47441800000001,
+      "pipeline_ms": 219.63007,
+      "p10_ms": 191.94311399999998,
+      "p90_ms": 1005.5515205,
+      "mutual": 474,
+      "correct": 363,
+      "precision_pct": 76.58227848101266,
+      "samples_ms": [
+        1005.921908,
+        550.615137,
+        1002.218033,
+        1081.233297,
+        428.104652,
+        193.862256,
+        226.426776,
+        190.379541,
+        191.729876,
+        197.898639,
+        199.584341,
+        212.833364
+      ],
+      "extraction_samples_ms": [
+        211.596724,
+        204.614565,
+        200.066083,
+        188.972086,
+        188.341337,
+        182.7687,
+        227.86418,
+        188.335077,
+        191.897522,
+        191.658284,
+        195.051314,
+        230.278706
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 0,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "extraction_only_ms": 243.477085,
+      "pipeline_ms": 243.53527,
+      "p10_ms": 234.9322367,
+      "p90_ms": 253.7604271,
+      "mutual": 406,
+      "correct": 231,
+      "precision_pct": 56.89655172413793,
+      "samples_ms": [
+        246.389419,
+        233.488287,
+        237.998031,
+        237.004016,
+        266.551905,
+        242.780369,
+        246.244239,
+        234.702039,
+        253.975653,
+        251.823394,
+        240.610794,
+        244.290171
+      ],
+      "extraction_samples_ms": [
+        238.092019,
+        251.635567,
+        289.038022,
+        231.767156,
+        241.390302,
+        232.537312,
+        265.05756,
+        246.00594,
+        236.398498,
+        245.563868,
+        282.987701,
+        236.014576
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 5,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "extraction_only_ms": 232.9917585,
+      "pipeline_ms": 224.77968049999998,
+      "p10_ms": 218.8007234,
+      "p90_ms": 238.147497,
+      "mutual": 446,
+      "correct": 284,
+      "precision_pct": 63.67713004484305,
+      "samples_ms": [
+        227.615625,
+        219.280436,
+        226.636865,
+        239.317705,
+        224.700804,
+        223.754762,
+        221.445841,
+        218.747422,
+        248.395588,
+        218.534692,
+        226.809551,
+        224.858557
+      ],
+      "extraction_samples_ms": [
+        1224.006516,
+        448.863274,
+        221.836619,
+        226.45175,
+        237.415699,
+        231.678122,
+        218.211793,
+        242.337233,
+        234.305395,
+        240.942985,
+        221.493784,
+        221.726039
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 11,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "extraction_only_ms": 523.3799375,
+      "pipeline_ms": 242.325973,
+      "p10_ms": 236.26279340000002,
+      "p90_ms": 280.2213748,
+      "mutual": 360,
+      "correct": 161,
+      "precision_pct": 44.72222222222222,
+      "samples_ms": [
+        237.808357,
+        243.583851,
+        258.579415,
+        236.921309,
+        236.189625,
+        255.632831,
+        282.626037,
+        229.950728,
+        237.622004,
+        241.068095,
+        283.40128,
+        244.888663
+      ],
+      "extraction_samples_ms": [
+        236.642303,
+        736.007348,
+        400.802473,
+        384.67793,
+        988.539766,
+        645.957402,
+        978.958745,
+        899.565621,
+        714.961936,
+        259.219816,
+        273.956365,
+        254.737818
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 17,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "extraction_only_ms": 192.5625345,
+      "pipeline_ms": 332.16151449999995,
+      "p10_ms": 201.0407719,
+      "p90_ms": 723.2420919,
+      "mutual": 520,
+      "correct": 412,
+      "precision_pct": 79.23076923076923,
+      "samples_ms": [
+        206.102884,
+        192.13778,
+        237.323385,
+        200.478315,
+        208.621599,
+        272.593147,
+        737.761397,
+        566.006959,
+        441.879746,
+        592.568346,
+        1111.193919,
+        391.729882
+      ],
+      "extraction_samples_ms": [
+        196.005382,
+        191.812102,
+        206.035226,
+        210.877117,
+        184.604409,
+        189.071245,
+        192.616127,
+        192.508942,
+        190.49643,
+        262.251718,
+        258.804836,
+        189.752999
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 23,
+      "method": "11 bins / 10 bits: method 1+2+3 SIMD4",
+      "extraction_only_ms": 167.215551,
+      "pipeline_ms": 186.9524185,
+      "p10_ms": 173.2896509,
+      "p90_ms": 206.731074,
+      "mutual": 461,
+      "correct": 311,
+      "precision_pct": 67.46203904555314,
+      "samples_ms": [
+        178.884,
+        193.557414,
+        189.811817,
+        208.194814,
+        187.916284,
+        172.868022,
+        167.827008,
+        177.084311,
+        225.878265,
+        185.988553,
+        188.677378,
+        184.28371
+      ],
+      "extraction_samples_ms": [
+        170.017905,
+        158.871418,
+        165.346155,
+        168.299994,
+        166.521928,
+        200.631226,
+        167.164339,
+        169.288494,
+        164.917121,
+        167.266763,
+        161.961731,
+        207.593945
+      ]
+    }
+  ],
+  "encoding_stages": [
+    {
+      "dataset": "synthetic",
+      "pair": 0,
+      "both_sets_encoding_ms": 0.1791725,
+      "B_encoding_and_layout_ms": 0.1310015
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 4,
+      "both_sets_encoding_ms": 0.167074,
+      "B_encoding_and_layout_ms": 0.1308665
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 8,
+      "both_sets_encoding_ms": 0.173991,
+      "B_encoding_and_layout_ms": 0.1500925
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 12,
+      "both_sets_encoding_ms": 0.17184100000000002,
+      "B_encoding_and_layout_ms": 0.130388
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 17,
+      "both_sets_encoding_ms": 0.174877,
+      "B_encoding_and_layout_ms": 0.13114399999999998
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 0,
+      "both_sets_encoding_ms": 0.184035,
+      "B_encoding_and_layout_ms": 0.1395245
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 5,
+      "both_sets_encoding_ms": 0.1712995,
+      "B_encoding_and_layout_ms": 0.12804500000000002
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 11,
+      "both_sets_encoding_ms": 0.1896915,
+      "B_encoding_and_layout_ms": 0.1385615
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 17,
+      "both_sets_encoding_ms": 0.1699495,
+      "B_encoding_and_layout_ms": 0.127127
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 23,
+      "both_sets_encoding_ms": 0.172605,
+      "B_encoding_and_layout_ms": 0.1305155
+    }
+  ],
+  "pair_manifest": [
+    {
+      "dataset": "synthetic",
+      "pair": 0,
+      "name": "synthetic_0",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.8745071887969971,
+          -0.10557389259338379,
+          26.423240661621094
+        ],
+        [
+          0.10557389259338379,
+          0.8745071887969971,
+          -5.182291030883789
+        ],
+        [
+          -5.9375804994488135e-05,
+          -4.165263089817017e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "df4012e3359c8b39986d43ffcfc875e3175e62740d37b0e411b47c1d7471a4ba"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 1,
+      "name": "synthetic_1",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0087510347366333,
+          -0.3427312672138214,
+          63.51181411743164
+        ],
+        [
+          0.3427312672138214,
+          1.0087510347366333,
+          -126.22637939453125
+        ],
+        [
+          2.9183252991060726e-05,
+          -6.867765478091314e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "0de2fd5fd064dd0201e6b0e4b97bb4e29df3b3545b051b643d15fc24a8823bce"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 2,
+      "name": "synthetic_2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.9686148166656494,
+          0.2760562300682068,
+          -78.61846923828125
+        ],
+        [
+          -0.2760562300682068,
+          0.9686148166656494,
+          85.78321075439453
+        ],
+        [
+          -6.60894438624382e-05,
+          -3.9313257730100304e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "2c307b2eb97f12476c519aaef7e6eb28ee25aa7e0301e52ac442025e500e2212"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 3,
+      "name": "synthetic_3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.8961988091468811,
+          0.08358878642320633,
+          -10.607488632202148
+        ],
+        [
+          -0.08358878642320633,
+          0.8961988091468811,
+          68.44722747802734
+        ],
+        [
+          -2.3036660422803834e-05,
+          -2.3380431230179965e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "e6c18e851991b8f04a7f9c9067b4f206f3c8d6e4aee26fe29654e5386a1232ca"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 4,
+      "name": "synthetic_4",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.9819351434707642,
+          0.12152494490146637,
+          -10.440725326538086
+        ],
+        [
+          -0.12152494490146637,
+          0.9819351434707642,
+          22.69647979736328
+        ],
+        [
+          -3.3557149436092004e-05,
+          1.1709812497429084e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "b6707e465722c6c5f2339bf9f66070043b280c228eab553c8af004f682948782"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 5,
+      "name": "synthetic_5",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.979019820690155,
+          0.09649498015642166,
+          -50.59514236450195
+        ],
+        [
+          -0.09649498015642166,
+          0.979019820690155,
+          54.74683380126953
+        ],
+        [
+          -6.0640428273472935e-05,
+          -5.192865137360059e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "0e86c5b9ed124664504eacc4ef7116d21d14166ccc036158409e8f321c71ae01"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 6,
+      "name": "synthetic_6",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.9511261582374573,
+          0.1928524225950241,
+          -49.27579116821289
+        ],
+        [
+          -0.1928524225950241,
+          0.9511261582374573,
+          48.680824279785156
+        ],
+        [
+          4.9193145969184116e-05,
+          6.687764835078269e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "ebd7abe61c80d1a9bee25cc0be558813cacf9091bbd3106e21f3e1d6362dcdce"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 7,
+      "name": "synthetic_7",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.9400880932807922,
+          -0.06406839191913605,
+          32.89388656616211
+        ],
+        [
+          0.06406839191913605,
+          0.9400880932807922,
+          -32.59245681762695
+        ],
+        [
+          -8.019974302442279e-06,
+          -4.206230369163677e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "fbad7fb98c94e7477205e3bdcdd0ba24a223ec5a26c060f61537b08c67d63ed5"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 8,
+      "name": "synthetic_8",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.024401068687439,
+          0.2697807848453522,
+          -77.99566650390625
+        ],
+        [
+          -0.2697807848453522,
+          1.024401068687439,
+          70.29118347167969
+        ],
+        [
+          6.147825479274616e-05,
+          5.596583037004166e-07,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "2f5d429820b5d27f6d013d007191ace5650f3ee076cdbb8b6ce6e97ddf0ee307"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 9,
+      "name": "synthetic_9",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.9380323886871338,
+          0.33433231711387634,
+          -116.33678436279297
+        ],
+        [
+          -0.33433231711387634,
+          0.9380323886871338,
+          90.23518371582031
+        ],
+        [
+          5.746304054810025e-07,
+          -9.045702427101787e-06,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "4a795a63c907e59d330e18e60360c54fcb8b30d51f6e83cde268c6e4bb30da3d"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 10,
+      "name": "synthetic_10",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.8793196082115173,
+          -0.2356342375278473,
+          95.88631439208984
+        ],
+        [
+          0.2356342375278473,
+          0.8793196082115173,
+          15.259038925170898
+        ],
+        [
+          1.7325362932751887e-05,
+          3.2176216336665675e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "7508840a7004251736f84c6b0bb5b7f404533d06449bc67178d28e683a4aff1b"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 11,
+      "name": "synthetic_11",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.8611699938774109,
+          0.1942407339811325,
+          -23.37206268310547
+        ],
+        [
+          -0.1942407339811325,
+          0.8611699938774109,
+          61.35295104980469
+        ],
+        [
+          -4.047192760481266e-06,
+          6.651864532614127e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "92c06d4810e87f4012c83468cb523abdb82ab8b8f010e04a716e86c870cd6bbf"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 12,
+      "name": "synthetic_12",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0108027458190918,
+          -0.05029963701963425,
+          -27.039461135864258
+        ],
+        [
+          0.05029963701963425,
+          1.0108027458190918,
+          -30.69036865234375
+        ],
+        [
+          -6.743294215993956e-05,
+          5.609555046248715e-06,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "6977307fbb336fec4fff21026448ecd1ec02c95001880fda3c3c9448ffdd68c9"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 13,
+      "name": "synthetic_13",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.001105546951294,
+          -0.14366456866264343,
+          4.421462059020996
+        ],
+        [
+          0.14366456866264343,
+          1.001105546951294,
+          -25.90255355834961
+        ],
+        [
+          6.44114043097943e-05,
+          -9.808879894990241e-07,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "f3d1c3485ec6cc1bff2a5e58d01337eb2c8d0e44f5173d6d836c543ff802bed1"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 14,
+      "name": "synthetic_14",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0294405221939087,
+          -0.15213365852832794,
+          5.888072967529297
+        ],
+        [
+          0.15213365852832794,
+          1.0294405221939087,
+          -43.825748443603516
+        ],
+        [
+          -2.323841181350872e-05,
+          1.4364233720698394e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "d5b6f19656b6eb3d5339c3bb61a4b9b5789949c1d54256ceec7d892258f26f05"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 15,
+      "name": "synthetic_15",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.9657177329063416,
+          0.2103872299194336,
+          -38.71162414550781
+        ],
+        [
+          -0.2103872299194336,
+          0.9657177329063416,
+          67.00680541992188
+        ],
+        [
+          -6.028231655363925e-05,
+          -3.3826981962192804e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "bd11ead4f7cef8441f629f69aad1960775c222c83e97e1296d1da36b0ac895db"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 16,
+      "name": "synthetic_16",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.064958930015564,
+          0.12654179334640503,
+          -8.159290313720703
+        ],
+        [
+          -0.12654179334640503,
+          1.064958930015564,
+          45.95748519897461
+        ],
+        [
+          4.2925519665004686e-05,
+          -4.5086537284078076e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "b5ebcea44d00616d75a6056541dd6876bf637beba1aca36b9cde1b07687a7169"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 17,
+      "name": "synthetic_17",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0207329988479614,
+          0.2689650058746338,
+          -48.91328048706055
+        ],
+        [
+          -0.2689650058746338,
+          1.0207329988479614,
+          83.06987762451172
+        ],
+        [
+          -4.1940475057344884e-05,
+          2.725571903283708e-06,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "7452f1bd1a46c1bb0daa35f6e4920fcdbb33254ac8338314e29d4f4978f0a863"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 0,
+      "name": "v_abstract:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.7088,
+          -0.010967973962571199,
+          -13.575915378356388
+        ],
+        [
+          -0.13598311822125814,
+          0.8348899999999999,
+          53.72147505422993
+        ],
+        [
+          -0.00044843137499999997,
+          -2.9993812499999998e-05,
+          1.0004
+        ]
+      ],
+      "descriptor_sha256": "f9977714f1acb1a72af608fabf8717a4f4fe245b551474cc814ad30b2218e31d"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 1,
+      "name": "v_abstract:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.5134,
+          -0.002958902305397342,
+          10.901350691619204
+        ],
+        [
+          0.2677273861171366,
+          1.4061999999999997,
+          -121.1349240780911
+        ],
+        [
+          0.0009329454218749999,
+          -7.74307125e-06,
+          1.0006
+        ]
+      ],
+      "descriptor_sha256": "9792fa895e10f604cce2d3d998c21a3cd1302a96907199147cc71b9696e6f51c"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 2,
+      "name": "v_adam:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.1202000000000003,
+          -0.005386692857142858,
+          41.3184
+        ],
+        [
+          0.18216592592592595,
+          1.0194,
+          -5.653361777777778
+        ],
+        [
+          0.0008934062500000001,
+          -4.482421875e-05,
+          0.99922
+        ]
+      ],
+      "descriptor_sha256": "467d5bc356de69807ed35c86333665120cd0fca4b9db455670357616030fcc98"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 3,
+      "name": "v_adam:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.37083000000000005,
+          -0.023624035714285715,
+          133.59359999999998
+        ],
+        [
+          -0.0980757037037037,
+          0.62749,
+          65.06254222222222
+        ],
+        [
+          -0.00056046875,
+          -2.2324218750000005e-05,
+          0.99885
+        ]
+      ],
+      "descriptor_sha256": "beb3e0acfb263b94a975f659098708a1fbd093c45e0972c14d258d8daa3b77db"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 4,
+      "name": "v_apprentices:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0246,
+          0.015343175851703408,
+          0.3187892585170341
+        ],
+        [
+          0.04616593538692713,
+          1.0208,
+          -25.198978211870774
+        ],
+        [
+          0.0001486774955357143,
+          0.0001020731421875,
+          1.0002
+        ]
+      ],
+      "descriptor_sha256": "f3f7cbca3cc45a855db0ef563b7a7131cee94fbbdeb9d86e2e2a76b1b83f5583"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 5,
+      "name": "v_apprentices:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.60367,
+          0.06661188216432866,
+          -16.39733867735471
+        ],
+        [
+          -0.2274287431576688,
+          0.96671,
+          -21.781637866265964
+        ],
+        [
+          -0.0008205654017857143,
+          0.00014028739999999998,
+          0.99996
+        ]
+      ],
+      "descriptor_sha256": "41f557dd5a428a00e79879f506a394f3aea3a933ab13a923832e2c6db30dc5d0"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 6,
+      "name": "v_artisans:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.6190674442190667,
+          0.045459173427991884,
+          66.04462474645031
+        ],
+        [
+          0.23647915773353748,
+          1.4368913189127104,
+          37.877022970903525
+        ],
+        [
+          0.0015780890625000002,
+          0.00026954876953125,
+          1.0016
+        ]
+      ],
+      "descriptor_sha256": "af7cda07f13ddf2bf05a87de73a928972759877cae1fbccc42172655a357b394"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 7,
+      "name": "v_artisans:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          2.2056511156186613,
+          0.02939393002028397,
+          62.16697768762677
+        ],
+        [
+          0.4241032006125574,
+          2.0174086332312404,
+          -13.092214395099539
+        ],
+        [
+          0.00279140765625,
+          0.0004714991015625,
+          1.0014
+        ]
+      ],
+      "descriptor_sha256": "ca83e5030f531317089aac11a195bef619ea4231138d2153d413078e094c6697"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 8,
+      "name": "v_astronautis:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.7952376033057852,
+          0.039793085950413226,
+          47.22644628099174
+        ],
+        [
+          -0.26073589584624923,
+          1.344266088034718,
+          -87.56453812771234
+        ],
+        [
+          -0.0012072375,
+          0.00013519894375,
+          1.001
+        ]
+      ],
+      "descriptor_sha256": "0eec67c2c218ecfa9e6c400178204a1c9424ce8776a380e95270fc2a3cb880ad"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 9,
+      "name": "v_astronautis:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.5588632231404959,
+          0.09648719256198347,
+          43.104793388429755
+        ],
+        [
+          -0.3622496383550321,
+          1.4917745815251084,
+          -109.63719776813392
+        ],
+        [
+          -0.0017580281250000002,
+          0.000268246875,
+          0.98986
+        ]
+      ],
+      "descriptor_sha256": "34a270d04f10ddca2a6c8cdebaa000bae155793aa3a946b2d01e476089a5ef19"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 10,
+      "name": "v_azzola:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.51123,
+          -0.01364707519242155,
+          33.877371225577264
+        ],
+        [
+          -0.16045500000000001,
+          0.85238,
+          58.64520710059171
+        ],
+        [
+          -0.0005865756250000001,
+          -7.112611458333332e-05,
+          1.0009
+        ]
+      ],
+      "descriptor_sha256": "99a61152fabfe3691aeac272668f496f1c9d5da19b4b426d4b81368e347856c2"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 11,
+      "name": "v_azzola:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.33492,
+          -0.005115626998223801,
+          35.8831971580817
+        ],
+        [
+          -0.19829259763313611,
+          0.81318,
+          55.942437869822484
+        ],
+        [
+          -0.0007265866875000001,
+          -4.950115625e-05,
+          0.99833
+        ]
+      ],
+      "descriptor_sha256": "6f278005156f78900bafa0e9a30615fae93fdf59011296efd400ecff46733c0d"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 12,
+      "name": "i_ajuntament:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "00664363d05e845118d6e731f6a99f425ad228896df077fe7202bcb0a3170eff"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 13,
+      "name": "i_ajuntament:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "f3b2cc4c0a3a8ccf2218e526453bf2549e9fb0625089f77d7eee6cea9b0cbda3"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 14,
+      "name": "i_autannes:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.9999999999999999,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "8e95a67c1764502ac522eb80fb04ee2efd0f25624b3a7d7019b15021a3b68be5"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 15,
+      "name": "i_autannes:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.9999999999999999,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "18be63c235dabcf5a39ff3d82809cb921656629c4ff278c2e1f623fed34cfb72"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 16,
+      "name": "i_bologna:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "de44dca78bea2fe977877feb2199603cbcf32d1423574aaa7c745f9e362f5d9b"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 17,
+      "name": "i_bologna:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "628713eb3010b9596af7d9b8a58e804517f4dbb11f8f0f224ed8e0213f0a57aa"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 18,
+      "name": "i_books:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "8a730d6d6984f4a393ce0d6680559151f5d3f667374b96285d174eb369663b2d"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 19,
+      "name": "i_books:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "bd5c847607fc231307b419e5f6aabcf9ef0fc2836b9caccefca144e1d3bc96d9"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 20,
+      "name": "i_boutique:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "99cfbe785eb89f06bc3017f6628eeeff28cec736671c15717851de33a8f75bd9"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 21,
+      "name": "i_boutique:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "c92f16157eb26bffb9e7a9b94c34782d0fcb31f3bcd512e171cd8b26d041624c"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 22,
+      "name": "i_bridger:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "5bdea4f64eeb810339277d48dd4896681b4e99e64d510a3aba7da039a72653da"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 23,
+      "name": "i_bridger:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "986e4feec24eee285a6acb4cff62053d818c289fc3f0cc6340ea0bd61d1756ba"
+    }
+  ],
+  "xfeat_provenance": {
+    "hub_path": "/root/.cache/torch/hub/verlab_accelerated_features_main",
+    "git_revision": null,
+    "match_sha256": "e987220ff12fe3352c01ce2d411cdf70f2756f4039398eb2e98f62dfdcd0ad14",
+    "extract_sha256": "810bafd27792ba820c54ca66a11cd6eb243384641419436b39aeff5835ae9308",
+    "match_signature": "(feats1, feats2, min_cossim=0.82)",
+    "match_xfeat_signature": "(img1, img2, top_k=None, min_cossim=-1)"
+  },
+  "official_min_cossim": -1,
+  "calibration_files": [
+    "000000002261.jpg",
+    "000000029675.jpg",
+    "000000067534.jpg",
+    "000000162858.jpg",
+    "000000165713.jpg",
+    "000000173008.jpg",
+    "000000175364.jpg",
+    "000000194506.jpg",
+    "000000270402.jpg",
+    "000000289343.jpg",
+    "000000360097.jpg",
+    "000000460841.jpg",
+    "000000471869.jpg",
+    "000000479596.jpg",
+    "000000504711.jpg",
+    "000000517832.jpg",
+    "000000528524.jpg",
+    "000000547383.jpg"
+  ],
+  "validation_files": [
+    "000000077595.jpg",
+    "000000132544.jpg",
+    "000000334006.jpg",
+    "000000394559.jpg",
+    "000000449432.jpg",
+    "000000474039.jpg"
+  ],
+  "note": "Precision: pooled matches with forward homography error <3px in resized coordinates. Match total includes thermometer encoding/layout; extraction excluded. Full pipeline measured directly. Calibration and compilation excluded. Compare separate runs only after checking CPU, versions, fingerprints and timing spread."
+}

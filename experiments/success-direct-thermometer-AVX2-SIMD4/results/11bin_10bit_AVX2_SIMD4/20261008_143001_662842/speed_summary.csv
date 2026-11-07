@@ -1,0 +1,3 @@
+dataset,method,cached_ms,total_ms,p10_ms,p90_ms
+synthetic,11 bins / 10 bits: method 1+2+3 SIMD4,2.93016,3.3318285000000003,3.2806371000000003,3.5669779999999998
+HPatches,11 bins / 10 bits: method 1+2+3 SIMD4,2.9319115,3.467169,3.3407881,3.7583549

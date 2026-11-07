@@ -1,0 +1,42 @@
+{
+  "seed": 20261011,
+  "source": "COCO val2017",
+  "groups": {
+    "train": [
+      "000000400573.jpg",
+      "000000371552.jpg",
+      "000000011760.jpg",
+      "000000186929.jpg",
+      "000000465179.jpg",
+      "000000311002.jpg",
+      "000000222235.jpg",
+      "000000388846.jpg",
+      "000000374545.jpg",
+      "000000544811.jpg",
+      "000000254016.jpg",
+      "000000472030.jpg",
+      "000000073153.jpg",
+      "000000243199.jpg",
+      "000000394559.jpg",
+      "000000334483.jpg"
+    ],
+    "validation": [
+      "000000386912.jpg",
+      "000000183648.jpg",
+      "000000031050.jpg"
+    ],
+    "test": [
+      "000000283412.jpg",
+      "000000418959.jpg",
+      "000000267300.jpg",
+      "000000157847.jpg",
+      "000000259097.jpg"
+    ]
+  },
+  "xfeat_commit": "e92685f57f8318b18725c5c8c0bd28c7fe188d9a",
+  "top_k": 1000,
+  "max_side": 640,
+  "warps_per_image": 3,
+  "note": "image-disjoint synthetic homographies; COCO val2017 is our training source, not a COCO official benchmark",
+  "cache_fingerprint": "80eef05fa393f7ae6432a1d46fbccfd9d0bf8e095d4fd514cc3669b9a9e3a2d8"
+}

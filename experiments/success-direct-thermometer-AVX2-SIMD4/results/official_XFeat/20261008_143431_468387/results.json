@@ -1,0 +1,2314 @@
+{
+  "experiment": "official_XFeat",
+  "method": "official XFeat cosine MNN (-1)",
+  "run_id": "20261008_143431_468387",
+  "seed": 7,
+  "top_k": 800,
+  "bins": null,
+  "thermometer_bits": null,
+  "descriptor_bytes": 256,
+  "threads": 2,
+  "warmup": 3,
+  "repeats": 12,
+  "avx2_required": false,
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "cpu_info": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           46 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  2\nOn-line CPU(s) list:                     0,1\nVendor ID:                               GenuineIntel\nModel name:                              Intel(R) Xeon(R) CPU @ 2.20GHz\nCPU family:                              6\nModel:                                   79\nThread(s) per core:                      2\nCore(s) per socket:                      1\nSocket(s):                               1\nStepping:                                0\nBogoMIPS:                                4400.31\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat md_clear arch_capabilities\nHypervisor vendor:                       KVM\nVirtualization type:                     full\nL1d cache:                               32 KiB (1 instance)\nL1i cache:                               32 KiB (1 instance)\nL2 cache:                                256 KiB (1 instance)\nL3 cache:                                55 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0,1\nVulnerability Gather data sampling:      Not affected\nVulnerability Indirect target selection: Vulnerable\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Mitigation; PTE Inversion\nVulnerability Mds:                       Vulnerable; SMT Host state unknown\nVulnerability Meltdown:                  Vulnerable\nVulnerability Mmio stale data:           Vulnerable\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Vulnerable\nVulnerability Spec rstack overflow:      Not affected\nVulnerability Spec store bypass:         Vulnerable\nVulnerability Spectre v1:                Vulnerable: __user pointer sanitization and usercopy barriers only; no swapgs barriers\nVulnerability Spectre v2:                Vulnerable; IBPB: disabled; STIBP: disabled; PBRSB-eIBRS: Not affected; BHI: Vulnerable\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Vulnerable\nVulnerability Vmscape:                   Not affected\n",
+  "versions": {
+    "numpy": "2.1.3",
+    "torch": "2.11.0+cpu",
+    "opencv": "5.0.0"
+  },
+  "accuracy": [
+    {
+      "dataset": "synthetic",
+      "method": "official XFeat cosine MNN (-1)",
+      "pairs": 18,
+      "mutual": 8200,
+      "correct": 5611,
+      "precision_pct": 68.42682926829268,
+      "median_px": 1.3664095401763916,
+      "descriptor_bytes": 256,
+      "bins": null,
+      "thermometer_bits": null,
+      "exact_abs_verified": null
+    },
+    {
+      "dataset": "HPatches",
+      "method": "official XFeat cosine MNN (-1)",
+      "pairs": 24,
+      "mutual": 10607,
+      "correct": 7138,
+      "precision_pct": 67.29518242669936,
+      "median_px": 1.1764448881149292,
+      "descriptor_bytes": 256,
+      "bins": null,
+      "thermometer_bits": null,
+      "exact_abs_verified": null
+    }
+  ],
+  "pair_accuracy": [
+    {
+      "dataset": "synthetic",
+      "pair": 0,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 473,
+      "correct": 353,
+      "precision_pct": 74.63002114164905,
+      "median_px": 1.1290451288223267
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 1,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 438,
+      "correct": 292,
+      "precision_pct": 66.66666666666667,
+      "median_px": 1.5944796800613403
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 2,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 455,
+      "correct": 293,
+      "precision_pct": 64.3956043956044,
+      "median_px": 1.681074857711792
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 3,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 419,
+      "correct": 245,
+      "precision_pct": 58.472553699284006,
+      "median_px": 1.7046562433242798
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 4,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 424,
+      "correct": 245,
+      "precision_pct": 57.783018867924525,
+      "median_px": 1.9025830030441284
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 5,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 446,
+      "correct": 261,
+      "precision_pct": 58.52017937219731,
+      "median_px": 1.706615924835205
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 6,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 422,
+      "correct": 220,
+      "precision_pct": 52.132701421800945,
+      "median_px": 2.5983266830444336
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 7,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 446,
+      "correct": 287,
+      "precision_pct": 64.34977578475336,
+      "median_px": 1.2458693981170654
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 8,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 393,
+      "correct": 226,
+      "precision_pct": 57.50636132315522,
+      "median_px": 1.824790358543396
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 9,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 448,
+      "correct": 307,
+      "precision_pct": 68.52678571428571,
+      "median_px": 1.5393691062927246
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 10,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 433,
+      "correct": 311,
+      "precision_pct": 71.82448036951502,
+      "median_px": 1.4833042621612549
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 11,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 468,
+      "correct": 327,
+      "precision_pct": 69.87179487179488,
+      "median_px": 1.3312746286392212
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 12,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 484,
+      "correct": 369,
+      "precision_pct": 76.2396694214876,
+      "median_px": 1.1607645750045776
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 13,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 469,
+      "correct": 346,
+      "precision_pct": 73.77398720682302,
+      "median_px": 1.148130178451538
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 14,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 488,
+      "correct": 366,
+      "precision_pct": 75.0,
+      "median_px": 1.2025532722473145
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 15,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 502,
+      "correct": 377,
+      "precision_pct": 75.0996015936255,
+      "median_px": 1.2351734638214111
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 16,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 514,
+      "correct": 414,
+      "precision_pct": 80.54474708171206,
+      "median_px": 1.0308752059936523
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 17,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 478,
+      "correct": 372,
+      "precision_pct": 77.82426778242677,
+      "median_px": 1.252232551574707
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 0,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 412,
+      "correct": 235,
+      "precision_pct": 57.03883495145631,
+      "median_px": 1.6575202941894531
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 1,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 396,
+      "correct": 195,
+      "precision_pct": 49.24242424242424,
+      "median_px": 3.1278486251831055
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 2,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 409,
+      "correct": 241,
+      "precision_pct": 58.924205378973106,
+      "median_px": 1.9070115089416504
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 3,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 406,
+      "correct": 230,
+      "precision_pct": 56.65024630541872,
+      "median_px": 2.195483684539795
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 4,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 473,
+      "correct": 319,
+      "precision_pct": 67.44186046511628,
+      "median_px": 1.3237515687942505
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 5,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 458,
+      "correct": 292,
+      "precision_pct": 63.75545851528384,
+      "median_px": 1.6050174236297607
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 6,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 333,
+      "correct": 168,
+      "precision_pct": 50.450450450450454,
+      "median_px": 2.940514087677002
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 7,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 320,
+      "correct": 140,
+      "precision_pct": 43.75,
+      "median_px": 3.785257577896118
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 8,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 381,
+      "correct": 193,
+      "precision_pct": 50.656167979002625,
+      "median_px": 2.8774704933166504
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 9,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 309,
+      "correct": 137,
+      "precision_pct": 44.336569579288025,
+      "median_px": 3.588965654373169
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 10,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 371,
+      "correct": 190,
+      "precision_pct": 51.21293800539083,
+      "median_px": 2.8548784255981445
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 11,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 352,
+      "correct": 167,
+      "precision_pct": 47.44318181818182,
+      "median_px": 3.2548513412475586
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 12,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 463,
+      "correct": 306,
+      "precision_pct": 66.09071274298056,
+      "median_px": 1.4142135381698608
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 13,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 357,
+      "correct": 163,
+      "precision_pct": 45.65826330532213,
+      "median_px": 3.1622776985168457
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 14,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 542,
+      "correct": 472,
+      "precision_pct": 87.08487084870849,
+      "median_px": 0.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 15,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 502,
+      "correct": 381,
+      "precision_pct": 75.89641434262948,
+      "median_px": 1.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 16,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 540,
+      "correct": 479,
+      "precision_pct": 88.70370370370371,
+      "median_px": 1.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 17,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 527,
+      "correct": 418,
+      "precision_pct": 79.3168880455408,
+      "median_px": 1.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 18,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 524,
+      "correct": 444,
+      "precision_pct": 84.73282442748092,
+      "median_px": 0.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 19,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 534,
+      "correct": 454,
+      "precision_pct": 85.0187265917603,
+      "median_px": 0.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 20,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 535,
+      "correct": 464,
+      "precision_pct": 86.72897196261682,
+      "median_px": 0.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 21,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 494,
+      "correct": 378,
+      "precision_pct": 76.51821862348179,
+      "median_px": 1.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 22,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 501,
+      "correct": 355,
+      "precision_pct": 70.85828343313374,
+      "median_px": 1.0
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 23,
+      "method": "official XFeat cosine MNN (-1)",
+      "mutual": 468,
+      "correct": 317,
+      "precision_pct": 67.73504273504274,
+      "median_px": 1.0
+    }
+  ],
+  "timing": [
+    {
+      "dataset": "synthetic",
+      "pair": 0,
+      "method": "official XFeat cosine MNN (-1)",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 3.7780065,
+      "total_ms": 3.756641,
+      "p10_ms": 3.7296772000000002,
+      "p90_ms": 3.8412425,
+      "cached_samples_ms": [
+        3.769959,
+        3.782305,
+        3.72784,
+        3.732312,
+        3.753272,
+        3.835968,
+        3.847513,
+        3.763085,
+        3.967905,
+        3.773708,
+        3.814003,
+        3.833214
+      ],
+      "total_samples_ms": [
+        3.841452,
+        3.968204,
+        3.839357,
+        3.810334,
+        3.752958,
+        3.700181,
+        3.744772,
+        3.747646,
+        3.728,
+        3.830105,
+        3.745281,
+        3.760324
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 4,
+      "method": "official XFeat cosine MNN (-1)",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 3.6728959999999997,
+      "total_ms": 3.7306030000000003,
+      "p10_ms": 3.6845132,
+      "p90_ms": 3.8292848,
+      "cached_samples_ms": [
+        3.708986,
+        3.700263,
+        3.702283,
+        3.689677,
+        3.681832,
+        3.648794,
+        3.66396,
+        3.629484,
+        3.635511,
+        3.655741,
+        3.661655,
+        3.79311
+      ],
+      "total_samples_ms": [
+        3.731498,
+        3.690158,
+        3.825161,
+        3.906408,
+        3.755911,
+        3.709378,
+        3.683886,
+        3.660875,
+        3.705446,
+        3.729708,
+        3.781196,
+        3.829743
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 8,
+      "method": "official XFeat cosine MNN (-1)",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 13.391615999999999,
+      "total_ms": 3.776891,
+      "p10_ms": 3.7250658,
+      "p90_ms": 3.8701543999999997,
+      "cached_samples_ms": [
+        16.001161,
+        16.000977,
+        16.093671,
+        14.867762,
+        16.051752,
+        16.992794,
+        6.547142,
+        9.807581,
+        11.91547,
+        9.538211,
+        4.994369,
+        9.962381
+      ],
+      "total_samples_ms": [
+        3.725532,
+        3.750331,
+        3.725014,
+        3.849944,
+        3.830807,
+        3.838374,
+        3.798936,
+        6.870303,
+        3.8724,
+        3.754846,
+        3.710946,
+        3.727816
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 12,
+      "method": "official XFeat cosine MNN (-1)",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 3.860271,
+      "total_ms": 3.800402,
+      "p10_ms": 3.7474217,
+      "p90_ms": 3.9481306,
+      "cached_samples_ms": [
+        3.817374,
+        3.830358,
+        3.79705,
+        3.857827,
+        4.211015,
+        4.144172,
+        3.944442,
+        3.851784,
+        3.862715,
+        3.825091,
+        3.949988,
+        7.973158
+      ],
+      "total_samples_ms": [
+        3.947713,
+        3.747166,
+        4.067859,
+        3.82519,
+        3.839274,
+        3.791569,
+        3.948177,
+        3.791048,
+        3.71835,
+        3.749723,
+        3.771479,
+        3.809235
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 17,
+      "method": "official XFeat cosine MNN (-1)",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 3.8816675,
+      "total_ms": 3.77255,
+      "p10_ms": 3.7419781,
+      "p90_ms": 3.7903252000000003,
+      "cached_samples_ms": [
+        4.015519,
+        3.87218,
+        3.814055,
+        3.997485,
+        3.901398,
+        3.843762,
+        3.818067,
+        3.945334,
+        3.891155,
+        3.785048,
+        3.910363,
+        3.823231
+      ],
+      "total_samples_ms": [
+        3.876472,
+        3.772861,
+        3.749962,
+        3.780699,
+        3.772239,
+        3.741091,
+        3.79096,
+        3.751481,
+        3.751579,
+        3.779166,
+        3.784612,
+        3.730933
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 0,
+      "method": "official XFeat cosine MNN (-1)",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 3.8366730000000002,
+      "total_ms": 15.908791,
+      "p10_ms": 11.5480496,
+      "p90_ms": 17.2623684,
+      "cached_samples_ms": [
+        3.867435,
+        3.992792,
+        3.788229,
+        3.72174,
+        3.744119,
+        4.045137,
+        3.812945,
+        3.772862,
+        3.952699,
+        3.837085,
+        3.836261,
+        3.861024
+      ],
+      "total_samples_ms": [
+        16.75605,
+        16.023549,
+        12.77107,
+        4.198688,
+        11.516028,
+        11.836244,
+        15.600447,
+        16.158149,
+        15.845667,
+        15.971915,
+        17.318626,
+        18.257388
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 5,
+      "method": "official XFeat cosine MNN (-1)",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 10.478936000000001,
+      "total_ms": 3.7639535,
+      "p10_ms": 3.6854517,
+      "p90_ms": 3.8569205,
+      "cached_samples_ms": [
+        9.575619,
+        7.977134,
+        8.076686,
+        9.908095,
+        10.104811,
+        9.937063,
+        10.853061,
+        15.972445,
+        15.989981,
+        16.038695,
+        15.971273,
+        15.995063
+      ],
+      "total_samples_ms": [
+        3.712544,
+        3.790578,
+        3.749594,
+        3.683898,
+        3.704268,
+        3.664968,
+        3.699435,
+        3.86275,
+        3.968874,
+        3.804455,
+        3.778565,
+        3.778313
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 11,
+      "method": "official XFeat cosine MNN (-1)",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 15.9147555,
+      "total_ms": 3.8960204999999997,
+      "p10_ms": 3.7824042,
+      "p90_ms": 4.1446626,
+      "cached_samples_ms": [
+        11.925989,
+        11.972146,
+        12.041434,
+        17.017451,
+        20.025646,
+        15.963951,
+        14.180622,
+        17.833362,
+        16.391939,
+        17.573504,
+        15.121531,
+        15.86556
+      ],
+      "total_samples_ms": [
+        3.784863,
+        3.95172,
+        3.782131,
+        3.799768,
+        3.876879,
+        3.8985,
+        3.749377,
+        4.233684,
+        3.893541,
+        4.156684,
+        4.03647,
+        3.961401
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 17,
+      "method": "official XFeat cosine MNN (-1)",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 3.7703765000000002,
+      "total_ms": 8.382947,
+      "p10_ms": 5.519912700000001,
+      "p90_ms": 13.983541700000002,
+      "cached_samples_ms": [
+        3.768829,
+        3.737933,
+        3.852846,
+        3.771924,
+        3.719962,
+        3.76061,
+        3.763033,
+        3.729206,
+        3.772146,
+        3.878796,
+        3.893449,
+        3.812223
+      ],
+      "total_samples_ms": [
+        6.589002,
+        4.638781,
+        5.401125,
+        10.005719,
+        8.63083,
+        8.135064,
+        7.743556,
+        9.676853,
+        9.950248,
+        7.994595,
+        17.425175,
+        14.425522
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 23,
+      "method": "official XFeat cosine MNN (-1)",
+      "n": 800,
+      "m": 800,
+      "cached_ms": 3.787756,
+      "total_ms": 4.199529500000001,
+      "p10_ms": 3.8871254,
+      "p90_ms": 4.6540279,
+      "cached_samples_ms": [
+        3.783103,
+        3.75038,
+        3.825377,
+        3.808237,
+        3.792409,
+        4.373153,
+        3.774933,
+        3.737074,
+        3.747879,
+        3.765922,
+        3.813743,
+        4.057497
+      ],
+      "total_samples_ms": [
+        4.654305,
+        7.303944,
+        4.512758,
+        4.069585,
+        4.12037,
+        3.895508,
+        4.378763,
+        4.278689,
+        4.651534,
+        3.796189,
+        4.064596,
+        3.886194
+      ]
+    }
+  ],
+  "pipeline": [
+    {
+      "dataset": "synthetic",
+      "pair": 0,
+      "method": "official XFeat cosine MNN (-1)",
+      "extraction_only_ms": 411.43319699999995,
+      "pipeline_ms": 194.010941,
+      "p10_ms": 188.5321915,
+      "p90_ms": 218.97141480000002,
+      "mutual": 473,
+      "correct": 353,
+      "precision_pct": 74.63002114164905,
+      "samples_ms": [
+        199.664074,
+        199.1856,
+        194.37502,
+        220.989128,
+        187.974726,
+        190.443367,
+        201.930561,
+        193.646862,
+        188.418136,
+        220.864843,
+        189.558691,
+        192.52544
+      ],
+      "extraction_samples_ms": [
+        721.481184,
+        716.469677,
+        655.042169,
+        1040.920149,
+        481.528823,
+        381.020337,
+        441.846057,
+        192.997121,
+        202.738246,
+        188.146779,
+        189.301951,
+        191.638386
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 4,
+      "method": "official XFeat cosine MNN (-1)",
+      "extraction_only_ms": 196.15220549999998,
+      "pipeline_ms": 195.4236175,
+      "p10_ms": 191.2422311,
+      "p90_ms": 201.56406610000002,
+      "mutual": 424,
+      "correct": 245,
+      "precision_pct": 57.783018867924525,
+      "samples_ms": [
+        191.16172,
+        195.924732,
+        220.094592,
+        195.280923,
+        198.466782,
+        193.854752,
+        199.949575,
+        201.743454,
+        193.36591,
+        191.966831,
+        190.799683,
+        195.566312
+      ],
+      "extraction_samples_ms": [
+        186.250801,
+        192.870809,
+        197.54565,
+        208.933845,
+        194.758761,
+        188.899643,
+        193.20753,
+        187.72806,
+        201.284499,
+        380.324738,
+        637.886094,
+        643.937091
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 8,
+      "method": "official XFeat cosine MNN (-1)",
+      "extraction_only_ms": 193.1092055,
+      "pipeline_ms": 195.902568,
+      "p10_ms": 191.24826349999998,
+      "p90_ms": 222.21780090000001,
+      "mutual": 393,
+      "correct": 226,
+      "precision_pct": 57.50636132315522,
+      "samples_ms": [
+        191.92638,
+        222.390508,
+        196.448135,
+        224.029113,
+        188.828434,
+        206.577609,
+        196.521652,
+        195.357001,
+        220.663437,
+        191.225228,
+        193.464509,
+        191.455583
+      ],
+      "extraction_samples_ms": [
+        191.321648,
+        189.135186,
+        227.567635,
+        189.12677,
+        185.395116,
+        186.965809,
+        187.491727,
+        196.421513,
+        238.232298,
+        208.811346,
+        203.461384,
+        194.896763
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 12,
+      "method": "official XFeat cosine MNN (-1)",
+      "extraction_only_ms": 362.41481650000003,
+      "pipeline_ms": 191.31870400000003,
+      "p10_ms": 188.19855619999998,
+      "p90_ms": 205.6532829,
+      "mutual": 484,
+      "correct": 369,
+      "precision_pct": 76.2396694214876,
+      "samples_ms": [
+        189.207165,
+        206.357116,
+        190.038057,
+        188.102074,
+        192.874766,
+        192.599351,
+        189.066896,
+        208.512401,
+        185.835075,
+        198.26245,
+        199.318785,
+        189.753654
+      ],
+      "extraction_samples_ms": [
+        307.533363,
+        770.472065,
+        833.490973,
+        778.500162,
+        802.567032,
+        538.716798,
+        417.29627,
+        235.234085,
+        215.885648,
+        185.100902,
+        184.236877,
+        187.1924
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 17,
+      "method": "official XFeat cosine MNN (-1)",
+      "extraction_only_ms": 176.438739,
+      "pipeline_ms": 180.9850465,
+      "p10_ms": 177.6042386,
+      "p90_ms": 203.86692630000002,
+      "mutual": 478,
+      "correct": 372,
+      "precision_pct": 77.82426778242677,
+      "samples_ms": [
+        182.415632,
+        180.72762,
+        179.318501,
+        186.57126,
+        213.594692,
+        180.49567,
+        181.242473,
+        177.413765,
+        177.390357,
+        205.788667,
+        180.373051,
+        186.05169
+      ],
+      "extraction_samples_ms": [
+        171.547588,
+        172.596726,
+        209.161507,
+        177.064457,
+        175.813021,
+        172.486729,
+        173.717396,
+        170.777452,
+        206.291916,
+        177.175456,
+        177.252007,
+        179.91295
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 0,
+      "method": "official XFeat cosine MNN (-1)",
+      "extraction_only_ms": 249.6114595,
+      "pipeline_ms": 225.581118,
+      "p10_ms": 220.5376025,
+      "p90_ms": 251.3044429,
+      "mutual": 412,
+      "correct": 235,
+      "precision_pct": 57.03883495145631,
+      "samples_ms": [
+        221.297909,
+        255.496586,
+        223.487548,
+        222.010977,
+        228.8899,
+        226.355944,
+        253.376576,
+        225.166846,
+        220.453124,
+        217.423171,
+        232.655245,
+        225.99539
+      ],
+      "extraction_samples_ms": [
+        219.178133,
+        247.269277,
+        215.460741,
+        215.377076,
+        215.185122,
+        222.377816,
+        251.953642,
+        258.29029,
+        793.489295,
+        723.292601,
+        875.768707,
+        911.240586
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 5,
+      "method": "official XFeat cosine MNN (-1)",
+      "extraction_only_ms": 206.975506,
+      "pipeline_ms": 210.260077,
+      "p10_ms": 206.1352434,
+      "p90_ms": 234.5533685,
+      "mutual": 458,
+      "correct": 292,
+      "precision_pct": 63.75545851528384,
+      "samples_ms": [
+        213.809551,
+        209.221363,
+        232.637723,
+        205.605613,
+        212.460367,
+        210.306087,
+        205.917214,
+        234.766218,
+        209.723357,
+        210.214067,
+        208.097508,
+        470.320139
+      ],
+      "extraction_samples_ms": [
+        204.383692,
+        201.911331,
+        202.775355,
+        219.128098,
+        241.173633,
+        212.303498,
+        208.06254,
+        205.888472,
+        239.251405,
+        211.779521,
+        205.873521,
+        202.839456
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 11,
+      "method": "official XFeat cosine MNN (-1)",
+      "extraction_only_ms": 226.1929525,
+      "pipeline_ms": 227.03578149999998,
+      "p10_ms": 224.1004421,
+      "p90_ms": 243.403583,
+      "mutual": 352,
+      "correct": 167,
+      "precision_pct": 47.44318181818182,
+      "samples_ms": [
+        226.83662,
+        225.067778,
+        234.114926,
+        263.165275,
+        222.205467,
+        224.096015,
+        227.035762,
+        227.035801,
+        244.435656,
+        229.767472,
+        224.140286,
+        231.34173
+      ],
+      "extraction_samples_ms": [
+        257.652857,
+        218.043475,
+        226.207709,
+        217.598645,
+        224.801583,
+        242.322643,
+        226.178196,
+        220.532467,
+        218.032383,
+        230.427493,
+        240.475307,
+        228.498897
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 17,
+      "method": "official XFeat cosine MNN (-1)",
+      "extraction_only_ms": 184.694892,
+      "pipeline_ms": 182.394292,
+      "p10_ms": 177.6862328,
+      "p90_ms": 402.6005625,
+      "mutual": 527,
+      "correct": 418,
+      "precision_pct": 79.3168880455408,
+      "samples_ms": [
+        625.004599,
+        422.911279,
+        178.948152,
+        176.614737,
+        182.72124,
+        182.067344,
+        219.804114,
+        181.547221,
+        178.906388,
+        185.661631,
+        177.55066,
+        200.843884
+      ],
+      "extraction_samples_ms": [
+        181.397592,
+        184.856062,
+        175.477495,
+        193.129934,
+        185.255755,
+        176.455865,
+        184.533722,
+        178.626944,
+        176.829519,
+        214.664352,
+        195.102974,
+        387.787784
+      ]
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 23,
+      "method": "official XFeat cosine MNN (-1)",
+      "extraction_only_ms": 154.969325,
+      "pipeline_ms": 156.16074350000002,
+      "p10_ms": 151.3895241,
+      "p90_ms": 164.84644500000002,
+      "mutual": 468,
+      "correct": 317,
+      "precision_pct": 67.73504273504274,
+      "samples_ms": [
+        154.974111,
+        152.623425,
+        165.416053,
+        155.965233,
+        156.356254,
+        185.563179,
+        150.094826,
+        151.252424,
+        158.867161,
+        156.544935,
+        159.719973,
+        154.546628
+      ],
+      "extraction_samples_ms": [
+        148.485667,
+        149.775196,
+        154.188998,
+        157.64747,
+        185.327602,
+        160.781802,
+        155.749652,
+        149.99566,
+        149.023487,
+        157.820777,
+        184.719218,
+        149.122
+      ]
+    }
+  ],
+  "encoding_stages": [],
+  "pair_manifest": [
+    {
+      "dataset": "synthetic",
+      "pair": 0,
+      "name": "synthetic_0",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.8745071887969971,
+          -0.10557389259338379,
+          26.423240661621094
+        ],
+        [
+          0.10557389259338379,
+          0.8745071887969971,
+          -5.182291030883789
+        ],
+        [
+          -5.9375804994488135e-05,
+          -4.165263089817017e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "df4012e3359c8b39986d43ffcfc875e3175e62740d37b0e411b47c1d7471a4ba"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 1,
+      "name": "synthetic_1",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0087510347366333,
+          -0.3427312672138214,
+          63.51181411743164
+        ],
+        [
+          0.3427312672138214,
+          1.0087510347366333,
+          -126.22637939453125
+        ],
+        [
+          2.9183252991060726e-05,
+          -6.867765478091314e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "0de2fd5fd064dd0201e6b0e4b97bb4e29df3b3545b051b643d15fc24a8823bce"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 2,
+      "name": "synthetic_2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.9686148166656494,
+          0.2760562300682068,
+          -78.61846923828125
+        ],
+        [
+          -0.2760562300682068,
+          0.9686148166656494,
+          85.78321075439453
+        ],
+        [
+          -6.60894438624382e-05,
+          -3.9313257730100304e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "2c307b2eb97f12476c519aaef7e6eb28ee25aa7e0301e52ac442025e500e2212"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 3,
+      "name": "synthetic_3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.8961988091468811,
+          0.08358878642320633,
+          -10.607488632202148
+        ],
+        [
+          -0.08358878642320633,
+          0.8961988091468811,
+          68.44722747802734
+        ],
+        [
+          -2.3036660422803834e-05,
+          -2.3380431230179965e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "e6c18e851991b8f04a7f9c9067b4f206f3c8d6e4aee26fe29654e5386a1232ca"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 4,
+      "name": "synthetic_4",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.9819351434707642,
+          0.12152494490146637,
+          -10.440725326538086
+        ],
+        [
+          -0.12152494490146637,
+          0.9819351434707642,
+          22.69647979736328
+        ],
+        [
+          -3.3557149436092004e-05,
+          1.1709812497429084e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "b6707e465722c6c5f2339bf9f66070043b280c228eab553c8af004f682948782"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 5,
+      "name": "synthetic_5",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.979019820690155,
+          0.09649498015642166,
+          -50.59514236450195
+        ],
+        [
+          -0.09649498015642166,
+          0.979019820690155,
+          54.74683380126953
+        ],
+        [
+          -6.0640428273472935e-05,
+          -5.192865137360059e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "0e86c5b9ed124664504eacc4ef7116d21d14166ccc036158409e8f321c71ae01"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 6,
+      "name": "synthetic_6",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.9511261582374573,
+          0.1928524225950241,
+          -49.27579116821289
+        ],
+        [
+          -0.1928524225950241,
+          0.9511261582374573,
+          48.680824279785156
+        ],
+        [
+          4.9193145969184116e-05,
+          6.687764835078269e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "ebd7abe61c80d1a9bee25cc0be558813cacf9091bbd3106e21f3e1d6362dcdce"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 7,
+      "name": "synthetic_7",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.9400880932807922,
+          -0.06406839191913605,
+          32.89388656616211
+        ],
+        [
+          0.06406839191913605,
+          0.9400880932807922,
+          -32.59245681762695
+        ],
+        [
+          -8.019974302442279e-06,
+          -4.206230369163677e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "fbad7fb98c94e7477205e3bdcdd0ba24a223ec5a26c060f61537b08c67d63ed5"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 8,
+      "name": "synthetic_8",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.024401068687439,
+          0.2697807848453522,
+          -77.99566650390625
+        ],
+        [
+          -0.2697807848453522,
+          1.024401068687439,
+          70.29118347167969
+        ],
+        [
+          6.147825479274616e-05,
+          5.596583037004166e-07,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "2f5d429820b5d27f6d013d007191ace5650f3ee076cdbb8b6ce6e97ddf0ee307"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 9,
+      "name": "synthetic_9",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.9380323886871338,
+          0.33433231711387634,
+          -116.33678436279297
+        ],
+        [
+          -0.33433231711387634,
+          0.9380323886871338,
+          90.23518371582031
+        ],
+        [
+          5.746304054810025e-07,
+          -9.045702427101787e-06,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "4a795a63c907e59d330e18e60360c54fcb8b30d51f6e83cde268c6e4bb30da3d"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 10,
+      "name": "synthetic_10",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.8793196082115173,
+          -0.2356342375278473,
+          95.88631439208984
+        ],
+        [
+          0.2356342375278473,
+          0.8793196082115173,
+          15.259038925170898
+        ],
+        [
+          1.7325362932751887e-05,
+          3.2176216336665675e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "7508840a7004251736f84c6b0bb5b7f404533d06449bc67178d28e683a4aff1b"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 11,
+      "name": "synthetic_11",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.8611699938774109,
+          0.1942407339811325,
+          -23.37206268310547
+        ],
+        [
+          -0.1942407339811325,
+          0.8611699938774109,
+          61.35295104980469
+        ],
+        [
+          -4.047192760481266e-06,
+          6.651864532614127e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "92c06d4810e87f4012c83468cb523abdb82ab8b8f010e04a716e86c870cd6bbf"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 12,
+      "name": "synthetic_12",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0108027458190918,
+          -0.05029963701963425,
+          -27.039461135864258
+        ],
+        [
+          0.05029963701963425,
+          1.0108027458190918,
+          -30.69036865234375
+        ],
+        [
+          -6.743294215993956e-05,
+          5.609555046248715e-06,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "6977307fbb336fec4fff21026448ecd1ec02c95001880fda3c3c9448ffdd68c9"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 13,
+      "name": "synthetic_13",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.001105546951294,
+          -0.14366456866264343,
+          4.421462059020996
+        ],
+        [
+          0.14366456866264343,
+          1.001105546951294,
+          -25.90255355834961
+        ],
+        [
+          6.44114043097943e-05,
+          -9.808879894990241e-07,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "f3d1c3485ec6cc1bff2a5e58d01337eb2c8d0e44f5173d6d836c543ff802bed1"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 14,
+      "name": "synthetic_14",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0294405221939087,
+          -0.15213365852832794,
+          5.888072967529297
+        ],
+        [
+          0.15213365852832794,
+          1.0294405221939087,
+          -43.825748443603516
+        ],
+        [
+          -2.323841181350872e-05,
+          1.4364233720698394e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "d5b6f19656b6eb3d5339c3bb61a4b9b5789949c1d54256ceec7d892258f26f05"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 15,
+      "name": "synthetic_15",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.9657177329063416,
+          0.2103872299194336,
+          -38.71162414550781
+        ],
+        [
+          -0.2103872299194336,
+          0.9657177329063416,
+          67.00680541992188
+        ],
+        [
+          -6.028231655363925e-05,
+          -3.3826981962192804e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "bd11ead4f7cef8441f629f69aad1960775c222c83e97e1296d1da36b0ac895db"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 16,
+      "name": "synthetic_16",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.064958930015564,
+          0.12654179334640503,
+          -8.159290313720703
+        ],
+        [
+          -0.12654179334640503,
+          1.064958930015564,
+          45.95748519897461
+        ],
+        [
+          4.2925519665004686e-05,
+          -4.5086537284078076e-05,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "b5ebcea44d00616d75a6056541dd6876bf637beba1aca36b9cde1b07687a7169"
+    },
+    {
+      "dataset": "synthetic",
+      "pair": 17,
+      "name": "synthetic_17",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0207329988479614,
+          0.2689650058746338,
+          -48.91328048706055
+        ],
+        [
+          -0.2689650058746338,
+          1.0207329988479614,
+          83.06987762451172
+        ],
+        [
+          -4.1940475057344884e-05,
+          2.725571903283708e-06,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "7452f1bd1a46c1bb0daa35f6e4920fcdbb33254ac8338314e29d4f4978f0a863"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 0,
+      "name": "v_abstract:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.7088,
+          -0.010967973962571199,
+          -13.575915378356388
+        ],
+        [
+          -0.13598311822125814,
+          0.8348899999999999,
+          53.72147505422993
+        ],
+        [
+          -0.00044843137499999997,
+          -2.9993812499999998e-05,
+          1.0004
+        ]
+      ],
+      "descriptor_sha256": "f9977714f1acb1a72af608fabf8717a4f4fe245b551474cc814ad30b2218e31d"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 1,
+      "name": "v_abstract:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.5134,
+          -0.002958902305397342,
+          10.901350691619204
+        ],
+        [
+          0.2677273861171366,
+          1.4061999999999997,
+          -121.1349240780911
+        ],
+        [
+          0.0009329454218749999,
+          -7.74307125e-06,
+          1.0006
+        ]
+      ],
+      "descriptor_sha256": "9792fa895e10f604cce2d3d998c21a3cd1302a96907199147cc71b9696e6f51c"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 2,
+      "name": "v_adam:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.1202000000000003,
+          -0.005386692857142858,
+          41.3184
+        ],
+        [
+          0.18216592592592595,
+          1.0194,
+          -5.653361777777778
+        ],
+        [
+          0.0008934062500000001,
+          -4.482421875e-05,
+          0.99922
+        ]
+      ],
+      "descriptor_sha256": "467d5bc356de69807ed35c86333665120cd0fca4b9db455670357616030fcc98"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 3,
+      "name": "v_adam:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.37083000000000005,
+          -0.023624035714285715,
+          133.59359999999998
+        ],
+        [
+          -0.0980757037037037,
+          0.62749,
+          65.06254222222222
+        ],
+        [
+          -0.00056046875,
+          -2.2324218750000005e-05,
+          0.99885
+        ]
+      ],
+      "descriptor_sha256": "beb3e0acfb263b94a975f659098708a1fbd093c45e0972c14d258d8daa3b77db"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 4,
+      "name": "v_apprentices:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0246,
+          0.015343175851703408,
+          0.3187892585170341
+        ],
+        [
+          0.04616593538692713,
+          1.0208,
+          -25.198978211870774
+        ],
+        [
+          0.0001486774955357143,
+          0.0001020731421875,
+          1.0002
+        ]
+      ],
+      "descriptor_sha256": "f3f7cbca3cc45a855db0ef563b7a7131cee94fbbdeb9d86e2e2a76b1b83f5583"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 5,
+      "name": "v_apprentices:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.60367,
+          0.06661188216432866,
+          -16.39733867735471
+        ],
+        [
+          -0.2274287431576688,
+          0.96671,
+          -21.781637866265964
+        ],
+        [
+          -0.0008205654017857143,
+          0.00014028739999999998,
+          0.99996
+        ]
+      ],
+      "descriptor_sha256": "41f557dd5a428a00e79879f506a394f3aea3a933ab13a923832e2c6db30dc5d0"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 6,
+      "name": "v_artisans:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.6190674442190667,
+          0.045459173427991884,
+          66.04462474645031
+        ],
+        [
+          0.23647915773353748,
+          1.4368913189127104,
+          37.877022970903525
+        ],
+        [
+          0.0015780890625000002,
+          0.00026954876953125,
+          1.0016
+        ]
+      ],
+      "descriptor_sha256": "af7cda07f13ddf2bf05a87de73a928972759877cae1fbccc42172655a357b394"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 7,
+      "name": "v_artisans:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          2.2056511156186613,
+          0.02939393002028397,
+          62.16697768762677
+        ],
+        [
+          0.4241032006125574,
+          2.0174086332312404,
+          -13.092214395099539
+        ],
+        [
+          0.00279140765625,
+          0.0004714991015625,
+          1.0014
+        ]
+      ],
+      "descriptor_sha256": "ca83e5030f531317089aac11a195bef619ea4231138d2153d413078e094c6697"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 8,
+      "name": "v_astronautis:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.7952376033057852,
+          0.039793085950413226,
+          47.22644628099174
+        ],
+        [
+          -0.26073589584624923,
+          1.344266088034718,
+          -87.56453812771234
+        ],
+        [
+          -0.0012072375,
+          0.00013519894375,
+          1.001
+        ]
+      ],
+      "descriptor_sha256": "0eec67c2c218ecfa9e6c400178204a1c9424ce8776a380e95270fc2a3cb880ad"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 9,
+      "name": "v_astronautis:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.5588632231404959,
+          0.09648719256198347,
+          43.104793388429755
+        ],
+        [
+          -0.3622496383550321,
+          1.4917745815251084,
+          -109.63719776813392
+        ],
+        [
+          -0.0017580281250000002,
+          0.000268246875,
+          0.98986
+        ]
+      ],
+      "descriptor_sha256": "34a270d04f10ddca2a6c8cdebaa000bae155793aa3a946b2d01e476089a5ef19"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 10,
+      "name": "v_azzola:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.51123,
+          -0.01364707519242155,
+          33.877371225577264
+        ],
+        [
+          -0.16045500000000001,
+          0.85238,
+          58.64520710059171
+        ],
+        [
+          -0.0005865756250000001,
+          -7.112611458333332e-05,
+          1.0009
+        ]
+      ],
+      "descriptor_sha256": "99a61152fabfe3691aeac272668f496f1c9d5da19b4b426d4b81368e347856c2"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 11,
+      "name": "v_azzola:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          0.33492,
+          -0.005115626998223801,
+          35.8831971580817
+        ],
+        [
+          -0.19829259763313611,
+          0.81318,
+          55.942437869822484
+        ],
+        [
+          -0.0007265866875000001,
+          -4.950115625e-05,
+          0.99833
+        ]
+      ],
+      "descriptor_sha256": "6f278005156f78900bafa0e9a30615fae93fdf59011296efd400ecff46733c0d"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 12,
+      "name": "i_ajuntament:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "00664363d05e845118d6e731f6a99f425ad228896df077fe7202bcb0a3170eff"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 13,
+      "name": "i_ajuntament:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "f3b2cc4c0a3a8ccf2218e526453bf2549e9fb0625089f77d7eee6cea9b0cbda3"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 14,
+      "name": "i_autannes:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.9999999999999999,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "8e95a67c1764502ac522eb80fb04ee2efd0f25624b3a7d7019b15021a3b68be5"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 15,
+      "name": "i_autannes:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.9999999999999999,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "18be63c235dabcf5a39ff3d82809cb921656629c4ff278c2e1f623fed34cfb72"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 16,
+      "name": "i_bologna:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "de44dca78bea2fe977877feb2199603cbcf32d1423574aaa7c745f9e362f5d9b"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 17,
+      "name": "i_bologna:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "628713eb3010b9596af7d9b8a58e804517f4dbb11f8f0f224ed8e0213f0a57aa"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 18,
+      "name": "i_books:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "8a730d6d6984f4a393ce0d6680559151f5d3f667374b96285d174eb369663b2d"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 19,
+      "name": "i_books:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "bd5c847607fc231307b419e5f6aabcf9ef0fc2836b9caccefca144e1d3bc96d9"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 20,
+      "name": "i_boutique:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "99cfbe785eb89f06bc3017f6628eeeff28cec736671c15717851de33a8f75bd9"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 21,
+      "name": "i_boutique:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "c92f16157eb26bffb9e7a9b94c34782d0fcb31f3bcd512e171cd8b26d041624c"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 22,
+      "name": "i_bridger:1->2",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "5bdea4f64eeb810339277d48dd4896681b4e99e64d510a3aba7da039a72653da"
+    },
+    {
+      "dataset": "HPatches",
+      "pair": 23,
+      "name": "i_bridger:1->3",
+      "n": 800,
+      "m": 800,
+      "homography": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "descriptor_sha256": "986e4feec24eee285a6acb4cff62053d818c289fc3f0cc6340ea0bd61d1756ba"
+    }
+  ],
+  "xfeat_provenance": {
+    "hub_path": "/root/.cache/torch/hub/verlab_accelerated_features_main",
+    "git_revision": null,
+    "match_sha256": "e987220ff12fe3352c01ce2d411cdf70f2756f4039398eb2e98f62dfdcd0ad14",
+    "extract_sha256": "810bafd27792ba820c54ca66a11cd6eb243384641419436b39aeff5835ae9308",
+    "match_signature": "(feats1, feats2, min_cossim=0.82)",
+    "match_xfeat_signature": "(img1, img2, top_k=None, min_cossim=-1)"
+  },
+  "official_min_cossim": -1,
+  "calibration_files": [
+    "000000002261.jpg",
+    "000000029675.jpg",
+    "000000067534.jpg",
+    "000000162858.jpg",
+    "000000165713.jpg",
+    "000000173008.jpg",
+    "000000175364.jpg",
+    "000000194506.jpg",
+    "000000270402.jpg",
+    "000000289343.jpg",
+    "000000360097.jpg",
+    "000000460841.jpg",
+    "000000471869.jpg",
+    "000000479596.jpg",
+    "000000504711.jpg",
+    "000000517832.jpg",
+    "000000528524.jpg",
+    "000000547383.jpg"
+  ],
+  "validation_files": [
+    "000000077595.jpg",
+    "000000132544.jpg",
+    "000000334006.jpg",
+    "000000394559.jpg",
+    "000000449432.jpg",
+    "000000474039.jpg"
+  ],
+  "note": "Precision: pooled matches with forward homography error <3px in resized coordinates. Match total includes thermometer encoding/layout; extraction excluded. Full pipeline measured directly. Calibration and compilation excluded. Compare separate runs only after checking CPU, versions, fingerprints and timing spread."
+}
