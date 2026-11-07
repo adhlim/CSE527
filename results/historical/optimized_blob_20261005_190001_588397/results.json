@@ -1,0 +1,790 @@
+{
+  "experiment": "exact encoding and mean Blob acceleration plus experimental BIN mean",
+  "run_id_seoul": "20261005_190001_588397",
+  "seed": 7,
+  "top_k": 800,
+  "levels": 8,
+  "dimensions": 64,
+  "grid": 6,
+  "top_blobs": 4,
+  "expand": false,
+  "cpu_threads": 2,
+  "serial_blob_threads": 1,
+  "warmup": 3,
+  "repeats": 12,
+  "timing_pairs_per_dataset": 5,
+  "threshold_resized_px": 3.0,
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "versions": {
+    "numpy": "2.1.3",
+    "torch": "2.11.0+cpu",
+    "numba": "0.61.2"
+  },
+  "threadpools": [
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 2,
+      "prefix": "libgomp",
+      "filepath": "/usr/local/lib/python3.13/dist-packages/torch/lib/libgomp.so.1",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libopenblas",
+      "filepath": "/usr/local/lib/python3.13/dist-packages/opencv_contrib_python.libs/libopenblasp-r0-59ffcd50.3.15.so",
+      "version": "0.3.15",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "/usr/local/lib/python3.13/dist-packages/numpy.libs/libscipy_openblas64_-ff651d7f.so",
+      "version": "0.3.27",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "/usr/local/lib/python3.13/dist-packages/scipy.libs/libscipy_openblas-b75cc656.so",
+      "version": "0.3.29.dev",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ],
+  "extraction_device": "cpu",
+  "edges_sha256": "c2fbd70652f354e928469cc78b9bab411b008676071bac8ca0c2cd8b805db5a5",
+  "source_names": [
+    "000000002261.jpg",
+    "000000029675.jpg",
+    "000000067534.jpg",
+    "000000077595.jpg",
+    "000000132544.jpg",
+    "000000162858.jpg",
+    "000000165713.jpg",
+    "000000173008.jpg",
+    "000000175364.jpg",
+    "000000194506.jpg",
+    "000000270402.jpg",
+    "000000289343.jpg",
+    "000000334006.jpg",
+    "000000360097.jpg",
+    "000000394559.jpg",
+    "000000449432.jpg",
+    "000000460841.jpg",
+    "000000471869.jpg",
+    "000000474039.jpg",
+    "000000479596.jpg",
+    "000000504711.jpg",
+    "000000517832.jpg",
+    "000000528524.jpg",
+    "000000547383.jpg"
+  ],
+  "calibration_sources": [
+    "000000002261.jpg",
+    "000000029675.jpg",
+    "000000067534.jpg",
+    "000000162858.jpg",
+    "000000165713.jpg",
+    "000000173008.jpg",
+    "000000175364.jpg",
+    "000000194506.jpg",
+    "000000270402.jpg",
+    "000000289343.jpg",
+    "000000360097.jpg",
+    "000000460841.jpg",
+    "000000471869.jpg",
+    "000000479596.jpg",
+    "000000504711.jpg",
+    "000000517832.jpg",
+    "000000528524.jpg",
+    "000000547383.jpg"
+  ],
+  "validation_sources": [
+    "000000077595.jpg",
+    "000000132544.jpg",
+    "000000334006.jpg",
+    "000000394559.jpg",
+    "000000449432.jpg",
+    "000000474039.jpg"
+  ],
+  "summary": [
+    {
+      "dataset": "synthetic_validation",
+      "method": "float_cosine",
+      "mutual": 8178,
+      "correct": 5598,
+      "precision_pct": 68.4519442406,
+      "median_px": 1.365621882,
+      "candidate_pct": 100.0,
+      "reference_keep_pct": 100.0,
+      "cached_match_ms": 3.3365085,
+      "prepare_ms": 0.0,
+      "total_ms": 3.466896,
+      "total_speedup_vs_float": 1.0,
+      "total_speedup_vs_thermo_direct": 2.4329488107,
+      "cached_speedup_vs_thermo_direct": 1.8954159715
+    },
+    {
+      "dataset": "synthetic_validation",
+      "method": "thermo_split",
+      "mutual": 8069,
+      "correct": 5404,
+      "precision_pct": 66.972363366,
+      "median_px": 1.4108929342,
+      "candidate_pct": 100.0,
+      "reference_keep_pct": 100.0,
+      "cached_match_ms": 6.527128,
+      "prepare_ms": 8.4048655,
+      "total_ms": 14.6197375,
+      "total_speedup_vs_float": 0.2371380471,
+      "total_speedup_vs_thermo_direct": 0.5769447297,
+      "cached_speedup_vs_thermo_direct": 0.9688903757
+    },
+    {
+      "dataset": "synthetic_validation",
+      "method": "thermo_direct",
+      "mutual": 8069,
+      "correct": 5404,
+      "precision_pct": 66.972363366,
+      "median_px": 1.4108929342,
+      "candidate_pct": 100.0,
+      "reference_keep_pct": 100.0,
+      "cached_match_ms": 6.3240715,
+      "prepare_ms": 2.05791,
+      "total_ms": 8.4347805,
+      "total_speedup_vs_float": 0.4110238553,
+      "total_speedup_vs_thermo_direct": 1.0,
+      "cached_speedup_vs_thermo_direct": 1.0
+    },
+    {
+      "dataset": "synthetic_validation",
+      "method": "blob_mean_split_serial",
+      "mutual": 7791,
+      "correct": 5162,
+      "precision_pct": 66.2559363368,
+      "median_px": 1.4296874023,
+      "candidate_pct": 21.9865972222,
+      "reference_keep_pct": 95.3367875648,
+      "cached_match_ms": 2.2321095,
+      "prepare_ms": 11.6866275,
+      "total_ms": 14.3568525,
+      "total_speedup_vs_float": 0.241480227,
+      "total_speedup_vs_thermo_direct": 0.587509031,
+      "cached_speedup_vs_thermo_direct": 2.8332263717
+    },
+    {
+      "dataset": "synthetic_validation",
+      "method": "blob_mean_direct_serial",
+      "mutual": 7791,
+      "correct": 5162,
+      "precision_pct": 66.2559363368,
+      "median_px": 1.4296874023,
+      "candidate_pct": 21.9865972222,
+      "reference_keep_pct": 95.3367875648,
+      "cached_match_ms": 2.229914,
+      "prepare_ms": 5.462274,
+      "total_ms": 7.9659505,
+      "total_speedup_vs_float": 0.4352143539,
+      "total_speedup_vs_thermo_direct": 1.0588542447,
+      "cached_speedup_vs_thermo_direct": 2.8360158733
+    },
+    {
+      "dataset": "synthetic_validation",
+      "method": "blob_mean_direct_parallel",
+      "mutual": 7791,
+      "correct": 5162,
+      "precision_pct": 66.2559363368,
+      "median_px": 1.4296874023,
+      "candidate_pct": 21.9865972222,
+      "reference_keep_pct": 95.3367875648,
+      "cached_match_ms": 2.6197775,
+      "prepare_ms": 5.45029,
+      "total_ms": 8.1186525,
+      "total_speedup_vs_float": 0.4270285001,
+      "total_speedup_vs_thermo_direct": 1.0389384815,
+      "cached_speedup_vs_thermo_direct": 2.4139727515
+    },
+    {
+      "dataset": "synthetic_validation",
+      "method": "blob_binmean_direct_parallel",
+      "mutual": 7825,
+      "correct": 5177,
+      "precision_pct": 66.1597444089,
+      "median_px": 1.4310595595,
+      "candidate_pct": 23.5930121528,
+      "reference_keep_pct": 95.6328645448,
+      "cached_match_ms": 2.806161,
+      "prepare_ms": 3.237449,
+      "total_ms": 6.1180015,
+      "total_speedup_vs_float": 0.5666713223,
+      "total_speedup_vs_thermo_direct": 1.3786823197,
+      "cached_speedup_vs_thermo_direct": 2.2536381555
+    },
+    {
+      "dataset": "HPatches_test",
+      "method": "float_cosine",
+      "mutual": 10607,
+      "correct": 7138,
+      "precision_pct": 67.2951824267,
+      "median_px": 1.1764363853,
+      "candidate_pct": 100.0,
+      "reference_keep_pct": 100.0,
+      "cached_match_ms": 3.453685,
+      "prepare_ms": 0.0,
+      "total_ms": 3.4660525,
+      "total_speedup_vs_float": 1.0,
+      "total_speedup_vs_thermo_direct": 2.4563877783,
+      "cached_speedup_vs_thermo_direct": 1.8720585404
+    },
+    {
+      "dataset": "HPatches_test",
+      "method": "thermo_split",
+      "mutual": 10510,
+      "correct": 6924,
+      "precision_pct": 65.880114177,
+      "median_px": 1.2508149834,
+      "candidate_pct": 100.0,
+      "reference_keep_pct": 100.0,
+      "cached_match_ms": 6.4494215,
+      "prepare_ms": 8.329826,
+      "total_ms": 14.881458,
+      "total_speedup_vs_float": 0.2329108142,
+      "total_speedup_vs_thermo_direct": 0.5721192776,
+      "cached_speedup_vs_thermo_direct": 1.0024930918
+    },
+    {
+      "dataset": "HPatches_test",
+      "method": "thermo_direct",
+      "mutual": 10510,
+      "correct": 6924,
+      "precision_pct": 65.880114177,
+      "median_px": 1.2508149834,
+      "candidate_pct": 100.0,
+      "reference_keep_pct": 100.0,
+      "cached_match_ms": 6.4655005,
+      "prepare_ms": 2.067337,
+      "total_ms": 8.513969,
+      "total_speedup_vs_float": 0.4071018464,
+      "total_speedup_vs_thermo_direct": 1.0,
+      "cached_speedup_vs_thermo_direct": 1.0
+    },
+    {
+      "dataset": "HPatches_test",
+      "method": "blob_mean_split_serial",
+      "mutual": 10286,
+      "correct": 6719,
+      "precision_pct": 65.3217966168,
+      "median_px": 1.2622881528,
+      "candidate_pct": 20.2000455729,
+      "reference_keep_pct": 96.8226458694,
+      "cached_match_ms": 2.217445,
+      "prepare_ms": 11.7944955,
+      "total_ms": 13.73038,
+      "total_speedup_vs_float": 0.2524367497,
+      "total_speedup_vs_thermo_direct": 0.6200825469,
+      "cached_speedup_vs_thermo_direct": 2.9157433443
+    },
+    {
+      "dataset": "HPatches_test",
+      "method": "blob_mean_direct_serial",
+      "mutual": 10286,
+      "correct": 6719,
+      "precision_pct": 65.3217966168,
+      "median_px": 1.2622881528,
+      "candidate_pct": 20.2000455729,
+      "reference_keep_pct": 96.8226458694,
+      "cached_match_ms": 2.1501065,
+      "prepare_ms": 5.4479095,
+      "total_ms": 7.7573745,
+      "total_speedup_vs_float": 0.4468074218,
+      "total_speedup_vs_thermo_direct": 1.0975322901,
+      "cached_speedup_vs_thermo_direct": 3.0070605805
+    },
+    {
+      "dataset": "HPatches_test",
+      "method": "blob_mean_direct_parallel",
+      "mutual": 10286,
+      "correct": 6719,
+      "precision_pct": 65.3217966168,
+      "median_px": 1.2622881528,
+      "candidate_pct": 20.2000455729,
+      "reference_keep_pct": 96.8226458694,
+      "cached_match_ms": 2.681882,
+      "prepare_ms": 5.4347025,
+      "total_ms": 7.6182385,
+      "total_speedup_vs_float": 0.4549677068,
+      "total_speedup_vs_thermo_direct": 1.1175771144,
+      "cached_speedup_vs_thermo_direct": 2.4108072242
+    },
+    {
+      "dataset": "HPatches_test",
+      "method": "blob_binmean_direct_parallel",
+      "mutual": 10313,
+      "correct": 6743,
+      "precision_pct": 65.3834965577,
+      "median_px": 1.262091099,
+      "candidate_pct": 21.4477213542,
+      "reference_keep_pct": 97.0392836511,
+      "cached_match_ms": 2.672392,
+      "prepare_ms": 3.2129965,
+      "total_ms": 5.816635,
+      "total_speedup_vs_float": 0.5958861954,
+      "total_speedup_vs_thermo_direct": 1.4637275676,
+      "cached_speedup_vs_thermo_direct": 2.4193683038
+    }
+  ],
+  "exact_checks": [
+    {
+      "dataset": "synthetic_validation",
+      "pair": 0,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 1,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 2,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 3,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 4,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 5,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 6,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 7,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 8,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 9,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 10,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 11,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 12,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 13,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 14,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 15,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 16,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 17,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 0,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 1,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 2,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 3,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 4,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 5,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 6,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 7,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 8,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 9,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 10,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 11,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 12,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 13,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 14,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 15,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 16,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 17,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 18,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 19,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 20,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 21,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 22,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 23,
+      "encoding_exact": true,
+      "mean_candidates_exact": true,
+      "both_nn_exact": true
+    }
+  ],
+  "stage_times": [
+    {
+      "dataset": "HPatches_test",
+      "stage": "bin_quantize_ms",
+      "ms": 7.9662035
+    },
+    {
+      "dataset": "HPatches_test",
+      "stage": "blob_binmean_direct_parallel_candidate_search_ms",
+      "ms": 0.4408765
+    },
+    {
+      "dataset": "HPatches_test",
+      "stage": "blob_binmean_direct_parallel_nn_kernel_ms",
+      "ms": 2.5867655
+    },
+    {
+      "dataset": "HPatches_test",
+      "stage": "blob_mean_direct_parallel_candidate_search_ms",
+      "ms": 0.194955
+    },
+    {
+      "dataset": "HPatches_test",
+      "stage": "blob_mean_direct_parallel_nn_kernel_ms",
+      "ms": 2.26938
+    },
+    {
+      "dataset": "HPatches_test",
+      "stage": "blob_mean_direct_serial_candidate_search_ms",
+      "ms": 0.1960435
+    },
+    {
+      "dataset": "HPatches_test",
+      "stage": "blob_mean_direct_serial_nn_kernel_ms",
+      "ms": 1.891227
+    },
+    {
+      "dataset": "HPatches_test",
+      "stage": "blob_mean_split_serial_candidate_search_ms",
+      "ms": 0.207567
+    },
+    {
+      "dataset": "HPatches_test",
+      "stage": "blob_mean_split_serial_nn_kernel_ms",
+      "ms": 1.9317185
+    },
+    {
+      "dataset": "HPatches_test",
+      "stage": "float_blob_mean_ms",
+      "ms": 2.752205
+    },
+    {
+      "dataset": "HPatches_test",
+      "stage": "fused_encode_pack_binmean_ms",
+      "ms": 2.516287
+    },
+    {
+      "dataset": "HPatches_test",
+      "stage": "fused_encode_pack_ms",
+      "ms": 2.061982
+    },
+    {
+      "dataset": "HPatches_test",
+      "stage": "grid_layout_ms",
+      "ms": 0.717172
+    },
+    {
+      "dataset": "HPatches_test",
+      "stage": "pack_existing_bins_ms",
+      "ms": 0.383776
+    },
+    {
+      "dataset": "synthetic_validation",
+      "stage": "bin_quantize_ms",
+      "ms": 7.9593355
+    },
+    {
+      "dataset": "synthetic_validation",
+      "stage": "blob_binmean_direct_parallel_candidate_search_ms",
+      "ms": 0.398788
+    },
+    {
+      "dataset": "synthetic_validation",
+      "stage": "blob_binmean_direct_parallel_nn_kernel_ms",
+      "ms": 2.6786155
+    },
+    {
+      "dataset": "synthetic_validation",
+      "stage": "blob_mean_direct_parallel_candidate_search_ms",
+      "ms": 0.1898615
+    },
+    {
+      "dataset": "synthetic_validation",
+      "stage": "blob_mean_direct_parallel_nn_kernel_ms",
+      "ms": 2.419437
+    },
+    {
+      "dataset": "synthetic_validation",
+      "stage": "blob_mean_direct_serial_candidate_search_ms",
+      "ms": 0.176659
+    },
+    {
+      "dataset": "synthetic_validation",
+      "stage": "blob_mean_direct_serial_nn_kernel_ms",
+      "ms": 1.9904365
+    },
+    {
+      "dataset": "synthetic_validation",
+      "stage": "blob_mean_split_serial_candidate_search_ms",
+      "ms": 0.2115775
+    },
+    {
+      "dataset": "synthetic_validation",
+      "stage": "blob_mean_split_serial_nn_kernel_ms",
+      "ms": 1.982348
+    },
+    {
+      "dataset": "synthetic_validation",
+      "stage": "float_blob_mean_ms",
+      "ms": 2.762253
+    },
+    {
+      "dataset": "synthetic_validation",
+      "stage": "fused_encode_pack_binmean_ms",
+      "ms": 2.6077625
+    },
+    {
+      "dataset": "synthetic_validation",
+      "stage": "fused_encode_pack_ms",
+      "ms": 2.0666695
+    },
+    {
+      "dataset": "synthetic_validation",
+      "stage": "grid_layout_ms",
+      "ms": 0.725183
+    },
+    {
+      "dataset": "synthetic_validation",
+      "stage": "pack_existing_bins_ms",
+      "ms": 0.3804075
+    }
+  ],
+  "notes": [
+    "All exact-change assertions passed on all evaluation pairs.",
+    "BIN mean can change candidate graph; it is not an exact optimization.",
+    "Same-run float and full Thermometer baselines; extraction/JIT excluded.",
+    "Grid 6/top4 fixed from prior synthetic validation; no new test-set tuning.",
+    "Descriptor payload: float256B; thermometer56B. Extra Blob means and indices are additional."
+  ]
+}

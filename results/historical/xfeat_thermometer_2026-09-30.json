@@ -1,0 +1,938 @@
+{
+  "experiment": "2026-09-30 packed 7-plane thermometer, exact 8-bin ABS",
+  "seed": 7,
+  "levels": 8,
+  "dimensions": 64,
+  "bytes_per_descriptor": {
+    "float32": 256,
+    "uint8_abs": 64,
+    "packed_thermometer": 56
+  },
+  "numba_threads": 2,
+  "warmup": 3,
+  "repeats": 12,
+  "timing_note": "First pair per case; median milliseconds; XFeat and projection excluded.",
+  "pruning": false,
+  "results": [
+    {
+      "method": "synthetic fixed thermometer",
+      "pairs_checked": 18,
+      "identical_distances_and_mnn": true,
+      "mutual": 8075,
+      "correct": 5405,
+      "precision": 66.93498452012383,
+      "median_px": 1.4113792181015015,
+      "per_pair": [
+        {
+          "name": "0",
+          "mutual": 471,
+          "correct": 346,
+          "identical_to_abs": true
+        },
+        {
+          "name": "1",
+          "mutual": 428,
+          "correct": 270,
+          "identical_to_abs": true
+        },
+        {
+          "name": "2",
+          "mutual": 437,
+          "correct": 279,
+          "identical_to_abs": true
+        },
+        {
+          "name": "3",
+          "mutual": 410,
+          "correct": 235,
+          "identical_to_abs": true
+        },
+        {
+          "name": "4",
+          "mutual": 425,
+          "correct": 245,
+          "identical_to_abs": true
+        },
+        {
+          "name": "5",
+          "mutual": 436,
+          "correct": 255,
+          "identical_to_abs": true
+        },
+        {
+          "name": "6",
+          "mutual": 405,
+          "correct": 213,
+          "identical_to_abs": true
+        },
+        {
+          "name": "7",
+          "mutual": 447,
+          "correct": 281,
+          "identical_to_abs": true
+        },
+        {
+          "name": "8",
+          "mutual": 394,
+          "correct": 217,
+          "identical_to_abs": true
+        },
+        {
+          "name": "9",
+          "mutual": 435,
+          "correct": 290,
+          "identical_to_abs": true
+        },
+        {
+          "name": "10",
+          "mutual": 433,
+          "correct": 296,
+          "identical_to_abs": true
+        },
+        {
+          "name": "11",
+          "mutual": 455,
+          "correct": 315,
+          "identical_to_abs": true
+        },
+        {
+          "name": "12",
+          "mutual": 472,
+          "correct": 353,
+          "identical_to_abs": true
+        },
+        {
+          "name": "13",
+          "mutual": 470,
+          "correct": 328,
+          "identical_to_abs": true
+        },
+        {
+          "name": "14",
+          "mutual": 493,
+          "correct": 360,
+          "identical_to_abs": true
+        },
+        {
+          "name": "15",
+          "mutual": 486,
+          "correct": 366,
+          "identical_to_abs": true
+        },
+        {
+          "name": "16",
+          "mutual": 502,
+          "correct": 398,
+          "identical_to_abs": true
+        },
+        {
+          "name": "17",
+          "mutual": 476,
+          "correct": 358,
+          "identical_to_abs": true
+        }
+      ]
+    },
+    {
+      "method": "synthetic learned thermometer",
+      "pairs_checked": 18,
+      "identical_distances_and_mnn": true,
+      "mutual": 7955,
+      "correct": 5322,
+      "precision": 66.90131992457574,
+      "median_px": 1.422013521194458,
+      "per_pair": [
+        {
+          "name": "0",
+          "mutual": 469,
+          "correct": 344,
+          "identical_to_abs": true
+        },
+        {
+          "name": "1",
+          "mutual": 425,
+          "correct": 255,
+          "identical_to_abs": true
+        },
+        {
+          "name": "2",
+          "mutual": 423,
+          "correct": 272,
+          "identical_to_abs": true
+        },
+        {
+          "name": "3",
+          "mutual": 397,
+          "correct": 235,
+          "identical_to_abs": true
+        },
+        {
+          "name": "4",
+          "mutual": 417,
+          "correct": 249,
+          "identical_to_abs": true
+        },
+        {
+          "name": "5",
+          "mutual": 429,
+          "correct": 251,
+          "identical_to_abs": true
+        },
+        {
+          "name": "6",
+          "mutual": 409,
+          "correct": 205,
+          "identical_to_abs": true
+        },
+        {
+          "name": "7",
+          "mutual": 444,
+          "correct": 275,
+          "identical_to_abs": true
+        },
+        {
+          "name": "8",
+          "mutual": 389,
+          "correct": 211,
+          "identical_to_abs": true
+        },
+        {
+          "name": "9",
+          "mutual": 428,
+          "correct": 286,
+          "identical_to_abs": true
+        },
+        {
+          "name": "10",
+          "mutual": 424,
+          "correct": 301,
+          "identical_to_abs": true
+        },
+        {
+          "name": "11",
+          "mutual": 445,
+          "correct": 298,
+          "identical_to_abs": true
+        },
+        {
+          "name": "12",
+          "mutual": 461,
+          "correct": 349,
+          "identical_to_abs": true
+        },
+        {
+          "name": "13",
+          "mutual": 460,
+          "correct": 324,
+          "identical_to_abs": true
+        },
+        {
+          "name": "14",
+          "mutual": 482,
+          "correct": 356,
+          "identical_to_abs": true
+        },
+        {
+          "name": "15",
+          "mutual": 494,
+          "correct": 367,
+          "identical_to_abs": true
+        },
+        {
+          "name": "16",
+          "mutual": 498,
+          "correct": 394,
+          "identical_to_abs": true
+        },
+        {
+          "name": "17",
+          "mutual": 461,
+          "correct": 350,
+          "identical_to_abs": true
+        }
+      ]
+    },
+    {
+      "method": "synthetic projected fixed thermometer",
+      "pairs_checked": 18,
+      "identical_distances_and_mnn": true,
+      "mutual": 8062,
+      "correct": 5472,
+      "precision": 67.87397668072438,
+      "median_px": 1.3808569312095642,
+      "per_pair": [
+        {
+          "name": "0",
+          "mutual": 466,
+          "correct": 343,
+          "identical_to_abs": true
+        },
+        {
+          "name": "1",
+          "mutual": 431,
+          "correct": 278,
+          "identical_to_abs": true
+        },
+        {
+          "name": "2",
+          "mutual": 436,
+          "correct": 283,
+          "identical_to_abs": true
+        },
+        {
+          "name": "3",
+          "mutual": 419,
+          "correct": 233,
+          "identical_to_abs": true
+        },
+        {
+          "name": "4",
+          "mutual": 425,
+          "correct": 249,
+          "identical_to_abs": true
+        },
+        {
+          "name": "5",
+          "mutual": 431,
+          "correct": 257,
+          "identical_to_abs": true
+        },
+        {
+          "name": "6",
+          "mutual": 403,
+          "correct": 213,
+          "identical_to_abs": true
+        },
+        {
+          "name": "7",
+          "mutual": 446,
+          "correct": 281,
+          "identical_to_abs": true
+        },
+        {
+          "name": "8",
+          "mutual": 396,
+          "correct": 221,
+          "identical_to_abs": true
+        },
+        {
+          "name": "9",
+          "mutual": 441,
+          "correct": 301,
+          "identical_to_abs": true
+        },
+        {
+          "name": "10",
+          "mutual": 425,
+          "correct": 299,
+          "identical_to_abs": true
+        },
+        {
+          "name": "11",
+          "mutual": 451,
+          "correct": 321,
+          "identical_to_abs": true
+        },
+        {
+          "name": "12",
+          "mutual": 471,
+          "correct": 358,
+          "identical_to_abs": true
+        },
+        {
+          "name": "13",
+          "mutual": 467,
+          "correct": 337,
+          "identical_to_abs": true
+        },
+        {
+          "name": "14",
+          "mutual": 484,
+          "correct": 365,
+          "identical_to_abs": true
+        },
+        {
+          "name": "15",
+          "mutual": 494,
+          "correct": 371,
+          "identical_to_abs": true
+        },
+        {
+          "name": "16",
+          "mutual": 508,
+          "correct": 404,
+          "identical_to_abs": true
+        },
+        {
+          "name": "17",
+          "mutual": 468,
+          "correct": 358,
+          "identical_to_abs": true
+        }
+      ]
+    },
+    {
+      "method": "HPatches fixed thermometer",
+      "pairs_checked": 24,
+      "identical_distances_and_mnn": true,
+      "mutual": 10503,
+      "correct": 6922,
+      "precision": 65.90497952965819,
+      "median_px": 1.247249960899353,
+      "per_pair": [
+        {
+          "name": "v_abstract:1->2",
+          "mutual": 399,
+          "correct": 224,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_abstract:1->3",
+          "mutual": 386,
+          "correct": 184,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_adam:1->2",
+          "mutual": 406,
+          "correct": 222,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_adam:1->3",
+          "mutual": 397,
+          "correct": 219,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_apprentices:1->2",
+          "mutual": 476,
+          "correct": 314,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_apprentices:1->3",
+          "mutual": 449,
+          "correct": 279,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_artisans:1->2",
+          "mutual": 334,
+          "correct": 162,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_artisans:1->3",
+          "mutual": 312,
+          "correct": 127,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_astronautis:1->2",
+          "mutual": 372,
+          "correct": 181,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_astronautis:1->3",
+          "mutual": 309,
+          "correct": 131,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_azzola:1->2",
+          "mutual": 386,
+          "correct": 189,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_azzola:1->3",
+          "mutual": 359,
+          "correct": 160,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_ajuntament:1->2",
+          "mutual": 470,
+          "correct": 306,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_ajuntament:1->3",
+          "mutual": 353,
+          "correct": 147,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_autannes:1->2",
+          "mutual": 539,
+          "correct": 468,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_autannes:1->3",
+          "mutual": 487,
+          "correct": 374,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_bologna:1->2",
+          "mutual": 542,
+          "correct": 470,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_bologna:1->3",
+          "mutual": 511,
+          "correct": 400,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_books:1->2",
+          "mutual": 519,
+          "correct": 429,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_books:1->3",
+          "mutual": 520,
+          "correct": 442,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_boutique:1->2",
+          "mutual": 537,
+          "correct": 461,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_boutique:1->3",
+          "mutual": 485,
+          "correct": 374,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_bridger:1->2",
+          "mutual": 489,
+          "correct": 349,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_bridger:1->3",
+          "mutual": 466,
+          "correct": 310,
+          "identical_to_abs": true
+        }
+      ]
+    },
+    {
+      "method": "HPatches learned thermometer",
+      "pairs_checked": 24,
+      "identical_distances_and_mnn": true,
+      "mutual": 10345,
+      "correct": 6804,
+      "precision": 65.7709038182697,
+      "median_px": 1.2559252977371216,
+      "per_pair": [
+        {
+          "name": "v_abstract:1->2",
+          "mutual": 400,
+          "correct": 224,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_abstract:1->3",
+          "mutual": 376,
+          "correct": 182,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_adam:1->2",
+          "mutual": 400,
+          "correct": 215,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_adam:1->3",
+          "mutual": 389,
+          "correct": 214,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_apprentices:1->2",
+          "mutual": 466,
+          "correct": 310,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_apprentices:1->3",
+          "mutual": 442,
+          "correct": 277,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_artisans:1->2",
+          "mutual": 323,
+          "correct": 149,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_artisans:1->3",
+          "mutual": 306,
+          "correct": 129,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_astronautis:1->2",
+          "mutual": 358,
+          "correct": 169,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_astronautis:1->3",
+          "mutual": 301,
+          "correct": 116,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_azzola:1->2",
+          "mutual": 378,
+          "correct": 185,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_azzola:1->3",
+          "mutual": 355,
+          "correct": 156,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_ajuntament:1->2",
+          "mutual": 462,
+          "correct": 305,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_ajuntament:1->3",
+          "mutual": 353,
+          "correct": 154,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_autannes:1->2",
+          "mutual": 535,
+          "correct": 460,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_autannes:1->3",
+          "mutual": 486,
+          "correct": 369,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_bologna:1->2",
+          "mutual": 525,
+          "correct": 453,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_bologna:1->3",
+          "mutual": 498,
+          "correct": 391,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_books:1->2",
+          "mutual": 512,
+          "correct": 427,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_books:1->3",
+          "mutual": 516,
+          "correct": 435,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_boutique:1->2",
+          "mutual": 534,
+          "correct": 463,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_boutique:1->3",
+          "mutual": 481,
+          "correct": 368,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_bridger:1->2",
+          "mutual": 492,
+          "correct": 349,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_bridger:1->3",
+          "mutual": 457,
+          "correct": 304,
+          "identical_to_abs": true
+        }
+      ]
+    },
+    {
+      "method": "HPatches projected fixed thermometer",
+      "pairs_checked": 24,
+      "identical_distances_and_mnn": true,
+      "mutual": 10500,
+      "correct": 6932,
+      "precision": 66.01904761904763,
+      "median_px": 1.241992473602295,
+      "per_pair": [
+        {
+          "name": "v_abstract:1->2",
+          "mutual": 404,
+          "correct": 226,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_abstract:1->3",
+          "mutual": 388,
+          "correct": 191,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_adam:1->2",
+          "mutual": 399,
+          "correct": 225,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_adam:1->3",
+          "mutual": 404,
+          "correct": 227,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_apprentices:1->2",
+          "mutual": 471,
+          "correct": 316,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_apprentices:1->3",
+          "mutual": 458,
+          "correct": 285,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_artisans:1->2",
+          "mutual": 341,
+          "correct": 161,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_artisans:1->3",
+          "mutual": 308,
+          "correct": 121,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_astronautis:1->2",
+          "mutual": 369,
+          "correct": 184,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_astronautis:1->3",
+          "mutual": 323,
+          "correct": 125,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_azzola:1->2",
+          "mutual": 384,
+          "correct": 186,
+          "identical_to_abs": true
+        },
+        {
+          "name": "v_azzola:1->3",
+          "mutual": 366,
+          "correct": 158,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_ajuntament:1->2",
+          "mutual": 458,
+          "correct": 308,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_ajuntament:1->3",
+          "mutual": 347,
+          "correct": 143,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_autannes:1->2",
+          "mutual": 540,
+          "correct": 471,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_autannes:1->3",
+          "mutual": 488,
+          "correct": 375,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_bologna:1->2",
+          "mutual": 533,
+          "correct": 468,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_bologna:1->3",
+          "mutual": 512,
+          "correct": 401,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_books:1->2",
+          "mutual": 524,
+          "correct": 429,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_books:1->3",
+          "mutual": 525,
+          "correct": 445,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_boutique:1->2",
+          "mutual": 533,
+          "correct": 458,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_boutique:1->3",
+          "mutual": 486,
+          "correct": 370,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_bridger:1->2",
+          "mutual": 488,
+          "correct": 349,
+          "identical_to_abs": true
+        },
+        {
+          "name": "i_bridger:1->3",
+          "mutual": 451,
+          "correct": 310,
+          "identical_to_abs": true
+        }
+      ]
+    }
+  ],
+  "timings": [
+    {
+      "case": "synthetic fixed",
+      "timing_pair": "first synthetic pair",
+      "n": 800,
+      "m": 800,
+      "abs_distance_only_ms": 4.4259105,
+      "thermometer_distance_only_ms": 1.29186,
+      "abs_preencoded_mnn_ms": 5.29213,
+      "thermometer_preencoded_mnn_ms": 2.09746,
+      "bin_encoding_both_sets_ms": 1.5849250000000001,
+      "thermometer_packing_both_sets_ms": 0.13585,
+      "abs_encode_and_mnn_ms": 7.0480515,
+      "thermometer_encode_pack_and_mnn_ms": 4.194561,
+      "float_cosine_mnn_ms": 1.6274350000000002,
+      "distance_speedup_abs_over_thermometer": 3.4259985602155028
+    },
+    {
+      "case": "synthetic learned",
+      "timing_pair": "first synthetic pair",
+      "n": 800,
+      "m": 800,
+      "abs_distance_only_ms": 4.4259655,
+      "thermometer_distance_only_ms": 1.2761105,
+      "abs_preencoded_mnn_ms": 5.2211915,
+      "thermometer_preencoded_mnn_ms": 2.1297449999999998,
+      "bin_encoding_both_sets_ms": 1.604061,
+      "thermometer_packing_both_sets_ms": 0.13681,
+      "abs_encode_and_mnn_ms": 7.3841105,
+      "thermometer_encode_pack_and_mnn_ms": 4.1242304999999995,
+      "float_cosine_mnn_ms": 1.62533,
+      "distance_speedup_abs_over_thermometer": 3.468324647434529
+    },
+    {
+      "case": "synthetic projected fixed",
+      "timing_pair": "first synthetic pair",
+      "n": 800,
+      "m": 800,
+      "abs_distance_only_ms": 4.433126,
+      "thermometer_distance_only_ms": 1.2791705,
+      "abs_preencoded_mnn_ms": 5.1547055,
+      "thermometer_preencoded_mnn_ms": 2.1034755,
+      "bin_encoding_both_sets_ms": 1.565865,
+      "thermometer_packing_both_sets_ms": 0.13538499999999998,
+      "abs_encode_and_mnn_ms": 7.1802410000000005,
+      "thermometer_encode_pack_and_mnn_ms": 4.1667055,
+      "float_cosine_mnn_ms": 1.620145,
+      "distance_speedup_abs_over_thermometer": 3.4656255753240086
+    },
+    {
+      "case": "HPatches fixed",
+      "timing_pair": "v_abstract:1->2",
+      "n": 800,
+      "m": 800,
+      "abs_distance_only_ms": 4.457261,
+      "thermometer_distance_only_ms": 1.2889005,
+      "abs_preencoded_mnn_ms": 5.153601,
+      "thermometer_preencoded_mnn_ms": 2.07695,
+      "bin_encoding_both_sets_ms": 1.590121,
+      "thermometer_packing_both_sets_ms": 0.13677,
+      "abs_encode_and_mnn_ms": 7.0261265,
+      "thermometer_encode_pack_and_mnn_ms": 4.1067805,
+      "float_cosine_mnn_ms": 1.6536455,
+      "distance_speedup_abs_over_thermometer": 3.458188587870049
+    },
+    {
+      "case": "HPatches learned",
+      "timing_pair": "v_abstract:1->2",
+      "n": 800,
+      "m": 800,
+      "abs_distance_only_ms": 4.409966000000001,
+      "thermometer_distance_only_ms": 1.2841200000000002,
+      "abs_preencoded_mnn_ms": 5.2422155,
+      "thermometer_preencoded_mnn_ms": 2.10492,
+      "bin_encoding_both_sets_ms": 2.853075,
+      "thermometer_packing_both_sets_ms": 0.13849899999999998,
+      "abs_encode_and_mnn_ms": 7.208466,
+      "thermometer_encode_pack_and_mnn_ms": 4.184965500000001,
+      "float_cosine_mnn_ms": 1.61192,
+      "distance_speedup_abs_over_thermometer": 3.434232003239573
+    },
+    {
+      "case": "HPatches projected fixed",
+      "timing_pair": "v_abstract:1->2",
+      "n": 800,
+      "m": 800,
+      "abs_distance_only_ms": 4.4208005,
+      "thermometer_distance_only_ms": 1.2728905,
+      "abs_preencoded_mnn_ms": 5.2214659999999995,
+      "thermometer_preencoded_mnn_ms": 2.0905255,
+      "bin_encoding_both_sets_ms": 1.9143504999999998,
+      "thermometer_packing_both_sets_ms": 0.139755,
+      "abs_encode_and_mnn_ms": 6.966640999999999,
+      "thermometer_encode_pack_and_mnn_ms": 4.084566000000001,
+      "float_cosine_mnn_ms": 1.6145100000000001,
+      "distance_speedup_abs_over_thermometer": 3.473040689674407
+    }
+  ]
+}

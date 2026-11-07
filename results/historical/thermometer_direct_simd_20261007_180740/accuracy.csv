@@ -1,0 +1,11 @@
+dataset,method,mutual,correct,precision_pct,median_px,exact_abs_verified
+synthetic,float cosine,8200,5611,68.42682926829268,1.3664095401763916,False
+synthetic,old C++ encode + fused,8098,5433,67.09063966411459,1.415396273136139,True
+synthetic,direct scalar encode + fused,8098,5433,67.09063966411459,1.415396273136139,True
+synthetic,method 1+2 AVX encode + fused,8098,5433,67.09063966411459,1.415396273136139,True
+synthetic,method 1+2+3 AVX encode + SIMD4 fused,8098,5433,67.09063966411459,1.415396273136139,True
+HPatches,float cosine,10607,7138,67.29518242669936,1.1764448881149292,False
+HPatches,old C++ encode + fused,10476,6919,66.04620084001527,1.247084140777588,True
+HPatches,direct scalar encode + fused,10476,6919,66.04620084001527,1.247084140777588,True
+HPatches,method 1+2 AVX encode + fused,10476,6919,66.04620084001527,1.247084140777588,True
+HPatches,method 1+2+3 AVX encode + SIMD4 fused,10476,6919,66.04620084001527,1.247084140777588,True

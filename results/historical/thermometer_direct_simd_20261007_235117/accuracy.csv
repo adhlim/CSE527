@@ -1,0 +1,15 @@
+dataset,method,mutual,correct,precision_pct,median_px,exact_abs_verified,bins,descriptor_bytes
+synthetic,old C++ encode + fused,8098,5433,67.09063966411459,1.415396273136139,True,8.0,56
+synthetic,direct scalar encode + fused,8098,5433,67.09063966411459,1.415396273136139,True,8.0,56
+synthetic,method 1+2 AVX encode + fused,8098,5433,67.09063966411459,1.415396273136139,True,8.0,56
+synthetic,method 1+2+3 AVX encode + SIMD4 fused,8098,5433,67.09063966411459,1.415396273136139,True,8.0,56
+synthetic,official XFeat match (-1),8200,5611,68.42682926829268,1.3664095401763916,False,,256
+synthetic,custom float cosine,8200,5611,68.42682926829268,1.3664095401763916,False,,256
+synthetic,9 bins / 8 bits: method 1+2+3 SIMD4,8098,5482,67.69572734008398,1.3951794505119324,True,9.0,64
+HPatches,old C++ encode + fused,10476,6919,66.04620084001527,1.247084140777588,True,8.0,56
+HPatches,direct scalar encode + fused,10476,6919,66.04620084001527,1.247084140777588,True,8.0,56
+HPatches,method 1+2 AVX encode + fused,10476,6919,66.04620084001527,1.247084140777588,True,8.0,56
+HPatches,method 1+2+3 AVX encode + SIMD4 fused,10476,6919,66.04620084001527,1.247084140777588,True,8.0,56
+HPatches,official XFeat match (-1),10607,7138,67.29518242669936,1.1764448881149292,False,,256
+HPatches,custom float cosine,10607,7138,67.29518242669936,1.1764448881149292,False,,256
+HPatches,9 bins / 8 bits: method 1+2+3 SIMD4,10471,6967,66.53614745487538,1.213319182395935,True,9.0,64

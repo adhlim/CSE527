@@ -1,0 +1,1988 @@
+{
+  "experiment": "XFeat exact paired-bin lookup and fused MNN",
+  "run_id_seoul": "20261001_133959_627536",
+  "seed": 7,
+  "top_k": 800,
+  "levels": 8,
+  "dimensions": 64,
+  "coco_source_count": 24,
+  "calibration_warps_per_image": 6,
+  "validation_warps_per_image": 3,
+  "source_names": [
+    "000000002261.jpg",
+    "000000029675.jpg",
+    "000000067534.jpg",
+    "000000077595.jpg",
+    "000000132544.jpg",
+    "000000162858.jpg",
+    "000000165713.jpg",
+    "000000173008.jpg",
+    "000000175364.jpg",
+    "000000194506.jpg",
+    "000000270402.jpg",
+    "000000289343.jpg",
+    "000000334006.jpg",
+    "000000360097.jpg",
+    "000000394559.jpg",
+    "000000449432.jpg",
+    "000000460841.jpg",
+    "000000471869.jpg",
+    "000000474039.jpg",
+    "000000479596.jpg",
+    "000000504711.jpg",
+    "000000517832.jpg",
+    "000000528524.jpg",
+    "000000547383.jpg"
+  ],
+  "calibration_source_names": [
+    "000000002261.jpg",
+    "000000029675.jpg",
+    "000000067534.jpg",
+    "000000162858.jpg",
+    "000000165713.jpg",
+    "000000173008.jpg",
+    "000000175364.jpg",
+    "000000194506.jpg",
+    "000000270402.jpg",
+    "000000289343.jpg",
+    "000000360097.jpg",
+    "000000460841.jpg",
+    "000000471869.jpg",
+    "000000479596.jpg",
+    "000000504711.jpg",
+    "000000517832.jpg",
+    "000000528524.jpg",
+    "000000547383.jpg"
+  ],
+  "validation_source_names": [
+    "000000077595.jpg",
+    "000000132544.jpg",
+    "000000334006.jpg",
+    "000000394559.jpg",
+    "000000449432.jpg",
+    "000000474039.jpg"
+  ],
+  "geometric_threshold_resized_px": 3.0,
+  "numba_threads": 2,
+  "torch_threads": 1,
+  "device_for_extraction_and_encoding": "cpu",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "versions": {
+    "numpy": "2.1.3",
+    "torch": "2.11.0+cpu"
+  },
+  "warmup": 3,
+  "repeats": 12,
+  "bytes_per_descriptor": {
+    "float32": 256,
+    "uint8_abs": 64,
+    "packed_thermometer": 56,
+    "paired_bin_lookup": 32
+  },
+  "storage_note": "Payload only. Notebook retains all representations for verification.",
+  "shared_lookup_bytes": 4096,
+  "block_rows": 16,
+  "fused_scratch_note": "uint16 distance and int64 index per block-column, plus nearest arrays",
+  "projection": false,
+  "threshold_learning": false,
+  "pruning": false,
+  "timing_note": "XFeat excluded; cached MNN and encoding-inclusive MNN measured separately.",
+  "accuracy_results": [
+    {
+      "mutual": 8178,
+      "correct": 5598,
+      "per_pair": [
+        {
+          "name": "0",
+          "group": "synthetic",
+          "mutual": 476,
+          "correct": 352
+        },
+        {
+          "name": "1",
+          "group": "synthetic",
+          "mutual": 432,
+          "correct": 290
+        },
+        {
+          "name": "2",
+          "group": "synthetic",
+          "mutual": 447,
+          "correct": 291
+        },
+        {
+          "name": "3",
+          "group": "synthetic",
+          "mutual": 416,
+          "correct": 239
+        },
+        {
+          "name": "4",
+          "group": "synthetic",
+          "mutual": 423,
+          "correct": 248
+        },
+        {
+          "name": "5",
+          "group": "synthetic",
+          "mutual": 441,
+          "correct": 258
+        },
+        {
+          "name": "6",
+          "group": "synthetic",
+          "mutual": 419,
+          "correct": 220
+        },
+        {
+          "name": "7",
+          "group": "synthetic",
+          "mutual": 448,
+          "correct": 289
+        },
+        {
+          "name": "8",
+          "group": "synthetic",
+          "mutual": 397,
+          "correct": 225
+        },
+        {
+          "name": "9",
+          "group": "synthetic",
+          "mutual": 446,
+          "correct": 310
+        },
+        {
+          "name": "10",
+          "group": "synthetic",
+          "mutual": 432,
+          "correct": 309
+        },
+        {
+          "name": "11",
+          "group": "synthetic",
+          "mutual": 467,
+          "correct": 328
+        },
+        {
+          "name": "12",
+          "group": "synthetic",
+          "mutual": 476,
+          "correct": 365
+        },
+        {
+          "name": "13",
+          "group": "synthetic",
+          "mutual": 471,
+          "correct": 346
+        },
+        {
+          "name": "14",
+          "group": "synthetic",
+          "mutual": 491,
+          "correct": 369
+        },
+        {
+          "name": "15",
+          "group": "synthetic",
+          "mutual": 500,
+          "correct": 377
+        },
+        {
+          "name": "16",
+          "group": "synthetic",
+          "mutual": 517,
+          "correct": 414
+        },
+        {
+          "name": "17",
+          "group": "synthetic",
+          "mutual": 479,
+          "correct": 368
+        }
+      ],
+      "dataset": "synthetic",
+      "method": "float cosine",
+      "precision": 68.45194424064563,
+      "median_px": 1.3656171560287476,
+      "exact_abs_mnn_verified": false
+    },
+    {
+      "mutual": 8070,
+      "correct": 5407,
+      "per_pair": [
+        {
+          "name": "0",
+          "group": "synthetic",
+          "mutual": 471,
+          "correct": 346
+        },
+        {
+          "name": "1",
+          "group": "synthetic",
+          "mutual": 428,
+          "correct": 270
+        },
+        {
+          "name": "2",
+          "group": "synthetic",
+          "mutual": 435,
+          "correct": 279
+        },
+        {
+          "name": "3",
+          "group": "synthetic",
+          "mutual": 410,
+          "correct": 235
+        },
+        {
+          "name": "4",
+          "group": "synthetic",
+          "mutual": 423,
+          "correct": 245
+        },
+        {
+          "name": "5",
+          "group": "synthetic",
+          "mutual": 436,
+          "correct": 255
+        },
+        {
+          "name": "6",
+          "group": "synthetic",
+          "mutual": 405,
+          "correct": 213
+        },
+        {
+          "name": "7",
+          "group": "synthetic",
+          "mutual": 446,
+          "correct": 281
+        },
+        {
+          "name": "8",
+          "group": "synthetic",
+          "mutual": 394,
+          "correct": 217
+        },
+        {
+          "name": "9",
+          "group": "synthetic",
+          "mutual": 434,
+          "correct": 290
+        },
+        {
+          "name": "10",
+          "group": "synthetic",
+          "mutual": 433,
+          "correct": 296
+        },
+        {
+          "name": "11",
+          "group": "synthetic",
+          "mutual": 455,
+          "correct": 315
+        },
+        {
+          "name": "12",
+          "group": "synthetic",
+          "mutual": 471,
+          "correct": 353
+        },
+        {
+          "name": "13",
+          "group": "synthetic",
+          "mutual": 470,
+          "correct": 328
+        },
+        {
+          "name": "14",
+          "group": "synthetic",
+          "mutual": 493,
+          "correct": 360
+        },
+        {
+          "name": "15",
+          "group": "synthetic",
+          "mutual": 487,
+          "correct": 367
+        },
+        {
+          "name": "16",
+          "group": "synthetic",
+          "mutual": 503,
+          "correct": 399
+        },
+        {
+          "name": "17",
+          "group": "synthetic",
+          "mutual": 476,
+          "correct": 358
+        }
+      ],
+      "dataset": "synthetic",
+      "method": "uint8 ABS",
+      "precision": 67.00123915737299,
+      "median_px": 1.4103453755378723,
+      "exact_abs_mnn_verified": true
+    },
+    {
+      "mutual": 8070,
+      "correct": 5407,
+      "per_pair": [
+        {
+          "name": "0",
+          "group": "synthetic",
+          "mutual": 471,
+          "correct": 346
+        },
+        {
+          "name": "1",
+          "group": "synthetic",
+          "mutual": 428,
+          "correct": 270
+        },
+        {
+          "name": "2",
+          "group": "synthetic",
+          "mutual": 435,
+          "correct": 279
+        },
+        {
+          "name": "3",
+          "group": "synthetic",
+          "mutual": 410,
+          "correct": 235
+        },
+        {
+          "name": "4",
+          "group": "synthetic",
+          "mutual": 423,
+          "correct": 245
+        },
+        {
+          "name": "5",
+          "group": "synthetic",
+          "mutual": 436,
+          "correct": 255
+        },
+        {
+          "name": "6",
+          "group": "synthetic",
+          "mutual": 405,
+          "correct": 213
+        },
+        {
+          "name": "7",
+          "group": "synthetic",
+          "mutual": 446,
+          "correct": 281
+        },
+        {
+          "name": "8",
+          "group": "synthetic",
+          "mutual": 394,
+          "correct": 217
+        },
+        {
+          "name": "9",
+          "group": "synthetic",
+          "mutual": 434,
+          "correct": 290
+        },
+        {
+          "name": "10",
+          "group": "synthetic",
+          "mutual": 433,
+          "correct": 296
+        },
+        {
+          "name": "11",
+          "group": "synthetic",
+          "mutual": 455,
+          "correct": 315
+        },
+        {
+          "name": "12",
+          "group": "synthetic",
+          "mutual": 471,
+          "correct": 353
+        },
+        {
+          "name": "13",
+          "group": "synthetic",
+          "mutual": 470,
+          "correct": 328
+        },
+        {
+          "name": "14",
+          "group": "synthetic",
+          "mutual": 493,
+          "correct": 360
+        },
+        {
+          "name": "15",
+          "group": "synthetic",
+          "mutual": 487,
+          "correct": 367
+        },
+        {
+          "name": "16",
+          "group": "synthetic",
+          "mutual": 503,
+          "correct": 399
+        },
+        {
+          "name": "17",
+          "group": "synthetic",
+          "mutual": 476,
+          "correct": 358
+        }
+      ],
+      "dataset": "synthetic",
+      "method": "packed thermometer",
+      "precision": 67.00123915737299,
+      "median_px": 1.4103453755378723,
+      "exact_abs_mnn_verified": true
+    },
+    {
+      "mutual": 8070,
+      "correct": 5407,
+      "per_pair": [
+        {
+          "name": "0",
+          "group": "synthetic",
+          "mutual": 471,
+          "correct": 346
+        },
+        {
+          "name": "1",
+          "group": "synthetic",
+          "mutual": 428,
+          "correct": 270
+        },
+        {
+          "name": "2",
+          "group": "synthetic",
+          "mutual": 435,
+          "correct": 279
+        },
+        {
+          "name": "3",
+          "group": "synthetic",
+          "mutual": 410,
+          "correct": 235
+        },
+        {
+          "name": "4",
+          "group": "synthetic",
+          "mutual": 423,
+          "correct": 245
+        },
+        {
+          "name": "5",
+          "group": "synthetic",
+          "mutual": 436,
+          "correct": 255
+        },
+        {
+          "name": "6",
+          "group": "synthetic",
+          "mutual": 405,
+          "correct": 213
+        },
+        {
+          "name": "7",
+          "group": "synthetic",
+          "mutual": 446,
+          "correct": 281
+        },
+        {
+          "name": "8",
+          "group": "synthetic",
+          "mutual": 394,
+          "correct": 217
+        },
+        {
+          "name": "9",
+          "group": "synthetic",
+          "mutual": 434,
+          "correct": 290
+        },
+        {
+          "name": "10",
+          "group": "synthetic",
+          "mutual": 433,
+          "correct": 296
+        },
+        {
+          "name": "11",
+          "group": "synthetic",
+          "mutual": 455,
+          "correct": 315
+        },
+        {
+          "name": "12",
+          "group": "synthetic",
+          "mutual": 471,
+          "correct": 353
+        },
+        {
+          "name": "13",
+          "group": "synthetic",
+          "mutual": 470,
+          "correct": 328
+        },
+        {
+          "name": "14",
+          "group": "synthetic",
+          "mutual": 493,
+          "correct": 360
+        },
+        {
+          "name": "15",
+          "group": "synthetic",
+          "mutual": 487,
+          "correct": 367
+        },
+        {
+          "name": "16",
+          "group": "synthetic",
+          "mutual": 503,
+          "correct": 399
+        },
+        {
+          "name": "17",
+          "group": "synthetic",
+          "mutual": 476,
+          "correct": 358
+        }
+      ],
+      "dataset": "synthetic",
+      "method": "thermometer fused",
+      "precision": 67.00123915737299,
+      "median_px": 1.4103453755378723,
+      "exact_abs_mnn_verified": true
+    },
+    {
+      "mutual": 8070,
+      "correct": 5407,
+      "per_pair": [
+        {
+          "name": "0",
+          "group": "synthetic",
+          "mutual": 471,
+          "correct": 346
+        },
+        {
+          "name": "1",
+          "group": "synthetic",
+          "mutual": 428,
+          "correct": 270
+        },
+        {
+          "name": "2",
+          "group": "synthetic",
+          "mutual": 435,
+          "correct": 279
+        },
+        {
+          "name": "3",
+          "group": "synthetic",
+          "mutual": 410,
+          "correct": 235
+        },
+        {
+          "name": "4",
+          "group": "synthetic",
+          "mutual": 423,
+          "correct": 245
+        },
+        {
+          "name": "5",
+          "group": "synthetic",
+          "mutual": 436,
+          "correct": 255
+        },
+        {
+          "name": "6",
+          "group": "synthetic",
+          "mutual": 405,
+          "correct": 213
+        },
+        {
+          "name": "7",
+          "group": "synthetic",
+          "mutual": 446,
+          "correct": 281
+        },
+        {
+          "name": "8",
+          "group": "synthetic",
+          "mutual": 394,
+          "correct": 217
+        },
+        {
+          "name": "9",
+          "group": "synthetic",
+          "mutual": 434,
+          "correct": 290
+        },
+        {
+          "name": "10",
+          "group": "synthetic",
+          "mutual": 433,
+          "correct": 296
+        },
+        {
+          "name": "11",
+          "group": "synthetic",
+          "mutual": 455,
+          "correct": 315
+        },
+        {
+          "name": "12",
+          "group": "synthetic",
+          "mutual": 471,
+          "correct": 353
+        },
+        {
+          "name": "13",
+          "group": "synthetic",
+          "mutual": 470,
+          "correct": 328
+        },
+        {
+          "name": "14",
+          "group": "synthetic",
+          "mutual": 493,
+          "correct": 360
+        },
+        {
+          "name": "15",
+          "group": "synthetic",
+          "mutual": 487,
+          "correct": 367
+        },
+        {
+          "name": "16",
+          "group": "synthetic",
+          "mutual": 503,
+          "correct": 399
+        },
+        {
+          "name": "17",
+          "group": "synthetic",
+          "mutual": 476,
+          "correct": 358
+        }
+      ],
+      "dataset": "synthetic",
+      "method": "pair LUT matrix",
+      "precision": 67.00123915737299,
+      "median_px": 1.4103453755378723,
+      "exact_abs_mnn_verified": true
+    },
+    {
+      "mutual": 8070,
+      "correct": 5407,
+      "per_pair": [
+        {
+          "name": "0",
+          "group": "synthetic",
+          "mutual": 471,
+          "correct": 346
+        },
+        {
+          "name": "1",
+          "group": "synthetic",
+          "mutual": 428,
+          "correct": 270
+        },
+        {
+          "name": "2",
+          "group": "synthetic",
+          "mutual": 435,
+          "correct": 279
+        },
+        {
+          "name": "3",
+          "group": "synthetic",
+          "mutual": 410,
+          "correct": 235
+        },
+        {
+          "name": "4",
+          "group": "synthetic",
+          "mutual": 423,
+          "correct": 245
+        },
+        {
+          "name": "5",
+          "group": "synthetic",
+          "mutual": 436,
+          "correct": 255
+        },
+        {
+          "name": "6",
+          "group": "synthetic",
+          "mutual": 405,
+          "correct": 213
+        },
+        {
+          "name": "7",
+          "group": "synthetic",
+          "mutual": 446,
+          "correct": 281
+        },
+        {
+          "name": "8",
+          "group": "synthetic",
+          "mutual": 394,
+          "correct": 217
+        },
+        {
+          "name": "9",
+          "group": "synthetic",
+          "mutual": 434,
+          "correct": 290
+        },
+        {
+          "name": "10",
+          "group": "synthetic",
+          "mutual": 433,
+          "correct": 296
+        },
+        {
+          "name": "11",
+          "group": "synthetic",
+          "mutual": 455,
+          "correct": 315
+        },
+        {
+          "name": "12",
+          "group": "synthetic",
+          "mutual": 471,
+          "correct": 353
+        },
+        {
+          "name": "13",
+          "group": "synthetic",
+          "mutual": 470,
+          "correct": 328
+        },
+        {
+          "name": "14",
+          "group": "synthetic",
+          "mutual": 493,
+          "correct": 360
+        },
+        {
+          "name": "15",
+          "group": "synthetic",
+          "mutual": 487,
+          "correct": 367
+        },
+        {
+          "name": "16",
+          "group": "synthetic",
+          "mutual": 503,
+          "correct": 399
+        },
+        {
+          "name": "17",
+          "group": "synthetic",
+          "mutual": 476,
+          "correct": 358
+        }
+      ],
+      "dataset": "synthetic",
+      "method": "pair LUT fused",
+      "precision": 67.00123915737299,
+      "median_px": 1.4103453755378723,
+      "exact_abs_mnn_verified": true
+    },
+    {
+      "mutual": 10607,
+      "correct": 7138,
+      "per_pair": [
+        {
+          "name": "v_abstract:1->2",
+          "group": "v_",
+          "mutual": 412,
+          "correct": 235
+        },
+        {
+          "name": "v_abstract:1->3",
+          "group": "v_",
+          "mutual": 396,
+          "correct": 195
+        },
+        {
+          "name": "v_adam:1->2",
+          "group": "v_",
+          "mutual": 409,
+          "correct": 241
+        },
+        {
+          "name": "v_adam:1->3",
+          "group": "v_",
+          "mutual": 406,
+          "correct": 230
+        },
+        {
+          "name": "v_apprentices:1->2",
+          "group": "v_",
+          "mutual": 473,
+          "correct": 319
+        },
+        {
+          "name": "v_apprentices:1->3",
+          "group": "v_",
+          "mutual": 458,
+          "correct": 292
+        },
+        {
+          "name": "v_artisans:1->2",
+          "group": "v_",
+          "mutual": 333,
+          "correct": 168
+        },
+        {
+          "name": "v_artisans:1->3",
+          "group": "v_",
+          "mutual": 320,
+          "correct": 140
+        },
+        {
+          "name": "v_astronautis:1->2",
+          "group": "v_",
+          "mutual": 381,
+          "correct": 193
+        },
+        {
+          "name": "v_astronautis:1->3",
+          "group": "v_",
+          "mutual": 309,
+          "correct": 137
+        },
+        {
+          "name": "v_azzola:1->2",
+          "group": "v_",
+          "mutual": 371,
+          "correct": 190
+        },
+        {
+          "name": "v_azzola:1->3",
+          "group": "v_",
+          "mutual": 352,
+          "correct": 167
+        },
+        {
+          "name": "i_ajuntament:1->2",
+          "group": "i_",
+          "mutual": 463,
+          "correct": 306
+        },
+        {
+          "name": "i_ajuntament:1->3",
+          "group": "i_",
+          "mutual": 357,
+          "correct": 163
+        },
+        {
+          "name": "i_autannes:1->2",
+          "group": "i_",
+          "mutual": 542,
+          "correct": 472
+        },
+        {
+          "name": "i_autannes:1->3",
+          "group": "i_",
+          "mutual": 502,
+          "correct": 381
+        },
+        {
+          "name": "i_bologna:1->2",
+          "group": "i_",
+          "mutual": 540,
+          "correct": 479
+        },
+        {
+          "name": "i_bologna:1->3",
+          "group": "i_",
+          "mutual": 527,
+          "correct": 418
+        },
+        {
+          "name": "i_books:1->2",
+          "group": "i_",
+          "mutual": 524,
+          "correct": 444
+        },
+        {
+          "name": "i_books:1->3",
+          "group": "i_",
+          "mutual": 534,
+          "correct": 454
+        },
+        {
+          "name": "i_boutique:1->2",
+          "group": "i_",
+          "mutual": 535,
+          "correct": 464
+        },
+        {
+          "name": "i_boutique:1->3",
+          "group": "i_",
+          "mutual": 494,
+          "correct": 378
+        },
+        {
+          "name": "i_bridger:1->2",
+          "group": "i_",
+          "mutual": 501,
+          "correct": 355
+        },
+        {
+          "name": "i_bridger:1->3",
+          "group": "i_",
+          "mutual": 468,
+          "correct": 317
+        }
+      ],
+      "dataset": "HPatches",
+      "method": "float cosine",
+      "precision": 67.29518242669936,
+      "median_px": 1.1764448881149292,
+      "exact_abs_mnn_verified": false
+    },
+    {
+      "mutual": 10499,
+      "correct": 6920,
+      "per_pair": [
+        {
+          "name": "v_abstract:1->2",
+          "group": "v_",
+          "mutual": 399,
+          "correct": 224
+        },
+        {
+          "name": "v_abstract:1->3",
+          "group": "v_",
+          "mutual": 385,
+          "correct": 184
+        },
+        {
+          "name": "v_adam:1->2",
+          "group": "v_",
+          "mutual": 406,
+          "correct": 222
+        },
+        {
+          "name": "v_adam:1->3",
+          "group": "v_",
+          "mutual": 397,
+          "correct": 219
+        },
+        {
+          "name": "v_apprentices:1->2",
+          "group": "v_",
+          "mutual": 476,
+          "correct": 314
+        },
+        {
+          "name": "v_apprentices:1->3",
+          "group": "v_",
+          "mutual": 449,
+          "correct": 279
+        },
+        {
+          "name": "v_artisans:1->2",
+          "group": "v_",
+          "mutual": 335,
+          "correct": 162
+        },
+        {
+          "name": "v_artisans:1->3",
+          "group": "v_",
+          "mutual": 311,
+          "correct": 127
+        },
+        {
+          "name": "v_astronautis:1->2",
+          "group": "v_",
+          "mutual": 372,
+          "correct": 181
+        },
+        {
+          "name": "v_astronautis:1->3",
+          "group": "v_",
+          "mutual": 309,
+          "correct": 131
+        },
+        {
+          "name": "v_azzola:1->2",
+          "group": "v_",
+          "mutual": 386,
+          "correct": 189
+        },
+        {
+          "name": "v_azzola:1->3",
+          "group": "v_",
+          "mutual": 359,
+          "correct": 160
+        },
+        {
+          "name": "i_ajuntament:1->2",
+          "group": "i_",
+          "mutual": 470,
+          "correct": 306
+        },
+        {
+          "name": "i_ajuntament:1->3",
+          "group": "i_",
+          "mutual": 353,
+          "correct": 147
+        },
+        {
+          "name": "i_autannes:1->2",
+          "group": "i_",
+          "mutual": 539,
+          "correct": 468
+        },
+        {
+          "name": "i_autannes:1->3",
+          "group": "i_",
+          "mutual": 486,
+          "correct": 372
+        },
+        {
+          "name": "i_bologna:1->2",
+          "group": "i_",
+          "mutual": 542,
+          "correct": 470
+        },
+        {
+          "name": "i_bologna:1->3",
+          "group": "i_",
+          "mutual": 510,
+          "correct": 400
+        },
+        {
+          "name": "i_books:1->2",
+          "group": "i_",
+          "mutual": 519,
+          "correct": 429
+        },
+        {
+          "name": "i_books:1->3",
+          "group": "i_",
+          "mutual": 520,
+          "correct": 442
+        },
+        {
+          "name": "i_boutique:1->2",
+          "group": "i_",
+          "mutual": 537,
+          "correct": 461
+        },
+        {
+          "name": "i_boutique:1->3",
+          "group": "i_",
+          "mutual": 485,
+          "correct": 374
+        },
+        {
+          "name": "i_bridger:1->2",
+          "group": "i_",
+          "mutual": 488,
+          "correct": 349
+        },
+        {
+          "name": "i_bridger:1->3",
+          "group": "i_",
+          "mutual": 466,
+          "correct": 310
+        }
+      ],
+      "dataset": "HPatches",
+      "method": "uint8 ABS",
+      "precision": 65.9110391465854,
+      "median_px": 1.2469313144683838,
+      "exact_abs_mnn_verified": true
+    },
+    {
+      "mutual": 10499,
+      "correct": 6920,
+      "per_pair": [
+        {
+          "name": "v_abstract:1->2",
+          "group": "v_",
+          "mutual": 399,
+          "correct": 224
+        },
+        {
+          "name": "v_abstract:1->3",
+          "group": "v_",
+          "mutual": 385,
+          "correct": 184
+        },
+        {
+          "name": "v_adam:1->2",
+          "group": "v_",
+          "mutual": 406,
+          "correct": 222
+        },
+        {
+          "name": "v_adam:1->3",
+          "group": "v_",
+          "mutual": 397,
+          "correct": 219
+        },
+        {
+          "name": "v_apprentices:1->2",
+          "group": "v_",
+          "mutual": 476,
+          "correct": 314
+        },
+        {
+          "name": "v_apprentices:1->3",
+          "group": "v_",
+          "mutual": 449,
+          "correct": 279
+        },
+        {
+          "name": "v_artisans:1->2",
+          "group": "v_",
+          "mutual": 335,
+          "correct": 162
+        },
+        {
+          "name": "v_artisans:1->3",
+          "group": "v_",
+          "mutual": 311,
+          "correct": 127
+        },
+        {
+          "name": "v_astronautis:1->2",
+          "group": "v_",
+          "mutual": 372,
+          "correct": 181
+        },
+        {
+          "name": "v_astronautis:1->3",
+          "group": "v_",
+          "mutual": 309,
+          "correct": 131
+        },
+        {
+          "name": "v_azzola:1->2",
+          "group": "v_",
+          "mutual": 386,
+          "correct": 189
+        },
+        {
+          "name": "v_azzola:1->3",
+          "group": "v_",
+          "mutual": 359,
+          "correct": 160
+        },
+        {
+          "name": "i_ajuntament:1->2",
+          "group": "i_",
+          "mutual": 470,
+          "correct": 306
+        },
+        {
+          "name": "i_ajuntament:1->3",
+          "group": "i_",
+          "mutual": 353,
+          "correct": 147
+        },
+        {
+          "name": "i_autannes:1->2",
+          "group": "i_",
+          "mutual": 539,
+          "correct": 468
+        },
+        {
+          "name": "i_autannes:1->3",
+          "group": "i_",
+          "mutual": 486,
+          "correct": 372
+        },
+        {
+          "name": "i_bologna:1->2",
+          "group": "i_",
+          "mutual": 542,
+          "correct": 470
+        },
+        {
+          "name": "i_bologna:1->3",
+          "group": "i_",
+          "mutual": 510,
+          "correct": 400
+        },
+        {
+          "name": "i_books:1->2",
+          "group": "i_",
+          "mutual": 519,
+          "correct": 429
+        },
+        {
+          "name": "i_books:1->3",
+          "group": "i_",
+          "mutual": 520,
+          "correct": 442
+        },
+        {
+          "name": "i_boutique:1->2",
+          "group": "i_",
+          "mutual": 537,
+          "correct": 461
+        },
+        {
+          "name": "i_boutique:1->3",
+          "group": "i_",
+          "mutual": 485,
+          "correct": 374
+        },
+        {
+          "name": "i_bridger:1->2",
+          "group": "i_",
+          "mutual": 488,
+          "correct": 349
+        },
+        {
+          "name": "i_bridger:1->3",
+          "group": "i_",
+          "mutual": 466,
+          "correct": 310
+        }
+      ],
+      "dataset": "HPatches",
+      "method": "packed thermometer",
+      "precision": 65.9110391465854,
+      "median_px": 1.2469313144683838,
+      "exact_abs_mnn_verified": true
+    },
+    {
+      "mutual": 10499,
+      "correct": 6920,
+      "per_pair": [
+        {
+          "name": "v_abstract:1->2",
+          "group": "v_",
+          "mutual": 399,
+          "correct": 224
+        },
+        {
+          "name": "v_abstract:1->3",
+          "group": "v_",
+          "mutual": 385,
+          "correct": 184
+        },
+        {
+          "name": "v_adam:1->2",
+          "group": "v_",
+          "mutual": 406,
+          "correct": 222
+        },
+        {
+          "name": "v_adam:1->3",
+          "group": "v_",
+          "mutual": 397,
+          "correct": 219
+        },
+        {
+          "name": "v_apprentices:1->2",
+          "group": "v_",
+          "mutual": 476,
+          "correct": 314
+        },
+        {
+          "name": "v_apprentices:1->3",
+          "group": "v_",
+          "mutual": 449,
+          "correct": 279
+        },
+        {
+          "name": "v_artisans:1->2",
+          "group": "v_",
+          "mutual": 335,
+          "correct": 162
+        },
+        {
+          "name": "v_artisans:1->3",
+          "group": "v_",
+          "mutual": 311,
+          "correct": 127
+        },
+        {
+          "name": "v_astronautis:1->2",
+          "group": "v_",
+          "mutual": 372,
+          "correct": 181
+        },
+        {
+          "name": "v_astronautis:1->3",
+          "group": "v_",
+          "mutual": 309,
+          "correct": 131
+        },
+        {
+          "name": "v_azzola:1->2",
+          "group": "v_",
+          "mutual": 386,
+          "correct": 189
+        },
+        {
+          "name": "v_azzola:1->3",
+          "group": "v_",
+          "mutual": 359,
+          "correct": 160
+        },
+        {
+          "name": "i_ajuntament:1->2",
+          "group": "i_",
+          "mutual": 470,
+          "correct": 306
+        },
+        {
+          "name": "i_ajuntament:1->3",
+          "group": "i_",
+          "mutual": 353,
+          "correct": 147
+        },
+        {
+          "name": "i_autannes:1->2",
+          "group": "i_",
+          "mutual": 539,
+          "correct": 468
+        },
+        {
+          "name": "i_autannes:1->3",
+          "group": "i_",
+          "mutual": 486,
+          "correct": 372
+        },
+        {
+          "name": "i_bologna:1->2",
+          "group": "i_",
+          "mutual": 542,
+          "correct": 470
+        },
+        {
+          "name": "i_bologna:1->3",
+          "group": "i_",
+          "mutual": 510,
+          "correct": 400
+        },
+        {
+          "name": "i_books:1->2",
+          "group": "i_",
+          "mutual": 519,
+          "correct": 429
+        },
+        {
+          "name": "i_books:1->3",
+          "group": "i_",
+          "mutual": 520,
+          "correct": 442
+        },
+        {
+          "name": "i_boutique:1->2",
+          "group": "i_",
+          "mutual": 537,
+          "correct": 461
+        },
+        {
+          "name": "i_boutique:1->3",
+          "group": "i_",
+          "mutual": 485,
+          "correct": 374
+        },
+        {
+          "name": "i_bridger:1->2",
+          "group": "i_",
+          "mutual": 488,
+          "correct": 349
+        },
+        {
+          "name": "i_bridger:1->3",
+          "group": "i_",
+          "mutual": 466,
+          "correct": 310
+        }
+      ],
+      "dataset": "HPatches",
+      "method": "thermometer fused",
+      "precision": 65.9110391465854,
+      "median_px": 1.2469313144683838,
+      "exact_abs_mnn_verified": true
+    },
+    {
+      "mutual": 10499,
+      "correct": 6920,
+      "per_pair": [
+        {
+          "name": "v_abstract:1->2",
+          "group": "v_",
+          "mutual": 399,
+          "correct": 224
+        },
+        {
+          "name": "v_abstract:1->3",
+          "group": "v_",
+          "mutual": 385,
+          "correct": 184
+        },
+        {
+          "name": "v_adam:1->2",
+          "group": "v_",
+          "mutual": 406,
+          "correct": 222
+        },
+        {
+          "name": "v_adam:1->3",
+          "group": "v_",
+          "mutual": 397,
+          "correct": 219
+        },
+        {
+          "name": "v_apprentices:1->2",
+          "group": "v_",
+          "mutual": 476,
+          "correct": 314
+        },
+        {
+          "name": "v_apprentices:1->3",
+          "group": "v_",
+          "mutual": 449,
+          "correct": 279
+        },
+        {
+          "name": "v_artisans:1->2",
+          "group": "v_",
+          "mutual": 335,
+          "correct": 162
+        },
+        {
+          "name": "v_artisans:1->3",
+          "group": "v_",
+          "mutual": 311,
+          "correct": 127
+        },
+        {
+          "name": "v_astronautis:1->2",
+          "group": "v_",
+          "mutual": 372,
+          "correct": 181
+        },
+        {
+          "name": "v_astronautis:1->3",
+          "group": "v_",
+          "mutual": 309,
+          "correct": 131
+        },
+        {
+          "name": "v_azzola:1->2",
+          "group": "v_",
+          "mutual": 386,
+          "correct": 189
+        },
+        {
+          "name": "v_azzola:1->3",
+          "group": "v_",
+          "mutual": 359,
+          "correct": 160
+        },
+        {
+          "name": "i_ajuntament:1->2",
+          "group": "i_",
+          "mutual": 470,
+          "correct": 306
+        },
+        {
+          "name": "i_ajuntament:1->3",
+          "group": "i_",
+          "mutual": 353,
+          "correct": 147
+        },
+        {
+          "name": "i_autannes:1->2",
+          "group": "i_",
+          "mutual": 539,
+          "correct": 468
+        },
+        {
+          "name": "i_autannes:1->3",
+          "group": "i_",
+          "mutual": 486,
+          "correct": 372
+        },
+        {
+          "name": "i_bologna:1->2",
+          "group": "i_",
+          "mutual": 542,
+          "correct": 470
+        },
+        {
+          "name": "i_bologna:1->3",
+          "group": "i_",
+          "mutual": 510,
+          "correct": 400
+        },
+        {
+          "name": "i_books:1->2",
+          "group": "i_",
+          "mutual": 519,
+          "correct": 429
+        },
+        {
+          "name": "i_books:1->3",
+          "group": "i_",
+          "mutual": 520,
+          "correct": 442
+        },
+        {
+          "name": "i_boutique:1->2",
+          "group": "i_",
+          "mutual": 537,
+          "correct": 461
+        },
+        {
+          "name": "i_boutique:1->3",
+          "group": "i_",
+          "mutual": 485,
+          "correct": 374
+        },
+        {
+          "name": "i_bridger:1->2",
+          "group": "i_",
+          "mutual": 488,
+          "correct": 349
+        },
+        {
+          "name": "i_bridger:1->3",
+          "group": "i_",
+          "mutual": 466,
+          "correct": 310
+        }
+      ],
+      "dataset": "HPatches",
+      "method": "pair LUT matrix",
+      "precision": 65.9110391465854,
+      "median_px": 1.2469313144683838,
+      "exact_abs_mnn_verified": true
+    },
+    {
+      "mutual": 10499,
+      "correct": 6920,
+      "per_pair": [
+        {
+          "name": "v_abstract:1->2",
+          "group": "v_",
+          "mutual": 399,
+          "correct": 224
+        },
+        {
+          "name": "v_abstract:1->3",
+          "group": "v_",
+          "mutual": 385,
+          "correct": 184
+        },
+        {
+          "name": "v_adam:1->2",
+          "group": "v_",
+          "mutual": 406,
+          "correct": 222
+        },
+        {
+          "name": "v_adam:1->3",
+          "group": "v_",
+          "mutual": 397,
+          "correct": 219
+        },
+        {
+          "name": "v_apprentices:1->2",
+          "group": "v_",
+          "mutual": 476,
+          "correct": 314
+        },
+        {
+          "name": "v_apprentices:1->3",
+          "group": "v_",
+          "mutual": 449,
+          "correct": 279
+        },
+        {
+          "name": "v_artisans:1->2",
+          "group": "v_",
+          "mutual": 335,
+          "correct": 162
+        },
+        {
+          "name": "v_artisans:1->3",
+          "group": "v_",
+          "mutual": 311,
+          "correct": 127
+        },
+        {
+          "name": "v_astronautis:1->2",
+          "group": "v_",
+          "mutual": 372,
+          "correct": 181
+        },
+        {
+          "name": "v_astronautis:1->3",
+          "group": "v_",
+          "mutual": 309,
+          "correct": 131
+        },
+        {
+          "name": "v_azzola:1->2",
+          "group": "v_",
+          "mutual": 386,
+          "correct": 189
+        },
+        {
+          "name": "v_azzola:1->3",
+          "group": "v_",
+          "mutual": 359,
+          "correct": 160
+        },
+        {
+          "name": "i_ajuntament:1->2",
+          "group": "i_",
+          "mutual": 470,
+          "correct": 306
+        },
+        {
+          "name": "i_ajuntament:1->3",
+          "group": "i_",
+          "mutual": 353,
+          "correct": 147
+        },
+        {
+          "name": "i_autannes:1->2",
+          "group": "i_",
+          "mutual": 539,
+          "correct": 468
+        },
+        {
+          "name": "i_autannes:1->3",
+          "group": "i_",
+          "mutual": 486,
+          "correct": 372
+        },
+        {
+          "name": "i_bologna:1->2",
+          "group": "i_",
+          "mutual": 542,
+          "correct": 470
+        },
+        {
+          "name": "i_bologna:1->3",
+          "group": "i_",
+          "mutual": 510,
+          "correct": 400
+        },
+        {
+          "name": "i_books:1->2",
+          "group": "i_",
+          "mutual": 519,
+          "correct": 429
+        },
+        {
+          "name": "i_books:1->3",
+          "group": "i_",
+          "mutual": 520,
+          "correct": 442
+        },
+        {
+          "name": "i_boutique:1->2",
+          "group": "i_",
+          "mutual": 537,
+          "correct": 461
+        },
+        {
+          "name": "i_boutique:1->3",
+          "group": "i_",
+          "mutual": 485,
+          "correct": 374
+        },
+        {
+          "name": "i_bridger:1->2",
+          "group": "i_",
+          "mutual": 488,
+          "correct": 349
+        },
+        {
+          "name": "i_bridger:1->3",
+          "group": "i_",
+          "mutual": 466,
+          "correct": 310
+        }
+      ],
+      "dataset": "HPatches",
+      "method": "pair LUT fused",
+      "precision": 65.9110391465854,
+      "median_px": 1.2469313144683838,
+      "exact_abs_mnn_verified": true
+    }
+  ],
+  "timing_results": [
+    {
+      "dataset": "synthetic",
+      "pair_index": 0,
+      "name": "0",
+      "n": 800,
+      "m": 800,
+      "abs_distance_only_ms": 5.863078,
+      "thermometer_distance_only_ms": 2.4216225,
+      "bin_encoding_both_sets_ms": 2.971552,
+      "packing_both_sets_ms": 0.1822775,
+      "thermometer_compression_both_sets_ms": 4.1055779999999995,
+      "abs_encode_and_mnn_ms": 11.805413999999999,
+      "thermometer_encode_pack_and_mnn_ms": 8.422512000000001,
+      "lookup_distance_only_ms": 12.115191,
+      "lookup_packing_both_sets_ms": 0.17358200000000001,
+      "thermometer_fused_encode_pack_mnn_ms": 9.654855,
+      "lookup_matrix_encode_pack_mnn_ms": 19.014761,
+      "lookup_fused_encode_pack_mnn_ms": 18.4369175,
+      "float cosine cached_mnn_ms": 2.8011545,
+      "uint8 ABS cached_mnn_ms": 7.3213255,
+      "packed thermometer cached_mnn_ms": 4.043205,
+      "thermometer fused cached_mnn_ms": 4.1284335,
+      "pair LUT matrix cached_mnn_ms": 13.512383,
+      "pair LUT fused cached_mnn_ms": 13.377006
+    },
+    {
+      "dataset": "synthetic",
+      "pair_index": 4,
+      "name": "4",
+      "n": 800,
+      "m": 800,
+      "abs_distance_only_ms": 5.6914675,
+      "thermometer_distance_only_ms": 2.7009334999999997,
+      "bin_encoding_both_sets_ms": 3.2941659999999997,
+      "packing_both_sets_ms": 0.2605655,
+      "thermometer_compression_both_sets_ms": 4.008166,
+      "abs_encode_and_mnn_ms": 11.610289999999999,
+      "thermometer_encode_pack_and_mnn_ms": 9.002697,
+      "lookup_distance_only_ms": 21.6782375,
+      "lookup_packing_both_sets_ms": 0.241174,
+      "thermometer_fused_encode_pack_mnn_ms": 15.0761295,
+      "lookup_matrix_encode_pack_mnn_ms": 31.2110585,
+      "lookup_fused_encode_pack_mnn_ms": 30.674839499999997,
+      "float cosine cached_mnn_ms": 4.819850000000001,
+      "uint8 ABS cached_mnn_ms": 12.861632,
+      "packed thermometer cached_mnn_ms": 6.361135,
+      "thermometer fused cached_mnn_ms": 7.775268499999999,
+      "pair LUT matrix cached_mnn_ms": 23.447637,
+      "pair LUT fused cached_mnn_ms": 23.675297999999998
+    },
+    {
+      "dataset": "synthetic",
+      "pair_index": 8,
+      "name": "8",
+      "n": 800,
+      "m": 800,
+      "abs_distance_only_ms": 11.617076,
+      "thermometer_distance_only_ms": 4.5770385000000005,
+      "bin_encoding_both_sets_ms": 4.683847500000001,
+      "packing_both_sets_ms": 0.31154000000000004,
+      "thermometer_compression_both_sets_ms": 5.433324,
+      "abs_encode_and_mnn_ms": 17.76645,
+      "thermometer_encode_pack_and_mnn_ms": 12.401998500000001,
+      "lookup_distance_only_ms": 20.7073175,
+      "lookup_packing_both_sets_ms": 0.219056,
+      "thermometer_fused_encode_pack_mnn_ms": 13.784075999999999,
+      "lookup_matrix_encode_pack_mnn_ms": 28.73144,
+      "lookup_fused_encode_pack_mnn_ms": 30.4965925,
+      "float cosine cached_mnn_ms": 2.763084,
+      "uint8 ABS cached_mnn_ms": 7.4216964999999995,
+      "packed thermometer cached_mnn_ms": 3.9848369999999997,
+      "thermometer fused cached_mnn_ms": 4.110108,
+      "pair LUT matrix cached_mnn_ms": 13.3470885,
+      "pair LUT fused cached_mnn_ms": 13.459371
+    },
+    {
+      "dataset": "synthetic",
+      "pair_index": 12,
+      "name": "12",
+      "n": 800,
+      "m": 800,
+      "abs_distance_only_ms": 6.0291405000000005,
+      "thermometer_distance_only_ms": 2.7259469999999997,
+      "bin_encoding_both_sets_ms": 2.8446875,
+      "packing_both_sets_ms": 0.18752400000000002,
+      "thermometer_compression_both_sets_ms": 3.2244580000000003,
+      "abs_encode_and_mnn_ms": 10.8277605,
+      "thermometer_encode_pack_and_mnn_ms": 8.229137000000001,
+      "lookup_distance_only_ms": 12.3789125,
+      "lookup_packing_both_sets_ms": 0.151748,
+      "thermometer_fused_encode_pack_mnn_ms": 8.169779,
+      "lookup_matrix_encode_pack_mnn_ms": 18.864486499999998,
+      "lookup_fused_encode_pack_mnn_ms": 17.895928,
+      "float cosine cached_mnn_ms": 2.9439075,
+      "uint8 ABS cached_mnn_ms": 7.3794205,
+      "packed thermometer cached_mnn_ms": 4.003161,
+      "thermometer fused cached_mnn_ms": 4.188844,
+      "pair LUT matrix cached_mnn_ms": 13.3236735,
+      "pair LUT fused cached_mnn_ms": 13.4616425
+    },
+    {
+      "dataset": "synthetic",
+      "pair_index": 17,
+      "name": "17",
+      "n": 800,
+      "m": 800,
+      "abs_distance_only_ms": 5.656692,
+      "thermometer_distance_only_ms": 2.4068985,
+      "bin_encoding_both_sets_ms": 2.7418785,
+      "packing_both_sets_ms": 0.188483,
+      "thermometer_compression_both_sets_ms": 3.4123105000000002,
+      "abs_encode_and_mnn_ms": 10.7007475,
+      "thermometer_encode_pack_and_mnn_ms": 7.6722895,
+      "lookup_distance_only_ms": 11.979197500000001,
+      "lookup_packing_both_sets_ms": 0.198694,
+      "thermometer_fused_encode_pack_mnn_ms": 9.255774500000001,
+      "lookup_matrix_encode_pack_mnn_ms": 17.7359285,
+      "lookup_fused_encode_pack_mnn_ms": 17.9906705,
+      "float cosine cached_mnn_ms": 2.711043,
+      "uint8 ABS cached_mnn_ms": 7.3641585,
+      "packed thermometer cached_mnn_ms": 3.9902040000000003,
+      "thermometer fused cached_mnn_ms": 4.1075145,
+      "pair LUT matrix cached_mnn_ms": 13.4306655,
+      "pair LUT fused cached_mnn_ms": 13.354085
+    },
+    {
+      "dataset": "HPatches",
+      "pair_index": 0,
+      "name": "v_abstract:1->2",
+      "n": 800,
+      "m": 800,
+      "abs_distance_only_ms": 5.685128499999999,
+      "thermometer_distance_only_ms": 2.399497,
+      "bin_encoding_both_sets_ms": 2.9724215000000003,
+      "packing_both_sets_ms": 0.22818650000000001,
+      "thermometer_compression_both_sets_ms": 3.6130905,
+      "abs_encode_and_mnn_ms": 11.569686,
+      "thermometer_encode_pack_and_mnn_ms": 7.947191,
+      "lookup_distance_only_ms": 11.647988999999999,
+      "lookup_packing_both_sets_ms": 0.15458,
+      "thermometer_fused_encode_pack_mnn_ms": 8.267330000000001,
+      "lookup_matrix_encode_pack_mnn_ms": 17.433591,
+      "lookup_fused_encode_pack_mnn_ms": 17.728496,
+      "float cosine cached_mnn_ms": 2.683165,
+      "uint8 ABS cached_mnn_ms": 7.3312325000000005,
+      "packed thermometer cached_mnn_ms": 3.9889245,
+      "thermometer fused cached_mnn_ms": 4.170731999999999,
+      "pair LUT matrix cached_mnn_ms": 13.6326815,
+      "pair LUT fused cached_mnn_ms": 14.2416725
+    },
+    {
+      "dataset": "HPatches",
+      "pair_index": 5,
+      "name": "v_apprentices:1->3",
+      "n": 800,
+      "m": 800,
+      "abs_distance_only_ms": 5.781354,
+      "thermometer_distance_only_ms": 2.401918,
+      "bin_encoding_both_sets_ms": 2.827488,
+      "packing_both_sets_ms": 0.1852835,
+      "thermometer_compression_both_sets_ms": 3.5238265,
+      "abs_encode_and_mnn_ms": 10.780646,
+      "thermometer_encode_pack_and_mnn_ms": 7.526689,
+      "lookup_distance_only_ms": 11.824777000000001,
+      "lookup_packing_both_sets_ms": 0.1514925,
+      "thermometer_fused_encode_pack_mnn_ms": 8.369983000000001,
+      "lookup_matrix_encode_pack_mnn_ms": 17.2926535,
+      "lookup_fused_encode_pack_mnn_ms": 17.4860995,
+      "float cosine cached_mnn_ms": 2.8205685000000003,
+      "uint8 ABS cached_mnn_ms": 7.3195125,
+      "packed thermometer cached_mnn_ms": 3.9825515,
+      "thermometer fused cached_mnn_ms": 4.1388549999999995,
+      "pair LUT matrix cached_mnn_ms": 13.59833,
+      "pair LUT fused cached_mnn_ms": 13.581699
+    },
+    {
+      "dataset": "HPatches",
+      "pair_index": 11,
+      "name": "v_azzola:1->3",
+      "n": 800,
+      "m": 800,
+      "abs_distance_only_ms": 5.8382895,
+      "thermometer_distance_only_ms": 2.4013359999999997,
+      "bin_encoding_both_sets_ms": 2.7183245,
+      "packing_both_sets_ms": 0.18541200000000002,
+      "thermometer_compression_both_sets_ms": 3.14099,
+      "abs_encode_and_mnn_ms": 10.677218,
+      "thermometer_encode_pack_and_mnn_ms": 7.5704805,
+      "lookup_distance_only_ms": 11.72916,
+      "lookup_packing_both_sets_ms": 0.1505165,
+      "thermometer_fused_encode_pack_mnn_ms": 8.3043185,
+      "lookup_matrix_encode_pack_mnn_ms": 29.007675499999998,
+      "lookup_fused_encode_pack_mnn_ms": 30.4164155,
+      "float cosine cached_mnn_ms": 4.928255,
+      "uint8 ABS cached_mnn_ms": 12.921835999999999,
+      "packed thermometer cached_mnn_ms": 6.490154,
+      "thermometer fused cached_mnn_ms": 8.7663715,
+      "pair LUT matrix cached_mnn_ms": 22.657494,
+      "pair LUT fused cached_mnn_ms": 23.4194775
+    },
+    {
+      "dataset": "HPatches",
+      "pair_index": 17,
+      "name": "i_bologna:1->3",
+      "n": 800,
+      "m": 800,
+      "abs_distance_only_ms": 11.743404,
+      "thermometer_distance_only_ms": 5.1235775,
+      "bin_encoding_both_sets_ms": 4.9165055,
+      "packing_both_sets_ms": 0.3036475,
+      "thermometer_compression_both_sets_ms": 5.7972125000000005,
+      "abs_encode_and_mnn_ms": 19.6040365,
+      "thermometer_encode_pack_and_mnn_ms": 13.879139,
+      "lookup_distance_only_ms": 21.03548,
+      "lookup_packing_both_sets_ms": 0.240629,
+      "thermometer_fused_encode_pack_mnn_ms": 14.555901500000001,
+      "lookup_matrix_encode_pack_mnn_ms": 29.1741965,
+      "lookup_fused_encode_pack_mnn_ms": 29.262127,
+      "float cosine cached_mnn_ms": 5.0914245000000005,
+      "uint8 ABS cached_mnn_ms": 12.4928805,
+      "packed thermometer cached_mnn_ms": 5.995088,
+      "thermometer fused cached_mnn_ms": 7.7250425,
+      "pair LUT matrix cached_mnn_ms": 13.462907999999999,
+      "pair LUT fused cached_mnn_ms": 13.404651000000001
+    },
+    {
+      "dataset": "HPatches",
+      "pair_index": 23,
+      "name": "i_bridger:1->3",
+      "n": 800,
+      "m": 800,
+      "abs_distance_only_ms": 5.6440920000000006,
+      "thermometer_distance_only_ms": 2.376112,
+      "bin_encoding_both_sets_ms": 2.7075195,
+      "packing_both_sets_ms": 0.181118,
+      "thermometer_compression_both_sets_ms": 3.2372955,
+      "abs_encode_and_mnn_ms": 10.6512205,
+      "thermometer_encode_pack_and_mnn_ms": 7.9949275,
+      "lookup_distance_only_ms": 11.888549000000001,
+      "lookup_packing_both_sets_ms": 0.15011449999999998,
+      "thermometer_fused_encode_pack_mnn_ms": 8.939233000000002,
+      "lookup_matrix_encode_pack_mnn_ms": 17.3722985,
+      "lookup_fused_encode_pack_mnn_ms": 17.735626500000002,
+      "float cosine cached_mnn_ms": 2.827082,
+      "uint8 ABS cached_mnn_ms": 7.312749999999999,
+      "packed thermometer cached_mnn_ms": 4.0641680000000004,
+      "thermometer fused cached_mnn_ms": 4.1231965,
+      "pair LUT matrix cached_mnn_ms": 13.4479335,
+      "pair LUT fused cached_mnn_ms": 13.392759999999999
+    }
+  ]
+}

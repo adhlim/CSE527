@@ -1,0 +1,2590 @@
+{
+  "config": {
+    "anchor_quadrant": 0,
+    "cosine_min": 0.8,
+    "margin_min": 0.016104817390441895,
+    "min_seed": 8,
+    "geom_tol": 0.035,
+    "region_padding": 0.04,
+    "min_seed_fraction": 0.45,
+    "min_seed_span": 0.08,
+    "probes": 16,
+    "min_probe_matches": 4,
+    "min_probe_fraction": 0.6,
+    "ransac_trials": 96,
+    "min_scale": 0.5,
+    "max_scale": 2.0,
+    "seed": 7
+  },
+  "calibration": {
+    "source": "calibration_correct_top1_10th_percentile_clipped",
+    "correct_samples": 5273
+  },
+  "seed": 7,
+  "top_k": 800,
+  "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "logical_cpus": 2,
+  "host_ram_GiB": 12.671417236328125,
+  "cpu_threads": 2,
+  "numpy": "2.1.3",
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "torch": "2.11.0+cpu",
+  "opencv": "5.0.0",
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libscipy_openblas",
+      "filepath": "/usr/local/lib/python3.13/dist-packages/numpy.libs/libscipy_openblas64_-ff651d7f.so",
+      "version": "0.3.27",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 2,
+      "prefix": "libgomp",
+      "filepath": "/usr/local/lib/python3.13/dist-packages/torch/lib/libgomp.so.1",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 2,
+      "prefix": "libopenblas",
+      "filepath": "/usr/local/lib/python3.13/dist-packages/opencv_python.libs/libopenblasp-r0-59ffcd50.3.15.so",
+      "version": "0.3.15",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ],
+  "warmup": 5,
+  "repeats": 12,
+  "timing_rounds": 3,
+  "timing_pairs_per_dataset": 5,
+  "geometry_threshold_px": 3.0,
+  "summary": [
+    {
+      "dataset": "synthetic_validation",
+      "method": "float_cosine",
+      "mutual": 8129,
+      "correct": 5613,
+      "precision_pct": 69.0490835281,
+      "median_px": 1.3484396074,
+      "comparison_pct": 100.0,
+      "reference_mnn_keep_pct": 100.0,
+      "reference_correct_keep_pct": 100.0,
+      "correct_candidate_keep_pct": 100.0,
+      "fallback_pct": 0.0,
+      "median_matmul_calls": 1.0,
+      "median_score_cache_KiB": 2500.0,
+      "median_ms": 3.6282925,
+      "p10_ms": 3.457353,
+      "p90_ms": 4.1278685,
+      "speedup_vs_float": 1.0
+    },
+    {
+      "dataset": "synthetic_validation",
+      "method": "quadrant_relation",
+      "mutual": 8128,
+      "correct": 5613,
+      "precision_pct": 69.0575787402,
+      "median_px": 1.34812984,
+      "comparison_pct": 98.1475954861,
+      "reference_mnn_keep_pct": 99.9876983639,
+      "reference_correct_keep_pct": 100.0,
+      "correct_candidate_keep_pct": 100.0,
+      "fallback_pct": 16.6666666667,
+      "median_matmul_calls": 5.0,
+      "median_score_cache_KiB": 2500.0,
+      "median_ms": 29.6054525,
+      "p10_ms": 29.24628,
+      "p90_ms": 34.147059,
+      "speedup_vs_float": 0.122554874
+    },
+    {
+      "dataset": "HPatches_test",
+      "method": "float_cosine",
+      "mutual": 10607,
+      "correct": 7138,
+      "precision_pct": 67.2951824267,
+      "median_px": 1.1764363853,
+      "comparison_pct": 100.0,
+      "reference_mnn_keep_pct": 100.0,
+      "reference_correct_keep_pct": 100.0,
+      "correct_candidate_keep_pct": 100.0,
+      "fallback_pct": 0.0,
+      "median_matmul_calls": 1.0,
+      "median_score_cache_KiB": 2500.0,
+      "median_ms": 3.552329,
+      "p10_ms": 3.443198,
+      "p90_ms": 4.103972,
+      "speedup_vs_float": 1.0
+    },
+    {
+      "dataset": "HPatches_test",
+      "method": "quadrant_relation",
+      "mutual": 10607,
+      "correct": 7138,
+      "precision_pct": 67.2951824267,
+      "median_px": 1.1764363853,
+      "comparison_pct": 100.0,
+      "reference_mnn_keep_pct": 100.0,
+      "reference_correct_keep_pct": 100.0,
+      "correct_candidate_keep_pct": 100.0,
+      "fallback_pct": 50.0,
+      "median_matmul_calls": 5.0,
+      "median_score_cache_KiB": 2500.0,
+      "median_ms": 29.89207,
+      "p10_ms": 28.3712095,
+      "p90_ms": 36.1049895,
+      "speedup_vs_float": 0.118838508
+    }
+  ],
+  "details": [
+    {
+      "dataset": "synthetic_validation",
+      "pair": 0,
+      "name": "validation_0_0",
+      "anchor_quadrant": 1,
+      "anchor_kps": 104,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": -0.01953125,
+          "ty": 0.003124999999999989,
+          "seed_inliers": 68,
+          "probe_inliers": 1,
+          "probe_usable": 11,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 1.0354070459185285,
+          "angle_deg": 6.235671605647769,
+          "tx": -0.005517390111781095,
+          "ty": -0.05017392922583594,
+          "seed_inliers": 67,
+          "probe_inliers": 8,
+          "probe_usable": 11,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 1,
+      "name": "validation_0_1",
+      "anchor_quadrant": 1,
+      "anchor_kps": 104,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.0078125,
+          "ty": -0.026562500000000017,
+          "seed_inliers": 66,
+          "probe_inliers": 0,
+          "probe_usable": 9,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 1.0061110185012359,
+          "angle_deg": 15.622786119045166,
+          "tx": 0.08171258839115175,
+          "ty": -0.13696617829447869,
+          "seed_inliers": 68,
+          "probe_inliers": 8,
+          "probe_usable": 9,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 2,
+      "name": "validation_0_2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 104,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.025000000000000022,
+          "ty": -0.0015625000000000222,
+          "seed_inliers": 71,
+          "probe_inliers": 2,
+          "probe_usable": 9,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.9631659215409588,
+          "angle_deg": 8.620289574384154,
+          "tx": 0.07938155322984192,
+          "ty": -0.051279418129184906,
+          "seed_inliers": 72,
+          "probe_inliers": 9,
+          "probe_usable": 9,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 3,
+      "name": "validation_1_0",
+      "anchor_quadrant": 1,
+      "anchor_kps": 255,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "similarity",
+          "scale": 0.9050455128223659,
+          "angle_deg": 19.27127723860012,
+          "tx": 0.15494201994168227,
+          "ty": -0.11303437249330248,
+          "seed_inliers": 102,
+          "probe_inliers": 5,
+          "probe_usable": 6,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 4,
+      "name": "validation_1_1",
+      "anchor_quadrant": 1,
+      "anchor_kps": 255,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.0015624999999999806,
+          "ty": -0.075,
+          "seed_inliers": 57,
+          "probe_inliers": 0,
+          "probe_usable": 6,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.9418718426340188,
+          "angle_deg": 14.378445401337283,
+          "tx": 0.07094620022379111,
+          "ty": -0.09959067815661293,
+          "seed_inliers": 112,
+          "probe_inliers": 5,
+          "probe_usable": 6,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 5,
+      "name": "validation_1_2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 255,
+      "probe_kps": 16,
+      "fallback_reason": "reverse_validation_failed",
+      "models": [
+        {
+          "kind": "similarity",
+          "scale": 1.0279176525460347,
+          "angle_deg": -17.80316911177909,
+          "tx": -0.030590092259938417,
+          "ty": 0.13674856958391002,
+          "seed_inliers": 126,
+          "probe_inliers": 1,
+          "probe_usable": 4,
+          "accepted": false
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 6,
+      "name": "validation_2_0",
+      "anchor_quadrant": 1,
+      "anchor_kps": 254,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.013281249999999994,
+          "ty": 0.0031249999999999993,
+          "seed_inliers": 118,
+          "probe_inliers": 5,
+          "probe_usable": 10,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.9374557018192204,
+          "angle_deg": 1.875009553460011,
+          "tx": 0.03511789996683484,
+          "ty": 0.005101073564408809,
+          "seed_inliers": 118,
+          "probe_inliers": 7,
+          "probe_usable": 10,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 7,
+      "name": "validation_2_1",
+      "anchor_quadrant": 1,
+      "anchor_kps": 254,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.04531249999999998,
+          "ty": -0.046875,
+          "seed_inliers": 34,
+          "probe_inliers": 0,
+          "probe_usable": 4,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 1.0222137939675418,
+          "angle_deg": 16.72435423467623,
+          "tx": 0.10834067275769282,
+          "ty": -0.1622677216945967,
+          "seed_inliers": 68,
+          "probe_inliers": 4,
+          "probe_usable": 4,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 8,
+      "name": "validation_2_2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 254,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.05624999999999997,
+          "ty": 0.0031250000000000028,
+          "seed_inliers": 127,
+          "probe_inliers": 0,
+          "probe_usable": 8,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.9020891767684921,
+          "angle_deg": 0.76315908990593,
+          "tx": 0.08025487084803096,
+          "ty": 0.013851666699593534,
+          "seed_inliers": 127,
+          "probe_inliers": 6,
+          "probe_usable": 8,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 9,
+      "name": "validation_3_0",
+      "anchor_quadrant": 1,
+      "anchor_kps": 217,
+      "probe_kps": 16,
+      "fallback_reason": "reverse_validation_failed",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": -0.02031250000000001,
+          "ty": -0.012500000000000011,
+          "seed_inliers": 126,
+          "probe_inliers": 3,
+          "probe_usable": 5,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.9478660892076336,
+          "angle_deg": -1.441357808995426,
+          "tx": -0.015744104326687436,
+          "ty": 0.004437281328972087,
+          "seed_inliers": 126,
+          "probe_inliers": 3,
+          "probe_usable": 5,
+          "accepted": false
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 10,
+      "name": "validation_3_1",
+      "anchor_quadrant": 1,
+      "anchor_kps": 217,
+      "probe_kps": 16,
+      "fallback_reason": "reverse_validation_failed",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": -0.0421875,
+          "ty": 0.05937500000000001,
+          "seed_inliers": 97,
+          "probe_inliers": 0,
+          "probe_usable": 5,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.9209283142664175,
+          "angle_deg": -9.885991457253763,
+          "tx": -0.06811551836107416,
+          "ty": 0.12223332406523069,
+          "seed_inliers": 107,
+          "probe_inliers": 3,
+          "probe_usable": 5,
+          "accepted": false
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 11,
+      "name": "validation_3_2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 217,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.1,
+          "ty": -0.045312500000000006,
+          "seed_inliers": 51,
+          "probe_inliers": 0,
+          "probe_usable": 5,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.961670779554409,
+          "angle_deg": 13.832580294134688,
+          "tx": 0.1651330111962881,
+          "ty": -0.07907404493694056,
+          "seed_inliers": 76,
+          "probe_inliers": 4,
+          "probe_usable": 5,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 12,
+      "name": "validation_4_0",
+      "anchor_quadrant": 1,
+      "anchor_kps": 201,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": -0.02656249999999999,
+          "ty": -0.040624999999999994,
+          "seed_inliers": 117,
+          "probe_inliers": 9,
+          "probe_usable": 11,
+          "accepted": true
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.9956468345825715,
+          "angle_deg": 1.964590618382425,
+          "tx": -0.016449424994665618,
+          "ty": -0.05007611321050692,
+          "seed_inliers": 117,
+          "probe_inliers": 9,
+          "probe_usable": 11,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 13,
+      "name": "validation_4_1",
+      "anchor_quadrant": 1,
+      "anchor_kps": 201,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.05156250000000001,
+          "ty": 0.0078125,
+          "seed_inliers": 56,
+          "probe_inliers": 0,
+          "probe_usable": 11,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.9842806817932508,
+          "angle_deg": 19.43168656738467,
+          "tx": 0.16970369873297808,
+          "ty": -0.10024606737911554,
+          "seed_inliers": 93,
+          "probe_inliers": 10,
+          "probe_usable": 11,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 14,
+      "name": "validation_4_2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 201,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.03125,
+          "ty": -0.02421875000000001,
+          "seed_inliers": 77,
+          "probe_inliers": 0,
+          "probe_usable": 11,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 1.0325815948461394,
+          "angle_deg": 12.618217095555968,
+          "tx": 0.09002306842201385,
+          "ty": -0.09414896753438257,
+          "seed_inliers": 108,
+          "probe_inliers": 11,
+          "probe_usable": 11,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 15,
+      "name": "validation_5_0",
+      "anchor_quadrant": 1,
+      "anchor_kps": 196,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": -0.03281250000000002,
+          "ty": -0.014062500000000006,
+          "seed_inliers": 115,
+          "probe_inliers": 2,
+          "probe_usable": 12,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 1.0862200682635228,
+          "angle_deg": -2.1155824902654783,
+          "tx": -0.05748809493762955,
+          "ty": -0.02150562966262548,
+          "seed_inliers": 116,
+          "probe_inliers": 9,
+          "probe_usable": 12,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 16,
+      "name": "validation_5_1",
+      "anchor_quadrant": 1,
+      "anchor_kps": 196,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.035937499999999956,
+          "ty": 0.04999999999999999,
+          "seed_inliers": 113,
+          "probe_inliers": 1,
+          "probe_usable": 9,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 1.0205697866767576,
+          "angle_deg": -7.046778729738971,
+          "tx": 0.006053757001741544,
+          "ty": 0.07563725768337293,
+          "seed_inliers": 115,
+          "probe_inliers": 9,
+          "probe_usable": 9,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "synthetic_validation",
+      "pair": 17,
+      "name": "validation_5_2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 196,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "similarity",
+          "scale": 0.9032926880821079,
+          "angle_deg": 18.8084507409113,
+          "tx": 0.20738789833990195,
+          "ty": -0.11486831874867992,
+          "seed_inliers": 73,
+          "probe_inliers": 6,
+          "probe_usable": 6,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 0,
+      "name": "v_abstract:1->2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 182,
+      "probe_kps": 16,
+      "fallback_reason": "reverse_validation_failed",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": -0.07109375,
+          "ty": 0.035156250000000014,
+          "seed_inliers": 65,
+          "probe_inliers": 1,
+          "probe_usable": 8,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.8635163404930511,
+          "angle_deg": -3.112132539085562,
+          "tx": -0.05234400330650249,
+          "ty": 0.07583459306270623,
+          "seed_inliers": 73,
+          "probe_inliers": 1,
+          "probe_usable": 8,
+          "accepted": false
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 1,
+      "name": "v_abstract:1->3",
+      "anchor_quadrant": 1,
+      "anchor_kps": 182,
+      "probe_kps": 16,
+      "fallback_reason": "reverse_validation_failed",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.09843750000000001,
+          "ty": -0.046875,
+          "seed_inliers": 44,
+          "probe_inliers": 0,
+          "probe_usable": 3,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 1.179382972664131,
+          "angle_deg": 5.092149635404847,
+          "tx": 0.06345100743765691,
+          "ty": -0.1223657659290513,
+          "seed_inliers": 81,
+          "probe_inliers": 2,
+          "probe_usable": 3,
+          "accepted": false
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 2,
+      "name": "v_adam:1->2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 224,
+      "probe_kps": 16,
+      "fallback_reason": "reverse_validation_failed",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.07291666666666667,
+          "ty": 0.0034722222222222376,
+          "seed_inliers": 74,
+          "probe_inliers": 2,
+          "probe_usable": 6,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.9129515954357136,
+          "angle_deg": 2.3710555974794896,
+          "tx": 0.08984360548051298,
+          "ty": 0.019892205949579606,
+          "seed_inliers": 86,
+          "probe_inliers": 2,
+          "probe_usable": 6,
+          "accepted": false
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 3,
+      "name": "v_adam:1->3",
+      "anchor_quadrant": 1,
+      "anchor_kps": 224,
+      "probe_kps": 16,
+      "fallback_reason": "reverse_validation_failed",
+      "models": [
+        {
+          "kind": "similarity",
+          "scale": 0.600834861010075,
+          "angle_deg": 2.085633744765742,
+          "tx": 0.21357955555519947,
+          "ty": 0.11256787977320182,
+          "seed_inliers": 55,
+          "probe_inliers": 1,
+          "probe_usable": 5,
+          "accepted": false
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 4,
+      "name": "v_apprentices:1->2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 132,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.0015624999999999944,
+          "ty": -0.03593750000000001,
+          "seed_inliers": 82,
+          "probe_inliers": 5,
+          "probe_usable": 9,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.9652782572467444,
+          "angle_deg": 0.2400924943000626,
+          "tx": 0.01030946277506159,
+          "ty": -0.024724694203808906,
+          "seed_inliers": 82,
+          "probe_inliers": 7,
+          "probe_usable": 9,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 5,
+      "name": "v_apprentices:1->3",
+      "anchor_quadrant": 1,
+      "anchor_kps": 132,
+      "probe_kps": 16,
+      "fallback_reason": "reverse_validation_failed",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": -0.084375,
+          "ty": -0.07500000000000001,
+          "seed_inliers": 51,
+          "probe_inliers": 1,
+          "probe_usable": 10,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.873155041195359,
+          "angle_deg": -5.019820273661409,
+          "tx": -0.07203464701404338,
+          "ty": -0.0102343994901134,
+          "seed_inliers": 64,
+          "probe_inliers": 3,
+          "probe_usable": 10,
+          "accepted": false
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 6,
+      "name": "v_artisans:1->2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 285,
+      "probe_kps": 16,
+      "fallback_reason": "reverse_validation_failed",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.14218749999999997,
+          "ty": 0.1078125,
+          "seed_inliers": 136,
+          "probe_inliers": 1,
+          "probe_usable": 2,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.9723955555467602,
+          "angle_deg": 0.7746493085660654,
+          "tx": 0.14792155775508292,
+          "ty": 0.10704842191111621,
+          "seed_inliers": 136,
+          "probe_inliers": 1,
+          "probe_usable": 2,
+          "accepted": false
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 7,
+      "name": "v_artisans:1->3",
+      "anchor_quadrant": 1,
+      "anchor_kps": 285,
+      "probe_kps": 16,
+      "fallback_reason": "reverse_validation_failed",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.171875,
+          "ty": 0.10625000000000001,
+          "seed_inliers": 87,
+          "probe_inliers": 0,
+          "probe_usable": 2,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 1.073593514969577,
+          "angle_deg": -1.8067760486244824,
+          "tx": 0.14533078412498818,
+          "ty": 0.10735051394771197,
+          "seed_inliers": 87,
+          "probe_inliers": 1,
+          "probe_usable": 2,
+          "accepted": false
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 8,
+      "name": "v_astronautis:1->2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 152,
+      "probe_kps": 16,
+      "fallback_reason": "reverse_validation_failed",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.0765625,
+          "ty": -0.075,
+          "seed_inliers": 26,
+          "probe_inliers": 0,
+          "probe_usable": 9,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 1.3663813908904072,
+          "angle_deg": 1.4243304406234285,
+          "tx": 0.03617691942463508,
+          "ty": -0.16506300020367398,
+          "seed_inliers": 52,
+          "probe_inliers": 3,
+          "probe_usable": 9,
+          "accepted": false
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 9,
+      "name": "v_astronautis:1->3",
+      "anchor_quadrant": 1,
+      "anchor_kps": 152,
+      "probe_kps": 16,
+      "fallback_reason": "reverse_validation_failed",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.065625,
+          "ty": 0.037500000000000006,
+          "seed_inliers": 30,
+          "probe_inliers": 0,
+          "probe_usable": 4,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 1.5504911182941208,
+          "angle_deg": 4.716999648898812,
+          "tx": 0.017041341536675608,
+          "ty": -0.2212912658349187,
+          "seed_inliers": 37,
+          "probe_inliers": 0,
+          "probe_usable": 4,
+          "accepted": false
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 10,
+      "name": "v_azzola:1->2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 212,
+      "probe_kps": 16,
+      "fallback_reason": "reverse_validation_failed",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": -0.10312500000000002,
+          "ty": 0.03593749999999999,
+          "seed_inliers": 62,
+          "probe_inliers": 3,
+          "probe_usable": 6,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.7157881657413099,
+          "angle_deg": -5.344397040303605,
+          "tx": 0.01385371401183419,
+          "ty": 0.11533430665609365,
+          "seed_inliers": 73,
+          "probe_inliers": 1,
+          "probe_usable": 6,
+          "accepted": false
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 11,
+      "name": "v_azzola:1->3",
+      "anchor_quadrant": 1,
+      "anchor_kps": 212,
+      "probe_kps": 16,
+      "fallback_reason": "reverse_validation_failed",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": -0.1796875,
+          "ty": 0.0078125,
+          "seed_inliers": 48,
+          "probe_inliers": 2,
+          "probe_usable": 6,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.9781706753198713,
+          "angle_deg": -0.8441588334229887,
+          "tx": -0.17436066793064153,
+          "ty": 0.018587291030330078,
+          "seed_inliers": 48,
+          "probe_inliers": 2,
+          "probe_usable": 6,
+          "accepted": false
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 12,
+      "name": "i_ajuntament:1->2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 280,
+      "probe_kps": 16,
+      "fallback_reason": "reverse_validation_failed",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.0,
+          "ty": 0.0,
+          "seed_inliers": 162,
+          "probe_inliers": 2,
+          "probe_usable": 4,
+          "accepted": false
+        },
+        {
+          "kind": "similarity",
+          "scale": 1.001149759545584,
+          "angle_deg": 0.07494879047239751,
+          "tx": -0.00021265051698882154,
+          "ty": -0.00036875214673104395,
+          "seed_inliers": 162,
+          "probe_inliers": 2,
+          "probe_usable": 4,
+          "accepted": false
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 13,
+      "name": "i_ajuntament:1->3",
+      "anchor_quadrant": 1,
+      "anchor_kps": 280,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.0,
+          "ty": 0.0,
+          "seed_inliers": 112,
+          "probe_inliers": 5,
+          "probe_usable": 6,
+          "accepted": true
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.995392334576709,
+          "angle_deg": 0.08668891197209416,
+          "tx": 0.0012635085357500797,
+          "ty": -0.0002399759332532836,
+          "seed_inliers": 112,
+          "probe_inliers": 5,
+          "probe_usable": 6,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 14,
+      "name": "i_autannes:1->2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 83,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.0,
+          "ty": 0.0,
+          "seed_inliers": 44,
+          "probe_inliers": 12,
+          "probe_usable": 13,
+          "accepted": true
+        },
+        {
+          "kind": "similarity",
+          "scale": 1.0103266258399326,
+          "angle_deg": -0.22975496666082784,
+          "tx": -0.005941209625274724,
+          "ty": -0.0014076822590768368,
+          "seed_inliers": 44,
+          "probe_inliers": 12,
+          "probe_usable": 13,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 15,
+      "name": "i_autannes:1->3",
+      "anchor_quadrant": 1,
+      "anchor_kps": 83,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": -0.0015624999999999667,
+          "ty": 0.0,
+          "seed_inliers": 37,
+          "probe_inliers": 12,
+          "probe_usable": 12,
+          "accepted": true
+        },
+        {
+          "kind": "similarity",
+          "scale": 1.007715443663986,
+          "angle_deg": -0.3382510359101044,
+          "tx": -0.007475242717078945,
+          "ty": 0.00015993187377899565,
+          "seed_inliers": 37,
+          "probe_inliers": 12,
+          "probe_usable": 12,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 16,
+      "name": "i_bologna:1->2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 21,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.0,
+          "ty": 0.0,
+          "seed_inliers": 16,
+          "probe_inliers": 13,
+          "probe_usable": 13,
+          "accepted": true
+        },
+        {
+          "kind": "similarity",
+          "scale": 1.0081020909379563,
+          "angle_deg": 0.12061150218735936,
+          "tx": 0.0011741501286056805,
+          "ty": -0.002446312557846997,
+          "seed_inliers": 16,
+          "probe_inliers": 13,
+          "probe_usable": 13,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 17,
+      "name": "i_bologna:1->3",
+      "anchor_quadrant": 1,
+      "anchor_kps": 21,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.0,
+          "ty": 0.0,
+          "seed_inliers": 13,
+          "probe_inliers": 12,
+          "probe_usable": 13,
+          "accepted": true
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.9847016463549274,
+          "angle_deg": 0.42933514524438937,
+          "tx": 0.002920690682852327,
+          "ty": 0.0034600614364520554,
+          "seed_inliers": 13,
+          "probe_inliers": 12,
+          "probe_usable": 13,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 18,
+      "name": "i_books:1->2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 162,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.0,
+          "ty": 0.0,
+          "seed_inliers": 118,
+          "probe_inliers": 7,
+          "probe_usable": 7,
+          "accepted": true
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.9965765812295052,
+          "angle_deg": -0.09583104292196824,
+          "tx": 3.805625825850645e-05,
+          "ty": 0.0010286249114966617,
+          "seed_inliers": 118,
+          "probe_inliers": 7,
+          "probe_usable": 7,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 19,
+      "name": "i_books:1->3",
+      "anchor_quadrant": 1,
+      "anchor_kps": 162,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.0,
+          "ty": 0.0,
+          "seed_inliers": 107,
+          "probe_inliers": 11,
+          "probe_usable": 11,
+          "accepted": true
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.999461823649116,
+          "angle_deg": 0.07993034824986618,
+          "tx": 0.00020446205198243472,
+          "ty": -0.00040928550410865294,
+          "seed_inliers": 107,
+          "probe_inliers": 11,
+          "probe_usable": 11,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 20,
+      "name": "i_boutique:1->2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 226,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.0,
+          "ty": 0.0,
+          "seed_inliers": 163,
+          "probe_inliers": 7,
+          "probe_usable": 7,
+          "accepted": true
+        },
+        {
+          "kind": "similarity",
+          "scale": 1.0009512834183412,
+          "angle_deg": 0.022817741385378027,
+          "tx": -8.771237179583391e-05,
+          "ty": 0.00011447968592470659,
+          "seed_inliers": 163,
+          "probe_inliers": 7,
+          "probe_usable": 7,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 21,
+      "name": "i_boutique:1->3",
+      "anchor_quadrant": 1,
+      "anchor_kps": 226,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.0,
+          "ty": 0.0,
+          "seed_inliers": 123,
+          "probe_inliers": 9,
+          "probe_usable": 9,
+          "accepted": true
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.998640231084046,
+          "angle_deg": -0.33822002977222043,
+          "tx": -0.001450549996953543,
+          "ty": 0.0020707780774928963,
+          "seed_inliers": 123,
+          "probe_inliers": 9,
+          "probe_usable": 9,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 22,
+      "name": "i_bridger:1->2",
+      "anchor_quadrant": 1,
+      "anchor_kps": 212,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.0,
+          "ty": 0.0,
+          "seed_inliers": 123,
+          "probe_inliers": 7,
+          "probe_usable": 7,
+          "accepted": true
+        },
+        {
+          "kind": "similarity",
+          "scale": 1.0007063449705476,
+          "angle_deg": 0.016225090101698647,
+          "tx": 0.0004141264787249077,
+          "ty": -0.0002807877415690052,
+          "seed_inliers": 123,
+          "probe_inliers": 7,
+          "probe_usable": 7,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "dataset": "HPatches_test",
+      "pair": 23,
+      "name": "i_bridger:1->3",
+      "anchor_quadrant": 1,
+      "anchor_kps": 212,
+      "probe_kps": 16,
+      "fallback_reason": "",
+      "models": [
+        {
+          "kind": "translation",
+          "scale": 1.0,
+          "angle_deg": 0.0,
+          "tx": 0.0,
+          "ty": 0.0,
+          "seed_inliers": 128,
+          "probe_inliers": 9,
+          "probe_usable": 10,
+          "accepted": true
+        },
+        {
+          "kind": "similarity",
+          "scale": 0.999196597878866,
+          "angle_deg": -0.011757080271766756,
+          "tx": 0.00034219441944421947,
+          "ty": 5.6005352734422864e-05,
+          "seed_inliers": 128,
+          "probe_inliers": 9,
+          "probe_usable": 10,
+          "accepted": true
+        }
+      ],
+      "allowed_quadrants": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    }
+  ],
+  "notes": [
+    "Only float baseline and spatial relation matching. No Thermometer/Grouping/Blob training.",
+    "Homography never passed to matcher; only calibration and accuracy evaluation.",
+    "Similarity model allows joint rotation/scale/translation; not a general perspective model.",
+    "Both accepted hypotheses use union; failed validation triggers full-search fallback.",
+    "Score cache and max block metrics are array sizes, not process peak memory."
+  ]
+}

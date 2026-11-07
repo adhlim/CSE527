@@ -1,0 +1,5 @@
+kernel,status,llvm_ctpop,native_instruction_lines,scalar_popcnt_lines,vector_popcnt_lines,examples
+existing_pairwise_thermometer64,YES_NATIVE_POPCOUNT,True,7,7,0,"['popcntq\t%r13, %rbx', 'popcntq\t%rax, %rax', 'popcntq\t%rbx, %rbx', 'popcntq\t%rax, %rax']"
+fused,YES_NATIVE_POPCOUNT,True,7,7,0,"['popcntq\t%rcx, %rcx', 'popcntq\t%rax, %rax', 'popcntq\t%rcx, %rcx', 'popcntq\t%rbx, %rax']"
+blocked_serial,YES_NATIVE_POPCOUNT,True,7,7,0,"['popcntq\t%rdx, %rdx', 'popcntq\t%rsi, %rsi', 'popcntq\t%rcx, %rcx', 'popcntq\t%rdx, %rdx']"
+blocked_parallel,YES_NATIVE_POPCOUNT,True,7,7,0,"['popcntq\t%rax, %rax', 'popcntq\t%rcx, %rcx', 'popcntq\t%rax, %rax', 'popcntq\t%rcx, %rcx']"

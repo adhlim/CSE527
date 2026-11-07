@@ -1,0 +1,357 @@
+{
+  "experiment": "exact Thermometer fused and tiled NN",
+  "variants": {
+    "float_cosine": [
+      "float",
+      0,
+      2
+    ],
+    "thermo_dense_existing": [
+      "dense",
+      0,
+      2
+    ],
+    "thermo_fused_serial": [
+      "fused",
+      0,
+      2
+    ],
+    "thermo_block32_serial": [
+      "blocked",
+      32,
+      2
+    ],
+    "thermo_block64_serial": [
+      "blocked",
+      64,
+      2
+    ],
+    "thermo_block128_serial": [
+      "blocked",
+      128,
+      2
+    ],
+    "thermo_block64_parallel_t1": [
+      "parallel",
+      64,
+      1
+    ],
+    "thermo_block64_parallel_t2": [
+      "parallel",
+      64,
+      2
+    ]
+  },
+  "target_ms": 5.0,
+  "cpu": "broadwell",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "numba": "0.61.2",
+  "numpy": "2.1.3",
+  "repeats": 12,
+  "warmup": 3,
+  "timing_pairs_per_dataset": 5,
+  "geometric_threshold": 3.0,
+  "seed": 7,
+  "top_k": 800,
+  "popcount": [
+    {
+      "kernel": "existing_pairwise_thermometer64",
+      "status": "YES_NATIVE_POPCOUNT",
+      "llvm_ctpop": true,
+      "native_instruction_lines": 7,
+      "scalar_popcnt_lines": 7,
+      "vector_popcnt_lines": 0,
+      "examples": [
+        "popcntq\t%r13, %rbx",
+        "popcntq\t%rax, %rax",
+        "popcntq\t%rbx, %rbx",
+        "popcntq\t%rax, %rax"
+      ]
+    },
+    {
+      "kernel": "fused",
+      "status": "YES_NATIVE_POPCOUNT",
+      "llvm_ctpop": true,
+      "native_instruction_lines": 7,
+      "scalar_popcnt_lines": 7,
+      "vector_popcnt_lines": 0,
+      "examples": [
+        "popcntq\t%rcx, %rcx",
+        "popcntq\t%rax, %rax",
+        "popcntq\t%rcx, %rcx",
+        "popcntq\t%rbx, %rax"
+      ]
+    },
+    {
+      "kernel": "blocked_serial",
+      "status": "YES_NATIVE_POPCOUNT",
+      "llvm_ctpop": true,
+      "native_instruction_lines": 7,
+      "scalar_popcnt_lines": 7,
+      "vector_popcnt_lines": 0,
+      "examples": [
+        "popcntq\t%rdx, %rdx",
+        "popcntq\t%rsi, %rsi",
+        "popcntq\t%rcx, %rcx",
+        "popcntq\t%rdx, %rdx"
+      ]
+    },
+    {
+      "kernel": "blocked_parallel",
+      "status": "YES_NATIVE_POPCOUNT",
+      "llvm_ctpop": true,
+      "native_instruction_lines": 7,
+      "scalar_popcnt_lines": 7,
+      "vector_popcnt_lines": 0,
+      "examples": [
+        "popcntq\t%rax, %rax",
+        "popcntq\t%rcx, %rcx",
+        "popcntq\t%rax, %rax",
+        "popcntq\t%rcx, %rcx"
+      ]
+    }
+  ],
+  "edges_sha256": "c2fbd70652f354e928469cc78b9bab411b008676071bac8ca0c2cd8b805db5a5",
+  "summary": [
+    {
+      "dataset": "synthetic_validation",
+      "method": "float_cosine",
+      "mutual": 8178,
+      "correct": 5598,
+      "precision_pct": 68.4519442406,
+      "median_px": 1.365621882,
+      "exact_vs_thermo": false,
+      "prepare_ms": 0.0,
+      "cached_match_ms": 3.4406885,
+      "total_ms": 3.507382,
+      "speedup_vs_dense": 2.4412568976,
+      "speedup_vs_float": 1.0,
+      "under_5ms": true
+    },
+    {
+      "dataset": "synthetic_validation",
+      "method": "thermo_dense_existing",
+      "mutual": 8069,
+      "correct": 5404,
+      "precision_pct": 66.972363366,
+      "median_px": 1.4108929342,
+      "exact_vs_thermo": true,
+      "prepare_ms": 2.073924,
+      "cached_match_ms": 6.51377,
+      "total_ms": 8.5624205,
+      "speedup_vs_dense": 1.0,
+      "speedup_vs_float": 0.4096250587,
+      "under_5ms": false
+    },
+    {
+      "dataset": "synthetic_validation",
+      "method": "thermo_fused_serial",
+      "mutual": 8069,
+      "correct": 5404,
+      "precision_pct": 66.972363366,
+      "median_px": 1.4108929342,
+      "exact_vs_thermo": true,
+      "prepare_ms": 2.043691,
+      "cached_match_ms": 4.387381,
+      "total_ms": 6.44916,
+      "speedup_vs_dense": 1.3276799614,
+      "speedup_vs_float": 0.5438509821,
+      "under_5ms": false
+    },
+    {
+      "dataset": "synthetic_validation",
+      "method": "thermo_block32_serial",
+      "mutual": 8069,
+      "correct": 5404,
+      "precision_pct": 66.972363366,
+      "median_px": 1.4108929342,
+      "exact_vs_thermo": true,
+      "prepare_ms": 2.078077,
+      "cached_match_ms": 6.980585,
+      "total_ms": 8.9826125,
+      "speedup_vs_dense": 0.9532216268,
+      "speedup_vs_float": 0.3904634648,
+      "under_5ms": false
+    },
+    {
+      "dataset": "synthetic_validation",
+      "method": "thermo_block64_serial",
+      "mutual": 8069,
+      "correct": 5404,
+      "precision_pct": 66.972363366,
+      "median_px": 1.4108929342,
+      "exact_vs_thermo": true,
+      "prepare_ms": 2.046726,
+      "cached_match_ms": 6.688695,
+      "total_ms": 8.7873495,
+      "speedup_vs_dense": 0.9744030894,
+      "speedup_vs_float": 0.3991399227,
+      "under_5ms": false
+    },
+    {
+      "dataset": "synthetic_validation",
+      "method": "thermo_block128_serial",
+      "mutual": 8069,
+      "correct": 5404,
+      "precision_pct": 66.972363366,
+      "median_px": 1.4108929342,
+      "exact_vs_thermo": true,
+      "prepare_ms": 2.0387435,
+      "cached_match_ms": 6.818188,
+      "total_ms": 8.7825575,
+      "speedup_vs_dense": 0.9749347499,
+      "speedup_vs_float": 0.3993577042,
+      "under_5ms": false
+    },
+    {
+      "dataset": "synthetic_validation",
+      "method": "thermo_block64_parallel_t1",
+      "mutual": 8069,
+      "correct": 5404,
+      "precision_pct": 66.972363366,
+      "median_px": 1.4108929342,
+      "exact_vs_thermo": true,
+      "prepare_ms": 2.0141795,
+      "cached_match_ms": 7.482439,
+      "total_ms": 9.6027035,
+      "speedup_vs_dense": 0.8916676955,
+      "speedup_vs_float": 0.3652494321,
+      "under_5ms": false
+    },
+    {
+      "dataset": "synthetic_validation",
+      "method": "thermo_block64_parallel_t2",
+      "mutual": 8069,
+      "correct": 5404,
+      "precision_pct": 66.972363366,
+      "median_px": 1.4108929342,
+      "exact_vs_thermo": true,
+      "prepare_ms": 2.056174,
+      "cached_match_ms": 7.3541895,
+      "total_ms": 9.408072,
+      "speedup_vs_dense": 0.9101142615,
+      "speedup_vs_float": 0.3728056078,
+      "under_5ms": false
+    },
+    {
+      "dataset": "HPatches_test",
+      "method": "float_cosine",
+      "mutual": 10607,
+      "correct": 7138,
+      "precision_pct": 67.2951824267,
+      "median_px": 1.1764363853,
+      "exact_vs_thermo": false,
+      "prepare_ms": 0.0,
+      "cached_match_ms": 10.6019715,
+      "total_ms": 10.649495,
+      "speedup_vs_dense": 1.2029154434,
+      "speedup_vs_float": 1.0,
+      "under_5ms": false
+    },
+    {
+      "dataset": "HPatches_test",
+      "method": "thermo_dense_existing",
+      "mutual": 10510,
+      "correct": 6924,
+      "precision_pct": 65.880114177,
+      "median_px": 1.2508149834,
+      "exact_vs_thermo": true,
+      "prepare_ms": 3.627407,
+      "cached_match_ms": 8.954888,
+      "total_ms": 12.810442,
+      "speedup_vs_dense": 1.0,
+      "speedup_vs_float": 0.8313136268,
+      "under_5ms": false
+    },
+    {
+      "dataset": "HPatches_test",
+      "method": "thermo_fused_serial",
+      "mutual": 10510,
+      "correct": 6924,
+      "precision_pct": 65.880114177,
+      "median_px": 1.2508149834,
+      "exact_vs_thermo": true,
+      "prepare_ms": 4.0300885,
+      "cached_match_ms": 8.60329,
+      "total_ms": 11.252016,
+      "speedup_vs_dense": 1.138501936,
+      "speedup_vs_float": 0.9464521735,
+      "under_5ms": false
+    },
+    {
+      "dataset": "HPatches_test",
+      "method": "thermo_block32_serial",
+      "mutual": 10510,
+      "correct": 6924,
+      "precision_pct": 65.880114177,
+      "median_px": 1.2508149834,
+      "exact_vs_thermo": true,
+      "prepare_ms": 3.8965145,
+      "cached_match_ms": 10.8665435,
+      "total_ms": 13.951545,
+      "speedup_vs_dense": 0.9182095603,
+      "speedup_vs_float": 0.7633201197,
+      "under_5ms": false
+    },
+    {
+      "dataset": "HPatches_test",
+      "method": "thermo_block64_serial",
+      "mutual": 10510,
+      "correct": 6924,
+      "precision_pct": 65.880114177,
+      "median_px": 1.2508149834,
+      "exact_vs_thermo": true,
+      "prepare_ms": 2.631293,
+      "cached_match_ms": 7.0217,
+      "total_ms": 12.571204,
+      "speedup_vs_dense": 1.0190306354,
+      "speedup_vs_float": 0.8471340533,
+      "under_5ms": false
+    },
+    {
+      "dataset": "HPatches_test",
+      "method": "thermo_block128_serial",
+      "mutual": 10510,
+      "correct": 6924,
+      "precision_pct": 65.880114177,
+      "median_px": 1.2508149834,
+      "exact_vs_thermo": true,
+      "prepare_ms": 2.2972935,
+      "cached_match_ms": 7.923283,
+      "total_ms": 13.7787075,
+      "speedup_vs_dense": 0.9297274073,
+      "speedup_vs_float": 0.7728950629,
+      "under_5ms": false
+    },
+    {
+      "dataset": "HPatches_test",
+      "method": "thermo_block64_parallel_t1",
+      "mutual": 10510,
+      "correct": 6924,
+      "precision_pct": 65.880114177,
+      "median_px": 1.2508149834,
+      "exact_vs_thermo": true,
+      "prepare_ms": 4.0938665,
+      "cached_match_ms": 15.3769775,
+      "total_ms": 16.3449575,
+      "speedup_vs_dense": 0.7837549899,
+      "speedup_vs_float": 0.6515462032,
+      "under_5ms": false
+    },
+    {
+      "dataset": "HPatches_test",
+      "method": "thermo_block64_parallel_t2",
+      "mutual": 10510,
+      "correct": 6924,
+      "precision_pct": 65.880114177,
+      "median_px": 1.2508149834,
+      "exact_vs_thermo": true,
+      "prepare_ms": 3.740577,
+      "cached_match_ms": 9.762998,
+      "total_ms": 12.5032575,
+      "speedup_vs_dense": 1.0245683575,
+      "speedup_vs_float": 0.8517376372,
+      "under_5ms": false
+    }
+  ]
+}
