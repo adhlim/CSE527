@@ -1,0 +1,37 @@
+{
+ "tag": "m32_L16_both_lrw0.0001_s0",
+ "m": 32,
+ "levels": 16,
+ "train": "both",
+ "lr_w": 0.0001,
+ "lr_u": 0.02,
+ "tau_rel": 0.25,
+ "steps": 600,
+ "seed": 0,
+ "bytes": 16,
+ "best_dev": 68.61631386456833,
+ "best_step": 600,
+ "init_dev": 67.18247079247408,
+ "log": [
+  {
+   "step": 0,
+   "dev_precision_3px": 67.18247079247408,
+   "seconds": 0.0
+  },
+  {
+   "step": 300,
+   "train_loss": 0.14475149258971215,
+   "dev_precision_3px": 68.58705222670189,
+   "w_change": 0.036270324140787125,
+   "seconds": 6.1
+  },
+  {
+   "step": 600,
+   "train_loss": 0.14053890878955524,
+   "dev_precision_3px": 68.61631386456833,
+   "w_change": 0.06168981269001961,
+   "seconds": 10.2
+  }
+ ],
+ "jax": "0.6.2"
+}

@@ -1,0 +1,102 @@
+{
+ "tag": "L8_l2_tau0.02_lr0.002_s0",
+ "levels": 8,
+ "variant": "l2",
+ "tau": 0.02,
+ "lr": 0.002,
+ "lr_scale": 0.02,
+ "steps": 3000,
+ "seed": 0,
+ "init": "quantile",
+ "best_dev": 68.28156540991078,
+ "best_step": 900,
+ "init_dev": 68.10268707767523,
+ "log": [
+  {
+   "step": 0,
+   "dev_precision_3px": 68.10268707767523,
+   "seconds": 0.0
+  },
+  {
+   "step": 300,
+   "train_loss": 0.1555718086473644,
+   "dev_precision_3px": 68.15613907937039,
+   "mean_abs_edge_shift": 0.014195392839610577,
+   "scale": 0.11269000917673111,
+   "seconds": 6.3
+  },
+  {
+   "step": 600,
+   "train_loss": 0.15640068429832657,
+   "dev_precision_3px": 68.21707589285714,
+   "mean_abs_edge_shift": 0.0162951797246933,
+   "scale": 0.12317324429750443,
+   "seconds": 10.5
+  },
+  {
+   "step": 900,
+   "train_loss": 0.1498376708974441,
+   "dev_precision_3px": 68.28156540991078,
+   "mean_abs_edge_shift": 0.01802423968911171,
+   "scale": 0.1227337047457695,
+   "seconds": 14.7
+  },
+  {
+   "step": 1200,
+   "train_loss": 0.15927669377997516,
+   "dev_precision_3px": 68.10871183916605,
+   "mean_abs_edge_shift": 0.019177047535777092,
+   "scale": 0.12210263311862946,
+   "seconds": 19.0
+  },
+  {
+   "step": 1500,
+   "train_loss": 0.16146772800634304,
+   "dev_precision_3px": 68.1656430887586,
+   "mean_abs_edge_shift": 0.018112165853381157,
+   "scale": 0.12514588236808777,
+   "seconds": 23.3
+  },
+  {
+   "step": 1800,
+   "train_loss": 0.1466588136057059,
+   "dev_precision_3px": 68.18801911744235,
+   "mean_abs_edge_shift": 0.01902044750750065,
+   "scale": 0.11895941197872162,
+   "seconds": 27.7
+  },
+  {
+   "step": 2100,
+   "train_loss": 0.1595255421164135,
+   "dev_precision_3px": 68.18439413223831,
+   "mean_abs_edge_shift": 0.02000182680785656,
+   "scale": 0.12206653505563736,
+   "seconds": 32.0
+  },
+  {
+   "step": 2400,
+   "train_loss": 0.1484398719916741,
+   "dev_precision_3px": 68.07078462866852,
+   "mean_abs_edge_shift": 0.020094530656933784,
+   "scale": 0.11354236304759979,
+   "seconds": 36.5
+  },
+  {
+   "step": 2700,
+   "train_loss": 0.16218645197028916,
+   "dev_precision_3px": 68.09941493270331,
+   "mean_abs_edge_shift": 0.02149808406829834,
+   "scale": 0.11875831335783005,
+   "seconds": 40.7
+  },
+  {
+   "step": 3000,
+   "train_loss": 0.14530258130903045,
+   "dev_precision_3px": 68.16223043631703,
+   "mean_abs_edge_shift": 0.019065042957663536,
+   "scale": 0.1337624341249466,
+   "seconds": 45.3
+  }
+ ],
+ "jax": "0.6.2"
+}

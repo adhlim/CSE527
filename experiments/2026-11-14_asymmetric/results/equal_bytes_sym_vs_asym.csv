@@ -1,0 +1,15 @@
+dataset,bytes,scalar_symmetric,scalar_symmetric_cfg,scalar_asymmetric,scalar_asymmetric_cfg,pca_symmetric,pca_symmetric_cfg,pca_asymmetric,pca_asymmetric_cfg,pq_symmetric,pq_asymmetric
+HPatches,8,,,,,53.08,32-D x 4 lv quantile,56.43,32-D x 4 lv quantile,52.85,57.17
+HPatches,12,,,,,57.66,32-D x 8 lv quantile,58.71,32-D x 8 lv quantile,,
+HPatches,16,57.38,64-D x 4 lv quantile,59.02,64-D x 4 lv lloyd,59.1,32-D x 16 lv quantile,59.51,32-D x 16 lv percentile,59.31,60.0
+HPatches,24,59.55,64-D x 8 lv quantile,60.13,64-D x 8 lv lloyd,59.97,48-D x 16 lv quantile,60.27,48-D x 16 lv percentile,,
+HPatches,32,60.39,64-D x 16 lv lloyd,60.52,64-D x 16 lv lloyd,59.9,32-D x 256 lv quantile,59.91,32-D x 256 lv quantile,60.45,60.52
+HPatches,48,,,,,60.59,48-D x 256 lv quantile,60.59,48-D x 256 lv quantile,,
+HPatches,64,60.59,64-D x 256 lv uniform_shared,60.59,64-D x 256 lv uniform_shared,,,,,,
+COCO_synthetic,8,,,,,62.98,32-D x 4 lv quantile,66.46,32-D x 4 lv quantile,61.28,66.62
+COCO_synthetic,12,,,,,67.93,32-D x 8 lv quantile,69.1,32-D x 8 lv quantile,,
+COCO_synthetic,16,66.51,64-D x 4 lv quantile,68.4,64-D x 4 lv lloyd,69.54,32-D x 16 lv quantile,70.0,32-D x 16 lv percentile,68.94,69.92
+COCO_synthetic,24,69.13,64-D x 8 lv quantile,69.94,64-D x 8 lv lloyd,70.05,48-D x 16 lv quantile,70.38,48-D x 16 lv quantile,,
+COCO_synthetic,32,70.29,64-D x 16 lv lloyd,70.38,64-D x 16 lv percentile,70.52,32-D x 256 lv quantile,70.51,32-D x 256 lv percentile,70.46,70.52
+COCO_synthetic,48,,,,,70.71,48-D x 256 lv percentile,70.71,48-D x 256 lv quantile,,
+COCO_synthetic,64,70.59,64-D x 256 lv percentile,70.58,64-D x 256 lv percentile,,,,,,

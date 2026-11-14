@@ -1,0 +1,93 @@
+{
+ "tag": "m64_L16_both_lrw0.001_s0",
+ "m": 64,
+ "levels": 16,
+ "train": "both",
+ "lr_w": 0.001,
+ "lr_u": 0.02,
+ "tau_rel": 0.25,
+ "steps": 3000,
+ "seed": 0,
+ "bytes": 32,
+ "best_dev": 69.33727627027372,
+ "best_step": 2400,
+ "init_dev": 65.57826095198378,
+ "log": [
+  {
+   "step": 0,
+   "dev_precision_3px": 65.57826095198378,
+   "seconds": 0.0
+  },
+  {
+   "step": 300,
+   "train_loss": 0.14356870391716559,
+   "dev_precision_3px": 68.68264243940118,
+   "w_change": 0.19215098023414612,
+   "seconds": 7.0
+  },
+  {
+   "step": 600,
+   "train_loss": 0.12316280909503499,
+   "dev_precision_3px": 69.0455654854752,
+   "w_change": 0.2521052956581116,
+   "seconds": 11.6
+  },
+  {
+   "step": 900,
+   "train_loss": 0.10657243813077609,
+   "dev_precision_3px": 69.13957724946675,
+   "w_change": 0.2893538475036621,
+   "seconds": 16.1
+  },
+  {
+   "step": 1200,
+   "train_loss": 0.1091908345123132,
+   "dev_precision_3px": 69.23105029504723,
+   "w_change": 0.32068824768066406,
+   "seconds": 20.6
+  },
+  {
+   "step": 1500,
+   "train_loss": 0.10506659995454053,
+   "dev_precision_3px": 69.16192248740968,
+   "w_change": 0.3543989360332489,
+   "seconds": 25.1
+  },
+  {
+   "step": 1800,
+   "train_loss": 0.09847922647371889,
+   "dev_precision_3px": 69.29122345286399,
+   "w_change": 0.3775600790977478,
+   "seconds": 29.7
+  },
+  {
+   "step": 2100,
+   "train_loss": 0.1024630801162372,
+   "dev_precision_3px": 69.21982192380675,
+   "w_change": 0.40298351645469666,
+   "seconds": 34.3
+  },
+  {
+   "step": 2400,
+   "train_loss": 0.09644448939400414,
+   "dev_precision_3px": 69.33727627027372,
+   "w_change": 0.42532315850257874,
+   "seconds": 38.7
+  },
+  {
+   "step": 2700,
+   "train_loss": 0.1017670736896495,
+   "dev_precision_3px": 69.28890227540319,
+   "w_change": 0.4498859941959381,
+   "seconds": 43.3
+  },
+  {
+   "step": 3000,
+   "train_loss": 0.09225295782399674,
+   "dev_precision_3px": 69.28032512027993,
+   "w_change": 0.4712497591972351,
+   "seconds": 47.9
+  }
+ ],
+ "jax": "0.6.2"
+}

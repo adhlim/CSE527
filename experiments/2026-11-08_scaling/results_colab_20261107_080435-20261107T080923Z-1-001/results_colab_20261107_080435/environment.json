@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-08",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "numpy": "2.4.6",
+  "threads": 2,
+  "sizes": [
+    1024,
+    4096,
+    16384,
+    65536,
+    262144,
+    524288
+  ],
+  "lscpu": "CPU(s):                                  2\nModel name:                              Intel(R) Xeon(R) CPU @ 2.20GHz\nL1d cache:                               32 KiB (1 instance)\nL1i cache:                               32 KiB (1 instance)\nL2 cache:                                256 KiB (1 instance)\nL3 cache:                                55 MiB (1 instance)\n",
+  "kernel_source_sha256": "b124ecb4ba4ef077c4536a4627cb1c84d29a2d90cba4e9ccd6a5a86ebd53ba4c",
+  "queries": "COCO test pairs 0,3,6 d1 (3 distinct source images, 1000 desc each)",
+  "database": "HPatches descriptors (reference image once per scene + all targets), first N",
+  "task": "exact 1-NN",
+  "repeats": "9 (N<=16k), 5 (N<=64k), 3 (larger); 1 warmup; median per query, then median over 3 queries",
+  "edges": {
+    "byte8_and_thermo8": "2026-10-14 quantile 8 levels",
+    "nib16": "percentile 16 levels (accuracy matrix)"
+  },
+  "int8_scale": 0.004601635038852692,
+  "quick": false
+}

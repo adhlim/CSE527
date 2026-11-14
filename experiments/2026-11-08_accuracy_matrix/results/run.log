@@ -1,0 +1,19 @@
+fitted 30 configs in 61.5 s
+quantile-8 vs saved edges max abs diff 1.2665987014770508e-07
+COCO_synthetic 1 192 85 s
+COCO_synthetic 51 192 105 s
+COCO_synthetic 101 192 125 s
+COCO_synthetic 151 192 146 s
+HPatches 1 580 186 s
+HPatches 51 580 207 s
+HPatches 101 580 226 s
+HPatches 151 580 247 s
+HPatches 201 580 267 s
+HPatches 251 580 287 s
+HPatches 301 580 306 s
+HPatches 351 580 326 s
+HPatches 401 580 346 s
+HPatches 451 580 366 s
+HPatches 501 580 386 s
+HPatches 551 580 406 s
+total minutes 7.0

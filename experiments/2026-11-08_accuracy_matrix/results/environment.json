@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-08",
+  "strategies": [
+    "uniform",
+    "percentile",
+    "quantile",
+    "lloyd",
+    "uniform_shared",
+    "quantile_shared"
+  ],
+  "levels": [
+    4,
+    8,
+    16,
+    32,
+    256
+  ],
+  "distances": [
+    "idx_L1",
+    "idx_L2",
+    "recon_cos"
+  ],
+  "percentile": [
+    0.1,
+    99.9
+  ],
+  "lloyd": "per-dimension 1D Lloyd-Max, init = quantile edges, <=60 iterations",
+  "reconstruction": "calibration conditional mean per bin (bin midpoint if empty)",
+  "code_rule": "count of x > edge",
+  "tie_rule": "smallest index",
+  "max_pairs": null,
+  "data_status": "validation only (COCO synthetic, HPatches); MegaDepth-1500 reserved as final test"
+}

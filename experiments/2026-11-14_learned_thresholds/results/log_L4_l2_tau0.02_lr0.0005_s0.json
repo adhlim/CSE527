@@ -1,0 +1,37 @@
+{
+ "tag": "L4_l2_tau0.02_lr0.0005_s0",
+ "levels": 4,
+ "variant": "l2",
+ "tau": 0.02,
+ "lr": 0.0005,
+ "lr_scale": 0.02,
+ "steps": 600,
+ "seed": 0,
+ "best_dev": 65.90760848712735,
+ "best_step": 300,
+ "init_dev": 65.83541386594969,
+ "log": [
+  {
+   "step": 0,
+   "dev_precision_3px": 65.83541386594969,
+   "seconds": 0.0
+  },
+  {
+   "step": 300,
+   "train_loss": 0.22517525707681973,
+   "dev_precision_3px": 65.90760848712735,
+   "mean_abs_edge_shift": 0.005266461055725813,
+   "scale": 0.3086288273334503,
+   "seconds": 5.4
+  },
+  {
+   "step": 600,
+   "train_loss": 0.22741914057483276,
+   "dev_precision_3px": 65.85644481563612,
+   "mean_abs_edge_shift": 0.006393712013959885,
+   "scale": 0.3215159475803375,
+   "seconds": 9.0
+  }
+ ],
+ "jax": "0.6.2"
+}

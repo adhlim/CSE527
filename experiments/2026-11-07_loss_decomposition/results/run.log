@@ -1,0 +1,36 @@
+done 8 COCO_synthetic
+done 8 HPatches
+done 16 COCO_synthetic
+done 16 HPatches
+ bins        dataset           method  pairs  mutual  correct_3px  same_as_float  precision_1px  precision_3px  precision_5px
+    8 COCO_synthetic   A_float_cosine    192  109639        77367         109639         39.941         70.565         84.950
+    8 COCO_synthetic   B_recon_cosine    192  107644        74418          97837         39.186         69.133         84.035
+    8 COCO_synthetic       C_recon_L2    192  107362        74185          97264         39.187         69.098         84.051
+    8 COCO_synthetic         D_bin_L1    192  106832        73332          94927         38.909         68.642         83.618
+    8 COCO_synthetic         E_bin_L2    192  107490        74537          97421         39.335         69.343         84.075
+    8 COCO_synthetic D_tiebreak_float    192  107287        73862          96496         38.983         68.845         83.751
+    8       HPatches   A_float_cosine    580  291631       176695         291631         27.025         60.589         73.561
+    8       HPatches   B_recon_cosine    580  286560       170653         250088         26.706         59.552         72.438
+    8       HPatches       C_recon_L2    580  284983       170063         247123         26.792         59.675         72.572
+    8       HPatches         D_bin_L1    580  286966       167895         237950         26.351         58.507         71.187
+    8       HPatches         E_bin_L2    580  285927       170007         244719         26.719         59.458         72.183
+    8       HPatches D_tiebreak_float    580  287883       168904         242412         26.376         58.671         71.369
+   16 COCO_synthetic   A_float_cosine    192  109639        77367         109639         39.941         70.565         84.950
+   16 COCO_synthetic   B_recon_cosine    192  108732        76208         102750         39.692         70.088         84.644
+   16 COCO_synthetic       C_recon_L2    192  108564        76053         102261         39.679         70.054         84.653
+   16 COCO_synthetic         D_bin_L1    192  107971        75077          98719         39.404         69.534         84.199
+   16 COCO_synthetic         E_bin_L2    192  108341        75771         100449         39.628         69.938         84.417
+   16 COCO_synthetic D_tiebreak_float    192  108178        75287          99493         39.415         69.595         84.240
+   16       HPatches   A_float_cosine    580  291631       176695         291631         27.025         60.589         73.561
+   16       HPatches   B_recon_cosine    580  289636       174402         266116         26.911         60.214         73.178
+   16       HPatches       C_recon_L2    580  288613       174028         263359         26.954         60.298         73.289
+   16       HPatches         D_bin_L1    580  289177       171000         247956         26.555         59.133         71.904
+   16       HPatches         E_bin_L2    580  288328       172583         253714         26.823         59.856         72.609
+   16       HPatches D_tiebreak_float    580  289582       171422         250253         26.564         59.196         71.973
+ bins        dataset     category  row_tie_frac  col_tie_frac
+    8 COCO_synthetic    synthetic        0.0333        0.0325
+    8       HPatches illumination        0.0355        0.0348
+    8       HPatches    viewpoint        0.0556        0.0591
+   16 COCO_synthetic    synthetic        0.0170        0.0163
+   16       HPatches illumination        0.0175        0.0169
+   16       HPatches    viewpoint        0.0280        0.0305

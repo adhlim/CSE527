@@ -1,0 +1,102 @@
+{
+ "tag": "L4_l2_tau0.03_lr0.002_s0_uniform",
+ "levels": 4,
+ "variant": "l2",
+ "tau": 0.03,
+ "lr": 0.002,
+ "lr_scale": 0.02,
+ "steps": 3000,
+ "seed": 0,
+ "init": "uniform",
+ "best_dev": 65.95849136520283,
+ "best_step": 1500,
+ "init_dev": 59.10137257432985,
+ "log": [
+  {
+   "step": 0,
+   "dev_precision_3px": 59.10137257432985,
+   "seconds": 0.0
+  },
+  {
+   "step": 300,
+   "train_loss": 0.2685075619071722,
+   "dev_precision_3px": 65.91249711782338,
+   "mean_abs_edge_shift": 0.09477609395980835,
+   "scale": 0.3043065071105957,
+   "seconds": 5.5
+  },
+  {
+   "step": 600,
+   "train_loss": 0.23046635104964178,
+   "dev_precision_3px": 65.88011307909767,
+   "mean_abs_edge_shift": 0.09785007685422897,
+   "scale": 0.30411678552627563,
+   "seconds": 9.2
+  },
+  {
+   "step": 900,
+   "train_loss": 0.22567743306358656,
+   "dev_precision_3px": 65.76066585293185,
+   "mean_abs_edge_shift": 0.09809020906686783,
+   "scale": 0.2989221513271332,
+   "seconds": 13.0
+  },
+  {
+   "step": 1200,
+   "train_loss": 0.23484600010017553,
+   "dev_precision_3px": 65.84525013240888,
+   "mean_abs_edge_shift": 0.09867777675390244,
+   "scale": 0.29635024070739746,
+   "seconds": 16.8
+  },
+  {
+   "step": 1500,
+   "train_loss": 0.2393098163108031,
+   "dev_precision_3px": 65.95849136520283,
+   "mean_abs_edge_shift": 0.09822747856378555,
+   "scale": 0.3011952340602875,
+   "seconds": 20.5
+  },
+  {
+   "step": 1800,
+   "train_loss": 0.219549652710557,
+   "dev_precision_3px": 65.86831537283679,
+   "mean_abs_edge_shift": 0.09724912792444229,
+   "scale": 0.2891972064971924,
+   "seconds": 24.3
+  },
+  {
+   "step": 2100,
+   "train_loss": 0.23805908918380736,
+   "dev_precision_3px": 65.93659664675275,
+   "mean_abs_edge_shift": 0.098312608897686,
+   "scale": 0.2889518737792969,
+   "seconds": 28.2
+  },
+  {
+   "step": 2400,
+   "train_loss": 0.22232463947186867,
+   "dev_precision_3px": 65.84014619601808,
+   "mean_abs_edge_shift": 0.09708741307258606,
+   "scale": 0.2847954332828522,
+   "seconds": 32.1
+  },
+  {
+   "step": 2700,
+   "train_loss": 0.24076625797897577,
+   "dev_precision_3px": 65.88210388560651,
+   "mean_abs_edge_shift": 0.09801099449396133,
+   "scale": 0.2825135588645935,
+   "seconds": 36.1
+  },
+  {
+   "step": 3000,
+   "train_loss": 0.21777744125574827,
+   "dev_precision_3px": 65.77467370228528,
+   "mean_abs_edge_shift": 0.10003940016031265,
+   "scale": 0.31707972288131714,
+   "seconds": 40.1
+  }
+ ],
+ "jax": "0.6.2"
+}

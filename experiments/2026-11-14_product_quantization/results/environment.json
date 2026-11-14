@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-14",
+  "configs": [
+    [
+      8,
+      256
+    ],
+    [
+      16,
+      256
+    ],
+    [
+      32,
+      256
+    ],
+    [
+      16,
+      16
+    ],
+    [
+      32,
+      16
+    ],
+    [
+      64,
+      16
+    ],
+    [
+      64,
+      4
+    ]
+  ],
+  "rotations": [
+    "none",
+    "pca64"
+  ],
+  "seed": 20261114,
+  "kmeans": "Lloyd, random init, 25 iterations, empty clusters re-seeded, 65536 training points",
+  "numpy": "2.2.6"
+}

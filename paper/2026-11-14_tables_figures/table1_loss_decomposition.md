@@ -1,0 +1,6 @@
+| Dataset | Bins | A float cos | B recon cos | E bin L2 | D bin L1 (thermometer) | Total loss A-D (pp) | Quantization A-B (pp, share) | Distance B-D (pp, share) |
+|---|---|---|---|---|---|---|---|---|
+| HPatches | 8 | 60.59 | 59.55 | 59.46 | 58.51 | 2.08 | 1.04 (50%) | 1.05 (50%) |
+| HPatches | 16 | 60.59 | 60.21 | 59.86 | 59.13 | 1.46 | 0.37 (26%) | 1.08 (74%) |
+| COCO synthetic | 8 | 70.57 | 69.13 | 69.34 | 68.64 | 1.92 | 1.43 (74%) | 0.49 (26%) |
+| COCO synthetic | 16 | 70.57 | 70.09 | 69.94 | 69.53 | 1.03 | 0.48 (46%) | 0.55 (54%) |

@@ -1,0 +1,99 @@
+dataset,bytes,family,dims,bits,strategy,distance,precision_3px
+COCO_synthetic,4,gfr + quantize,16,2,quantile,idx_L2,48.455526160016426
+COCO_synthetic,4,pca + quantize,16,2,quantile,idx_L2,48.331981158349784
+COCO_synthetic,6,gfr + quantize,24,2,quantile,idx_L2,59.66503397061147
+COCO_synthetic,6,pca + quantize,24,2,quantile,idx_L2,59.57901834156825
+COCO_synthetic,6,gfr + quantize,16,3,quantile,idx_L2,57.648761659697655
+COCO_synthetic,6,pca + quantize,16,3,quantile,idx_L2,57.58222567187348
+COCO_synthetic,8,pca + quantize,32,2,quantile,idx_L2,64.47132660839264
+COCO_synthetic,8,gfr + quantize,32,2,quantile,idx_L2,64.38398225092361
+COCO_synthetic,8,gfr + quantize,16,4,quantile,recon_cos,61.233262207378544
+COCO_synthetic,8,pca + quantize,16,4,quantile,recon_cos,61.06133487479097
+COCO_synthetic,9,gfr + quantize,24,3,quantile,idx_L2,65.04007612993104
+COCO_synthetic,9,pca + quantize,24,3,quantile,idx_L2,64.98116317400518
+COCO_synthetic,12,pca + quantize,32,3,quantile,recon_cos,67.92512146327522
+COCO_synthetic,12,gfr + quantize,32,3,quantile,recon_cos,67.86010150544188
+COCO_synthetic,12,pca + quantize,24,4,quantile,recon_cos,67.27338950072365
+COCO_synthetic,12,gfr + quantize,24,4,quantile,recon_cos,67.27049784939027
+COCO_synthetic,12,pca + quantize,48,2,quantile,recon_cos,65.06150196367696
+COCO_synthetic,12,gfr + quantize,48,2,quantile,recon_cos,64.94252873563218
+COCO_synthetic,16,gfr + quantize,32,4,quantile,recon_cos,69.60551662525475
+COCO_synthetic,16,pca + quantize,32,4,quantile,recon_cos,69.53617084715441
+COCO_synthetic,16,scalar 64-D,64,2,quantile,idx_L2,66.84228742837365
+COCO_synthetic,16,gfr + quantize,16,8,percentile,idx_L2,64.23859371913885
+COCO_synthetic,16,pca + quantize,16,8,percentile,idx_L2,64.08388760957868
+COCO_synthetic,18,pca + quantize,48,3,quantile,recon_cos,68.82632197414806
+COCO_synthetic,18,gfr + quantize,48,3,quantile,recon_cos,68.782033799479
+COCO_synthetic,24,pca + quantize,48,4,quantile,recon_cos,70.04743097593385
+COCO_synthetic,24,gfr + quantize,48,4,quantile,recon_cos,70.04143098373211
+COCO_synthetic,24,scalar 64-D,64,3,quantile,idx_L2,69.34319471578752
+COCO_synthetic,24,gfr + quantize,24,8,quantile,recon_cos,68.82614290679216
+COCO_synthetic,24,pca + quantize,24,8,quantile,recon_cos,68.80071374906086
+COCO_synthetic,32,gfr + quantize,32,8,percentile,recon_cos,70.5300054279327
+COCO_synthetic,32,pca + quantize,32,8,quantile,recon_cos,70.51773773718533
+COCO_synthetic,32,scalar 64-D,64,4,lloyd,recon_cos,70.29167010725459
+COCO_synthetic,40,scalar 64-D,64,5,percentile,recon_cos,70.46918543560693
+COCO_synthetic,48,pca + quantize,48,8,percentile,recon_cos,70.71299927776711
+COCO_synthetic,48,gfr + quantize,48,8,percentile,recon_cos,70.66436346686409
+COCO_synthetic,64,scalar 64-D,64,8,percentile,recon_cos,70.59097254536994
+COCO_synthetic,64,gfr float,16,32,none,cosine,64.2018057346959
+COCO_synthetic,64,pca float,16,32,none,cosine,64.01346627472789
+COCO_synthetic,64,truncate float,16,32,none,cosine,62.000839806844425
+COCO_synthetic,96,gfr float,24,32,none,cosine,68.84199459297086
+COCO_synthetic,96,pca float,24,32,none,cosine,68.7951117410199
+COCO_synthetic,96,truncate float,24,32,none,cosine,66.86508323737777
+COCO_synthetic,128,gfr float,32,32,none,cosine,70.55311789975255
+COCO_synthetic,128,pca float,32,32,none,cosine,70.50604403180586
+COCO_synthetic,128,truncate float,32,32,none,cosine,68.86211714943917
+COCO_synthetic,192,pca float,48,32,none,cosine,70.74388326079801
+COCO_synthetic,192,gfr float,48,32,none,cosine,70.71277733592957
+COCO_synthetic,192,truncate float,48,32,none,cosine,70.1311025326835
+HPatches,4,pca + quantize,16,2,quantile,idx_L2,39.68635441428733
+HPatches,4,gfr + quantize,16,2,quantile,idx_L2,39.5766979660472
+HPatches,6,pca + quantize,24,2,quantile,idx_L2,49.55240581872436
+HPatches,6,gfr + quantize,24,2,quantile,idx_L2,49.540706891728064
+HPatches,6,gfr + quantize,16,3,quantile,recon_cos,47.57703337604491
+HPatches,6,pca + quantize,16,3,quantile,idx_L2,47.404192498356316
+HPatches,8,gfr + quantize,32,2,quantile,idx_L2,53.796084320799984
+HPatches,8,pca + quantize,32,2,quantile,idx_L2,53.731900502174135
+HPatches,8,gfr + quantize,16,4,percentile,idx_L2,51.35064565134827
+HPatches,8,pca + quantize,16,4,percentile,idx_L2,51.269459702426445
+HPatches,9,pca + quantize,24,3,quantile,recon_cos,54.63621535872018
+HPatches,9,gfr + quantize,24,3,quantile,recon_cos,54.59419266089155
+HPatches,12,pca + quantize,32,3,quantile,recon_cos,57.65808916833176
+HPatches,12,gfr + quantize,32,3,quantile,recon_cos,57.63094209778628
+HPatches,12,gfr + quantize,24,4,quantile,recon_cos,56.854363581650155
+HPatches,12,pca + quantize,24,4,quantile,recon_cos,56.798364826371525
+HPatches,12,gfr + quantize,48,2,quantile,recon_cos,55.35305751944621
+HPatches,12,pca + quantize,48,2,quantile,recon_cos,55.24587201304138
+HPatches,16,gfr + quantize,32,4,quantile,recon_cos,59.11459702318996
+HPatches,16,pca + quantize,32,4,quantile,recon_cos,59.09849632497335
+HPatches,16,scalar 64-D,64,2,quantile,idx_L2,57.587927773742834
+HPatches,16,pca + quantize,16,8,percentile,idx_L2,53.51038613287027
+HPatches,16,gfr + quantize,16,8,percentile,idx_L2,53.50118017309205
+HPatches,18,gfr + quantize,48,3,quantile,recon_cos,58.964063511725456
+HPatches,18,pca + quantize,48,3,quantile,recon_cos,58.89871965425738
+HPatches,24,gfr + quantize,48,4,percentile,recon_cos,60.03770224238245
+HPatches,24,pca + quantize,48,4,quantile,recon_cos,59.973526364483746
+HPatches,24,scalar 64-D,64,3,lloyd,idx_L2,59.55466828326748
+HPatches,24,gfr + quantize,24,8,percentile,recon_cos,58.07713547697515
+HPatches,24,pca + quantize,24,8,percentile,recon_cos,58.05373193906863
+HPatches,32,scalar 64-D,64,4,lloyd,recon_cos,60.38819233948746
+HPatches,32,gfr + quantize,32,8,quantile,recon_cos,59.924300455098454
+HPatches,32,pca + quantize,32,8,quantile,recon_cos,59.897949279682756
+HPatches,40,scalar 64-D,64,5,percentile,recon_cos,60.53964349033136
+HPatches,48,gfr + quantize,48,8,percentile,recon_cos,60.60862040547223
+HPatches,48,pca + quantize,48,8,quantile,recon_cos,60.58697257474541
+HPatches,64,scalar 64-D,64,8,uniform_shared,recon_cos,60.59402544843434
+HPatches,64,gfr float,16,32,none,cosine,53.24784175676808
+HPatches,64,pca float,16,32,none,cosine,53.17671451112517
+HPatches,64,truncate float,16,32,none,cosine,51.09898699349675
+HPatches,96,gfr float,24,32,none,cosine,58.06773334093208
+HPatches,96,pca float,24,32,none,cosine,58.059514771767375
+HPatches,96,truncate float,24,32,none,cosine,56.344071628294365
+HPatches,128,gfr float,32,32,none,cosine,59.930154242714
+HPatches,128,pca float,32,32,none,cosine,59.90866915435814
+HPatches,128,truncate float,32,32,none,cosine,58.50618683968764
+HPatches,192,pca float,48,32,none,cosine,60.60561320139266
+HPatches,192,gfr float,48,32,none,cosine,60.60271113597902
+HPatches,192,truncate float,48,32,none,cosine,59.805618102465736

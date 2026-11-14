@@ -1,0 +1,8 @@
+| Method | Bytes/desc | Compression | DB MB at 524,288 desc | HPatches P@3px | COCO P@3px | Two-image MNN ms (encode+match, HPatches median) | Speedup vs float BLAS | Speedup vs official XFeat match | 1-NN speedup vs float BLAS, N>=65,536 (range over 3 sizes x 2 runs) |
+|---|---|---|---|---|---|---|---|---|---|
+| float32 (cosine) | 256 | 1.0x | 128 | 60.59 | 70.57 | 4.61 | 1.00x | 1.35x | 1.00x |
+| int8 per-tensor (dot) | 64 | 4.0x | 32 | 60.58 | 70.54 | 4.06 | 1.13x | 1.53x | 1.31-1.52x |
+| 8-level quantile, byte, L2 | 64 | 4.0x | 32 | 59.46 | 69.34 | 3.41 | 1.35x | 1.82x | 1.64-1.91x |
+| 8-level quantile, byte, L1 | 64 | 4.0x | 32 | 58.51 | 68.64 | 3.11 | 1.48x | 2.00x | 1.67-2.06x |
+| 8-level quantile, thermometer, L1 | 56 | 4.6x | 28 | 58.51 | 68.64 | 3.70 | 1.25x | 1.68x | 1.03-1.26x |
+| 16-level percentile, 4-bit packed, L2 | 32 | 8.0x | 16 | 60.25 | 70.05 | not measured | not measured | not measured | 1.36-1.54x |

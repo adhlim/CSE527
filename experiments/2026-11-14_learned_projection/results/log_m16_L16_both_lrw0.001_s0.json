@@ -1,0 +1,93 @@
+{
+ "tag": "m16_L16_both_lrw0.001_s0",
+ "m": 16,
+ "levels": 16,
+ "train": "both",
+ "lr_w": 0.001,
+ "lr_u": 0.02,
+ "tau_rel": 0.25,
+ "steps": 3000,
+ "seed": 0,
+ "bytes": 8,
+ "best_dev": 67.77063115925675,
+ "best_step": 2700,
+ "init_dev": 59.1088299512609,
+ "log": [
+  {
+   "step": 0,
+   "dev_precision_3px": 59.1088299512609,
+   "seconds": 0.0
+  },
+  {
+   "step": 300,
+   "train_loss": 0.32065277521808944,
+   "dev_precision_3px": 65.17549830781473,
+   "w_change": 0.4052869379520416,
+   "seconds": 5.4
+  },
+  {
+   "step": 600,
+   "train_loss": 0.24269680198282004,
+   "dev_precision_3px": 66.3797425249955,
+   "w_change": 0.5854507088661194,
+   "seconds": 8.5
+  },
+  {
+   "step": 900,
+   "train_loss": 0.20636450059711933,
+   "dev_precision_3px": 66.9839179911596,
+   "w_change": 0.6939162015914917,
+   "seconds": 11.4
+  },
+  {
+   "step": 1200,
+   "train_loss": 0.2046641881329318,
+   "dev_precision_3px": 67.29484195510173,
+   "w_change": 0.769447922706604,
+   "seconds": 14.3
+  },
+  {
+   "step": 1500,
+   "train_loss": 0.1982110130166014,
+   "dev_precision_3px": 67.47975118861932,
+   "w_change": 0.825492262840271,
+   "seconds": 17.3
+  },
+  {
+   "step": 1800,
+   "train_loss": 0.18368571515505513,
+   "dev_precision_3px": 67.57801478471869,
+   "w_change": 0.8568162322044373,
+   "seconds": 20.2
+  },
+  {
+   "step": 2100,
+   "train_loss": 0.19378195070351165,
+   "dev_precision_3px": 67.5787198044929,
+   "w_change": 0.8887659311294556,
+   "seconds": 23.1
+  },
+  {
+   "step": 2400,
+   "train_loss": 0.1789319389189283,
+   "dev_precision_3px": 67.59513866078551,
+   "w_change": 0.9007123112678528,
+   "seconds": 26.0
+  },
+  {
+   "step": 2700,
+   "train_loss": 0.1926989407092333,
+   "dev_precision_3px": 67.77063115925675,
+   "w_change": 0.9228732585906982,
+   "seconds": 28.8
+  },
+  {
+   "step": 3000,
+   "train_loss": 0.1739614798501134,
+   "dev_precision_3px": 67.71954182575494,
+   "w_change": 0.9445877075195312,
+   "seconds": 31.7
+  }
+ ],
+ "jax": "0.6.2"
+}

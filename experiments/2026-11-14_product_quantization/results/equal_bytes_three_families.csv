@@ -1,0 +1,7 @@
+dataset,bytes,scalar64,scalar64_config,reduce_quantize,reduce_quantize_config,pq_symmetric,pq_config,pq_asymmetric,pq_asym_config
+HPatches,8,,,53.8,gfr 32-D x 2 bit idx_L2,52.85,M=16 K=16 pca64 sdc_l2,57.17,M=8 K=256 pca64
+HPatches,16,57.59,4 levels quantile idx_L2,59.11,gfr 32-D x 4 bit recon_cos,59.31,M=16 K=256 pca64 sdc_l2,60.0,M=16 K=256 pca64
+HPatches,32,60.39,16 levels lloyd recon_cos,59.92,gfr 32-D x 8 bit recon_cos,60.45,M=32 K=256 pca64 sdc_l2,60.52,M=32 K=256 pca64
+COCO_synthetic,8,,,64.47,pca 32-D x 2 bit idx_L2,61.28,M=16 K=16 pca64 sdc_cos,66.62,M=8 K=256 pca64
+COCO_synthetic,16,66.84,4 levels quantile idx_L2,69.61,gfr 32-D x 4 bit recon_cos,68.94,M=16 K=256 pca64 sdc_l2,69.92,M=16 K=256 pca64
+COCO_synthetic,32,70.29,16 levels lloyd recon_cos,70.53,gfr 32-D x 8 bit recon_cos,70.46,M=32 K=256 pca64 sdc_l2,70.52,M=32 K=256 pca64
